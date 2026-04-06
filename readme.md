@@ -31,7 +31,7 @@ Este projeto tem como fim identificar e melhorar o já consolidade jogo sério I
 
 A reabilitação respiratória é um processo terapêutico onde pacientes com disfunções respiratórias, usam de  uma abordagem sistemática, repetitiva e de longo prazo, o que pode reduzir a adesão do paciente ao tratamento.Nesse contexto os jogos sérios surgem como uma alternativa há tornar os exercícios mais motivadores, lúdicos e engajadores aos pacientes.Nesse âmbito o software já desenvolvido pela inciativa de pesquisa da Udesc, I Blue It gamifica o tratamento e retorna dados uteis ao proficional da saúde que aplica o tratamento sobre paciente.
   
-Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás ás três principais aréas deste trabalho sendo elas:
+Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás ás:
 - Dificuldade em ajustar a dificuldade dos exercicios.
 - Necessidade de ampliar a captura de dados dos pacientes na hora do exercicios.
 - Necessidade de ampliar os dados mostrados no dashboard do paciente.
