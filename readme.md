@@ -23,17 +23,18 @@
 
 # 1. Visão do Produto e Impacto (O Problema)
   
-  Este projeto tem como fim identificar e melhorar o já consolidade jogo sério I Blue It, um software desenvolvido pela Universidade do Estado de Santa Catarina (UDESC) com o fim de auxiliar na fisioterapia de pacientes com problemas respiratorios, isso por meio da gamificação dos seus exercícios e análises dos resultados.Assim o projeto pretende análisar o software e aplicar as melhorias que forem encontradas, tanto tecnicas, como de demandas da comunidade que já utiliza o software.    
+Este projeto tem como fim identificar e melhorar o já consolidade jogo sério I Blue It, um software desenvolvido pela Universidade do Estado de Santa Catarina (UDESC) com o fim de auxiliar na fisioterapia de pacientes com problemas respiratorios, isso por meio da gamificação dos seus exercícios e análises dos resultados.Assim o projeto pretende análisar o software e aplicar as melhorias que forem encontradas, tanto tecnicas, como de demandas da comunidade que já utiliza o software.    
 
 ---
 
 ## 1.1 Contexto e Problema
 
-  A reabilitação respiratória é um processo terapêutico onde pacientes com disfunções respiratórias, usam de  uma abordagem sistemática, repetitiva e de longo prazo, o que pode reduzir a adesão do paciente ao tratamento.Nesse contexto os jogos sérios surgem como uma alternativa há tornar os exercícios mais motivadores, lúdicos e engajadores aos pacientes.Nesse âmbito o software já desenvolvido pela inciativa de pesquisa da Udesc, I Blue It gamifica o tratamento e retorna dados uteis ao proficional da saúde que aplica o tratamento sobre paciente.
-  Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás ás três principais aréas deste trabalho sendo elas:
-  - Dificuldade em ajustar a dificuldade dos exercicios.
-  - Necessidade de ampliar a captura de dados dos pacientes na hora do exercicios.
-  - Necessidade de ampliar os dados mostrados no dashboard do paciente.
+A reabilitação respiratória é um processo terapêutico onde pacientes com disfunções respiratórias, usam de  uma abordagem sistemática, repetitiva e de longo prazo, o que pode reduzir a adesão do paciente ao tratamento.Nesse contexto os jogos sérios surgem como uma alternativa há tornar os exercícios mais motivadores, lúdicos e engajadores aos pacientes.Nesse âmbito o software já desenvolvido pela inciativa de pesquisa da Udesc, I Blue It gamifica o tratamento e retorna dados uteis ao proficional da saúde que aplica o tratamento sobre paciente.
+  
+Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás ás três principais aréas deste trabalho sendo elas:
+- Dificuldade em ajustar a dificuldade dos exercicios.
+- Necessidade de ampliar a captura de dados dos pacientes na hora do exercicios.
+- Necessidade de ampliar os dados mostrados no dashboard do paciente.
 
 Sempre que possível apresente:
 
