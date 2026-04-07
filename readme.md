@@ -63,24 +63,6 @@ Inclua:
 
 ---
 
-### Pesquisa com Usuários
-
-Pode incluir:
-
-- entrevistas
-- questionários
-- observação de processos
-
-Inclua:
-
-- número de pessoas entrevistadas
-- principais dores identificadas
-- padrões observados
-
-Adicione **tabelas, gráficos ou prints**.
-
----
-
 ### Evidência de Interesse
 
 Podem ser incluídos:
