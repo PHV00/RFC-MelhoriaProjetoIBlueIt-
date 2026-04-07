@@ -42,37 +42,13 @@ Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás 
 
 ## 1.2 Origem da Demanda e Evidências
 
-É necessário demonstrar que existe **interesse real pela solução**.
+-contar a historia do software
+-mostrar seus resultados (feed backs)
+-argumentar como sua melhoria seria benefica para comunidade
 
-Apresente pelo menos **uma evidência concreta**.
+O software foi conceido em uma iniciativa do (LARVA)LAboratory for Research on Visual Applications da Universidade do Estado de Santa Catarina (UDESC) em colaboração com profissionais da aréa de saúde 
 
-### Demanda Externa
-
-Projeto solicitado por:
-
-- empresa
-- ONG
-- órgão público
-- grupo de usuários
-
-Inclua:
-
-- nome da organização
-- contexto da demanda
-- descrição do problema relatado
-
----
-
-### Evidência de Interesse
-
-Podem ser incluídos:
-
-- cartas de intenção
-- feedback de usuários
-- comentários de comunidades
-- resultados de formulários
-
----
+A demanda de melhoria nasce do próprio contexto de pesquisa e desenvolvimento do sistema I Blue It, conduzido pela Universidade do Estado de Santa Catarina (UDESC), em colaboração com profissionais da área respiratória e fisioterapica, que auxiliaram o projeto a atender suas demandas,lacunas e problematicas reais da aréa medica. O sistema foi concebido com forte participação de especialistas em fisioterapia respiratória, o que garantiu aderência a uma necessidade real do domínio clínico.Neste contexto a melhoria de suas lacunas, ajudariam a comunidade trazendo novas funções e aprimoramentos ao sistema que já os ampara.
 
 ## 1.3 Análise de Soluções Existentes (Benchmark)
 
