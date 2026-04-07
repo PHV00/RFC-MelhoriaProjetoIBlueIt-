@@ -14,7 +14,7 @@
   Pedro Henrique Vitoreti
 
 - **Data da Proposta:**  
-  DD/MM/AAAA
+  12/04/2026
 
 - **Versão:**  
   1.0
