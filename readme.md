@@ -38,13 +38,6 @@ Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás 
 - Dificuldade em ajustar a dificuldade dos exercicios ao estado atual do tratamento paciente (no modelo atual isso é configurado pelo profissional da saude oque pode acabar acaretando em erros).
 - Necessidade de ampliar a captura de dados dos pacientes na hora do exercicios (adicionar um novo modulo para o biossensor de saturação periférica de oxigênio (SpO2)), com a finalidade de capturar mais dados sobre o paciente).
 - Necessidade de ampliar os dados mostrados no dashboard do paciente ( adicionar os dados obtidos pela adição do modulo (SpO2) para o dashboard do paciente).
-
-Sempre que possível apresente:
-
-- exemplos reais
-- prints de processos atuais
-- descrições de fluxos existentes
-
 ---
 
 ## 1.2 Origem da Demanda e Evidências
