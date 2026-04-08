@@ -32,7 +32,7 @@ Este projeto tem como fim identificar e melhorar o já consolidade jogo sério I
 A reabilitação respiratória é um processo terapêutico onde pacientes com disfunções respiratórias, usam de  uma abordagem sistemática, repetitiva e de longo prazo, o que pode reduzir a adesão do paciente ao tratamento.Nesse contexto os jogos sérios surgem como uma alternativa há tornar os exercícios mais motivadores, lúdicos e engajadores aos pacientes.
 Nesse âmbito o software já desenvolvido pela inciativa de pesquisa da Udesc, I Blue It gamifica o tratamento e retorna dados uteis ao proficional da saúde que aplica o tratamento sobre paciente.O jogo consiste em um jogo de plataforma onde o usuario por meio de sua respiração em um equipamento IOT chamado PITACO no qual os valores obtidos são transformados em movimentos verticais inspirar sobe expirar desce assim fazendo o personagem controlado  "Blue" (o golfinho) desviar dos obstaculos ou capturar, além de possuir outros minigames com mesmo conceitos para exercicitar o paciente.Assim a solução atual já contempla calibração, histórico do jogador, armazenamento de dados e customização de parâmetros por profissionais.
 
-link com dados sobre  software: https://udescmove2learn.wordpress.com/2018/04/26/i-blue-it/
+link auxiliar com dados sobre software: https://udescmove2learn.wordpress.com/2018/04/26/i-blue-it/
 
 Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás ás:
 - Dificuldade em ajustar a dificuldade dos exercicios ao estado atual do tratamento paciente (no modelo atual isso é configurado pelo profissional da saude oque pode acabar acaretando em erros).
@@ -42,13 +42,12 @@ Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás 
 
 ## 1.2 Origem da Demanda e Evidências
 
--contar a historia do software
--mostrar seus resultados (feed backs)
--argumentar como sua melhoria seria benefica para comunidade
+O software foi concebido em uma iniciativa do (LARVA)LAboratory for Research on Visual Applications da UDESC em colaboração com profissionais da aréa de fisioterapia respiratória e áreas correlatas, com o objetivo de atender a problematicas reais do dominio clinico.Sendo assim desde o principio o sistema tem como foco atender as necessidade de ferramentas que auxiem no processo de atendimento medico e tratamento de pacientes com problemas respiratorios.
 
-O software foi conceido em uma iniciativa do (LARVA)LAboratory for Research on Visual Applications da Universidade do Estado de Santa Catarina (UDESC) em colaboração com profissionais da aréa de saúde 
+O programa que foi concebido em 2018 já está atualmente na sua versão 5.0 e como tal já possue alguma experimentação por parte dos profissionais de saude, que o avaliaram possitivamente desde sua primeira versão, como pode-se ver nas avaliações de feitas já em 2018, onde os profissionais que tiveram contato com a ferramenta a avaliaram com nota de 4.1 de 5, demonstrando grande satisfação por parte dos envolvidos, já nos estagios iniciais do software. [referencia 2018 - Santos - I Blue It Um Jogo Sério para auxiliar na Reabilitação Respiratória.pdf]
 
-A demanda de melhoria nasce do próprio contexto de pesquisa e desenvolvimento do sistema I Blue It, conduzido pela Universidade do Estado de Santa Catarina (UDESC), em colaboração com profissionais da área respiratória e fisioterapica, que auxiliaram o projeto a atender suas demandas,lacunas e problematicas reais da aréa medica. O sistema foi concebido com forte participação de especialistas em fisioterapia respiratória, o que garantiu aderência a uma necessidade real do domínio clínico.Neste contexto a melhoria de suas lacunas, ajudariam a comunidade trazendo novas funções e aprimoramentos ao sistema que já os ampara.
+Nesse contexto, tendo em mente o fim de ajudar ainda mais as equipes medicas no tratamento de doenças respiratorias, atrávez do aprimoramento das funcionalidades do software, que este projeto se origina, se propondo a aprimorar o software nas lacunas identificadas pela comunidade, com o fim de fornecer ao final uma ferramenta mais completa aos profissionais de saude.
+
 
 ## 1.3 Análise de Soluções Existentes (Benchmark)
 
