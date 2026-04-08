@@ -30,6 +30,7 @@ Este projeto tem como fim identificar e melhorar o já consolidade jogo sério I
 ## 1.1 Contexto e Problema
 
 A reabilitação respiratória é um processo terapêutico onde pacientes com disfunções respiratórias, usam de  uma abordagem sistemática, repetitiva e de longo prazo, o que pode reduzir a adesão do paciente ao tratamento.Nesse contexto os jogos sérios surgem como uma alternativa há tornar os exercícios mais motivadores, lúdicos e engajadores aos pacientes.
+
 Nesse âmbito o software já desenvolvido pela inciativa de pesquisa da Udesc, I Blue It gamifica o tratamento e retorna dados uteis ao proficional da saúde que aplica o tratamento sobre paciente.O jogo consiste em um jogo de plataforma onde o usuario por meio de sua respiração em um equipamento IOT chamado PITACO no qual os valores obtidos são transformados em movimentos verticais inspirar sobe expirar desce assim fazendo o personagem controlado  "Blue" (o golfinho) desviar dos obstaculos ou capturar, além de possuir outros minigames com mesmo conceitos para exercicitar o paciente.Assim a solução atual já contempla calibração, histórico do jogador, armazenamento de dados e customização de parâmetros por profissionais.
 
 link auxiliar com dados sobre software: https://udescmove2learn.wordpress.com/2018/04/26/i-blue-it/
