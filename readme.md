@@ -143,14 +143,12 @@ Tendo em vista a problematica apresentada, este projeto tem como fim sanar as la
 
 ## 1.6 Métricas de Sucesso (KPIs)
 
-Como saberemos que o projeto foi bem sucedido?
-
-Exemplos:
-
-- latência inferior a 200ms
-- acurácia da IA superior a 85%
-- suporte a 100 usuários simultâneos
-- redução do tempo de um processo em 30%
+- Registro correto de sessões com dados respiratórios e de SpO2.
+- Tempo de resposta do sistema inferior a 300 ms para feedback em gameplay.
+- Ajuste dinâmico de dificuldade executado em tempo real durante a sessão.
+- Dashboard apresentando histórico por paciente, sessão e indicadores fisiológicos.
+- Avaliação de utilidade por profissionais com média mínima de 4,0/5 em validação inicial.
+- Disponibilidade de exportação de dados para análise clínica.
 
 ---
 
