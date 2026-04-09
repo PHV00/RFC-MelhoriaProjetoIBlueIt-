@@ -39,7 +39,6 @@ Nesse âmbito o software já desenvolvido pela inciativa de pesquisa da Udesc, I
 
 link auxiliar com dados sobre software: https://udescmove2learn.wordpress.com/2018/04/26/i-blue-it/
 
-
 Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás ás:
 - Dificuldade em ajustar a dificuldade dos exercicios ao estado atual do tratamento paciente (no modelo atual isso é configurado pelo profissional da saude oque pode acabar acaretando em erros).
 - Necessidade de ampliar a captura de dados dos pacientes na hora do exercicios (adicionar um novo modulo para o biossensor de saturação periférica de oxigênio (SpO2)), com a finalidade de capturar mais dados sobre o paciente).
@@ -106,11 +105,11 @@ público-alvo : pessoas com problemas respiratorios de modo amplo
 
 ### Diferencial do Projeto
 
-Explique claramente:
+A análisando os concorentes elencados, podemos concluir que no campo das soluções respiratórias gamificadas elencadas se distribuem em três grandes grupos. O primeiro é o de soluções leves e acessíveis, como o BubbleBreather, que prioriza  a simplicidade tecnológica e acesso rápido. O segundo é o das soluções orientadas ao engajamento familiar e à adesão de maneira ludica, como o PlayPhysio. O terceiro é o das soluções com maior maturidade clínica e comercial, como o ACPlus Respiratory Assessment e o OmniFlow, fortemente ligado a atuação completa desda analise de desempenho do paciente em resposta ao tratamento, até ao tratamento gamificado e ludico.
 
-- por que criar algo novo
-- qual lacuna não foi resolvida pelas soluções existentes
-- qual nicho específico será atendido
+Porém podemos perceber que enquanto os dois primeiros concorentes apresentem pontos fortes especificos e distintos, e que não cobrem todo o escopo já tratado pelo software I blue it, o terceiro apresenta uma solução completa e semelhante ao software I blue it, porém trazendo com isso uma diferença crucial, a especifidade ao ambiente estadunidense, oque impossibilita sua implementação de maneira simplificada em outros ambientes.
+
+Dado isto percebemos a lacuna nitida de uma ferramenta completa ao ambiente fisioterapico brasileiro, que abranja de maneira relevante tanto a gamificação dos exercicios fisioterapicos, como a analise dos dados de desempenho do paciente, que é justamente a lacuna que o I blue it cobre.  
 
 ---
 
