@@ -133,13 +133,11 @@ Qual transformação o projeto pretende gerar.
 
 ### Objetivos Específicos
 
-Liste **3 a 5 objetivos técnicos ou de produto**.
+Tendo em vista a problematica apresentada, este projeto tem como fim sanar as lacunas identificadas pela comunidade com fim de entregar uma plataforma mais completa e otimizada.Baseando-se nisso segue abaixo os objetivos a serem tratados:
 
-Exemplo:
-
-- automatizar um processo manual
-- permitir análise de dados
-- criar um sistema de recomendação
+- Integrar um sensor de SpO2 ao ecossistema do jogo para monitoramento fisiológico complementar.
+- Implementar um módulo de ajuste dinâmico de dificuldade com base no desempenho e nos sinais do paciente.
+- Ampliar o dashboard clínico para exibir e correlacionar dados respiratórios, de SpO2 e de desempenho no jogo.
 
 ---
 
