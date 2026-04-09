@@ -64,7 +64,7 @@ Uma pequena coleção de jogos/atividades para exercícios respiratórios focado
 
 link do repositorio : https://github.com/hcilab/BubbleBreather?tab=readme-ov-file
 
-público-alvo : pessoas ecuperação de pneumonia(todas as idades)
+público-alvo : pessoas ecuperação de pneumonia
 
 **PlayPhysio**
 
