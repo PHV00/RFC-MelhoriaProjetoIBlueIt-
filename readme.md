@@ -76,6 +76,8 @@ link do repositorio : https://github.com/hcilab/BubbleBreather?tab=readme-ov-fil
 
 <img width="1915" height="947" alt="image" src="https://github.com/user-attachments/assets/45f80ec5-01ce-4d98-9ae2-b7e611d33471" />
 
+público-alvo : pessoas com problemas respiratorios(todas as idades)
+
 **PlayPhysio**
 
 Uma inicitiva originada pela demanda de um pai cuja a filha possui fibrose cística e necessitava reralizar fisiotaripia, porém o tratamento não era engajador oque dificultava a participação e o interresse da criança.Com isso em mente, decidiu-se criar uma plataforma gamificada para que sua filha pudesse realizar seus exercicios de maneira mais ludica.Para fazer isso a plataforma acopla um equipamento IOT chamado PhysioPal ao equipamento terapeutico que ao se conectar via bluetooth no aparelho celular, registrara a pontuação no app.Não apresenta uma camada clínica, comparável a dashboard terapêutico ou equipamentos IOT com sensores dedicados acoplados diretamente ao sistema, apenas um anexo que gamifica o tratamento já existente, porém que não cria todo o ecossitema de acompanhamento clinico.
@@ -85,6 +87,8 @@ Uma inicitiva originada pela demanda de um pai cuja a filha possui fibrose císt
 links do projeto:
 - https://www.jbs.cam.ac.uk/ventures/playphysio/
 - https://play.physio/
+
+público-alvo : pessoas com problemas respiratorios(com foco em crianças)
 
 **ACPlus Respiratory Assessment + OmniFlow**
 
@@ -97,6 +101,8 @@ links dos produtos:
 - https://acplus.com/acplus-respiratory-assessment-lp/
 - https://acplus.com/technology/omniflow/
 - https://acplus.com/blog/success-stories/omniflow-in-action-restoring-speech-confidence-and-connection/
+  
+público-alvo : pessoas com problemas respiratorios(todas as idades)
 
 ---
 
