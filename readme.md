@@ -85,6 +85,19 @@ Uma inicitiva originada pela demanda de um pai cuja a filha possui fibrose císt
 links do projeto:
 - https://www.jbs.cam.ac.uk/ventures/playphysio/
 - https://play.physio/
+
+**ACPlus Respiratory Assessment + OmniFlow**
+
+A empresa Accelerated Care Plus produz dois sotwares no ramo de terapia respiratoria sendo eles o ACPlus Respiratory Assessment um software voltado ao diagnostico de doenças cardiopulmonares, onde por meio de um dispositivo IOT que captura os dados da respiração do paciente e os transmite a um Ipad em formato de já de pronturario com a documentação clinica necessaria, facilitando a etapa de diagnostico e pronturio medico dos profissionais da saude.O outro chamado OmniFlow, tem como foco o tramatemnto gamificado atraves de tarapias pulmonares por meio de jogos, onde o paciente realiza o tratamento por meio de um dispositivo IOT que capta seus dados transmite aos jogos e posteriormente permite a analise por um profissional de saúde.Entre suas limitações podemos destacar a esclusividade de implantação, pois atualmente os sitemas são voltados as regulamentações e normativas do seu pais de origem Estados Unidos, oque limita sua atuação apenas ao mercado estadunidense.
+
+- OmniFlow
+- <img width="1187" height="768" alt="image" src="https://github.com/user-attachments/assets/eef6fc3f-ce31-4bc5-8d05-24394b690f87" />
+
+links dos produtos:
+- https://acplus.com/acplus-respiratory-assessment-lp/
+- https://acplus.com/technology/omniflow/
+- https://acplus.com/blog/success-stories/omniflow-in-action-restoring-speech-confidence-and-connection/
+
 ---
 
 ### Comparação
