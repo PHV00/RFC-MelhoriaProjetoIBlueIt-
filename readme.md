@@ -33,7 +33,12 @@ A reabilitação respiratória é um processo terapêutico onde pacientes com di
 
 Nesse âmbito o software já desenvolvido pela inciativa de pesquisa da Udesc, I Blue It gamifica o tratamento e retorna dados uteis ao proficional da saúde que aplica o tratamento sobre paciente.O jogo consiste em um jogo de plataforma onde o usuario por meio de sua respiração em um equipamento IOT chamado PITACO no qual os valores obtidos são transformados em movimentos verticais inspirar sobe expirar desce assim fazendo o personagem controlado  "Blue" (o golfinho) desviar dos obstaculos ou capturar, além de possuir outros minigames com mesmo conceitos para exercicitar o paciente.Assim a solução atual já contempla calibração, histórico do jogador, armazenamento de dados e customização de parâmetros por profissionais.
 
+<img width="846" height="585" alt="image" src="https://github.com/user-attachments/assets/8dbcc698-b0ba-4f3b-b7fa-d3daddebf55a" />
+
+<img width="675" height="318" alt="image" src="https://github.com/user-attachments/assets/27040498-d538-4f3c-86c5-6c2aa9d87c31" />
+
 link auxiliar com dados sobre software: https://udescmove2learn.wordpress.com/2018/04/26/i-blue-it/
+
 
 Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás ás:
 - Dificuldade em ajustar a dificuldade dos exercicios ao estado atual do tratamento paciente (no modelo atual isso é configurado pelo profissional da saude oque pode acabar acaretando em erros).
@@ -516,4 +521,3 @@ Observações:
 
 Observações:
 
-https://udescmove2learn.wordpress.com/2018/04/26/i-blue-it/
