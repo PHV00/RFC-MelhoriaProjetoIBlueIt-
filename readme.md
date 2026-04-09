@@ -64,6 +64,22 @@ Para cada solução apresente:
 
 Inclua **prints da interface ou diagramas simplificados**.
 
+**BubbleBreather (2020)**
+Uma pequena coleção de jogos/atividades para exercícios respiratórios focados apenas há recuperação de pneumonia.Pode ser acessado pelo GitHub público e possui uma demo web ativa, por mais que não haja updates desde 2020. Possui um escopo mais estreito sendo um jogo de browser-based, depende de microfone, com foco em exercícios específicos e não apresenta uma camada clínica, comparável a dashboard terapêutico ou equipamentos IOT terapeuticos multimodalidade com sensores dedicados.
+
+link do repositorio : https://github.com/hcilab/BubbleBreather?tab=readme-ov-file
+
+<img width="1915" height="947" alt="image" src="https://github.com/user-attachments/assets/45f80ec5-01ce-4d98-9ae2-b7e611d33471" />
+
+**PlayPhysio**
+
+Uma inicitiva originada pela demanda de um pai cuja a filha possui fibrose cística e necessitava reralizar fisiotaripia, porém o tratamento não era engajador oque dificultava a participação e o interresse da criança.Com isso em mente, decidiu-se criar uma plataforma gamificada para que sua filha pudesse realizar seus exercicios de maneira mais ludica.Para fazer isso a plataforma acopla um equipamento IOT chamado PhysioPal ao equipamento terapeutico que ao se conectar via bluetooth no aparelho celular, registrara a pontuação no app.Não apresenta uma camada clínica, comparável a dashboard terapêutico ou equipamentos IOT terapeuticos multimodalidade com sensores dedicados acoplados diretamente ao sistema, apenas um anexo que gamifica o tratamento já existente, porém que não cria todo o ecossitema de acompanhamento clinico.
+
+<img width="1922" height="952" alt="image" src="https://github.com/user-attachments/assets/0c27559d-9700-4069-ac29-197f41ecb948" />
+
+links do projeto:
+- https://www.jbs.cam.ac.uk/ventures/playphysio/
+- https://play.physio/
 ---
 
 ### Comparação
