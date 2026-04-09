@@ -58,7 +58,7 @@ Nesse contexto, tendo em mente o fim de ajudar ainda mais as equipes medicas no 
 ## 1.3 Análise de Soluções Existentes (Benchmark)
 
 **BubbleBreather (2020)**
-Uma pequena coleção de jogos/atividades para exercícios respiratórios focados apenas há recuperação de pneumonia.Pode ser acessado pelo GitHub público e possui uma demo web ativa, por mais que não haja updates desde 2020. Possui um escopo mais estreito sendo um jogo de browser-based, depende de microfone, com foco em exercícios específicos e não apresenta uma camada clínica, comparável a dashboard terapêutico ou equipamentos IOT terapeuticos multimodalidade com sensores dedicados.
+Uma pequena coleção de jogos/atividades para exercícios respiratórios focados apenas há recuperação de pneumonia.Pode ser acessado pelo GitHub público e possui uma demo web ativa, por mais que não haja updates desde 2020. Possui um escopo mais estreito sendo um jogo feito no propio browser, depende de microfone, com foco em exercícios específicos e não apresenta uma camada clínica, comparável a dashboard terapêutico ou equipamentos IOT terapeuticos multimodalidade com sensores dedicados.
 
 <img width="1915" height="947" alt="image" src="https://github.com/user-attachments/assets/45f80ec5-01ce-4d98-9ae2-b7e611d33471" />
 
@@ -68,7 +68,7 @@ público-alvo : pessoas ecuperação de pneumonia(todas as idades)
 
 **PlayPhysio**
 
-Uma inicitiva originada pela demanda de um pai cuja a filha possui fibrose cística e necessitava reralizar fisiotaripia, porém o tratamento não era engajador oque dificultava a participação e o interresse da criança.Com isso em mente, decidiu-se criar uma plataforma gamificada para que sua filha pudesse realizar seus exercicios de maneira mais ludica.Para fazer isso a plataforma acopla um equipamento IOT chamado PhysioPal ao equipamento terapeutico que ao se conectar via bluetooth no aparelho celular, registrara a pontuação no app.Não apresenta uma camada clínica, comparável a dashboard terapêutico ou equipamentos IOT com sensores dedicados acoplados diretamente ao sistema, apenas um anexo que gamifica o tratamento já existente, porém que não cria todo o ecossitema de acompanhamento clinico.
+Uma inicitiva originada pela demanda de um pai cuja a filha possui fibrose cística e necessitava reralizar fisiotaripia, porém o tratamento não era engajador oque dificultava a participação e o interresse da criança.Com isso em mente, decidiu-se criar uma plataforma gamificada para que sua filha pudesse realizar seus exercicios de maneira mais ludica.Para fazer isso a plataforma acopla um equipamento IOT chamado PhysioPal ao equipamento terapeutico que ao se conectar via bluetooth no aparelho celular, registrara a pontuação no app.Não parece apresentar publicamente um ecossistema clínico tão robusto quanto o I Blue It, contendo dashboard terapêutico ou equipamentos IOT com sensores dedicados acoplados diretamente ao sistema, apenas um anexo que gamifica o tratamento já existente, e dados auxiliadores ao profisional da saude.
 
 <img width="1922" height="952" alt="image" src="https://github.com/user-attachments/assets/0c27559d-9700-4069-ac29-197f41ecb948" />
 
@@ -80,7 +80,7 @@ público-alvo : pessoas com problemas respiratorios(com foco em crianças)
 
 **ACPlus Respiratory Assessment + OmniFlow**
 
-A empresa Accelerated Care Plus produz dois sotwares no ramo de terapia respiratoria sendo eles o ACPlus Respiratory Assessment um software voltado ao diagnostico de doenças cardiopulmonares, onde por meio de um dispositivo IOT que captura os dados da respiração do paciente e os transmite a um Ipad em formato de já de pronturario com a documentação clinica necessaria, facilitando a etapa de diagnostico e pronturio medico dos profissionais da saude.O outro chamado OmniFlow, tem como foco o tramatemnto gamificado atraves de tarapias pulmonares por meio de jogos, onde o paciente realiza o tratamento por meio de um dispositivo IOT que capta seus dados transmite aos jogos e posteriormente permite a analise por um profissional de saúde.Entre suas limitações podemos destacar a esclusividade de implantação, pois atualmente os sitemas são voltados as regulamentações e normativas do seu pais de origem Estados Unidos, oque limita sua atuação apenas ao mercado estadunidense.
+A empresa Accelerated Care Plus produz duas soluções no ramo de terapia respiratoria sendo eles o ACPlus Respiratory Assessment uma solução voltado ao diagnostico de doenças cardiopulmonares, onde por meio de um dispositivo IOT que captura os dados da respiração do paciente e os transmite a um Ipad em formato de já de pronturario com a documentação clinica necessaria, facilitando a etapa de diagnostico e pronturio medico dos profissionais da saude.A outra chamado OmniFlow, tem como foco o tramatemnto gamificado atraves de tarapias pulmonares por meio de jogos, onde o paciente realiza o tratamento por meio de um dispositivo IOT que capta seus dados transmite aos jogos e posteriormente permite a analise por um profissional de saúde.Entre suas limitações podemos destacar a esclusividade de implantação, pois atualmente os sitemas são voltados as regulamentações e normativas do seu pais de origem Estados Unidos, oque limita sua atuação apenas ao mercado estadunidense.
 
 - OmniFlow
 - <img width="1187" height="768" alt="image" src="https://github.com/user-attachments/assets/eef6fc3f-ce31-4bc5-8d05-24394b690f87" />
@@ -90,7 +90,7 @@ links dos produtos:
 - https://acplus.com/technology/omniflow/
 - https://acplus.com/blog/success-stories/omniflow-in-action-restoring-speech-confidence-and-connection/
   
-público-alvo : pessoas com problemas respiratorios(todas as idades)
+público-alvo : pessoas com problemas respiratorios de modo amplo
 
 ---
 
