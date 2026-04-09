@@ -72,9 +72,9 @@ Inclua **prints da interface ou diagramas simplificados**.
 **BubbleBreather (2020)**
 Uma pequena coleção de jogos/atividades para exercícios respiratórios focados apenas há recuperação de pneumonia.Pode ser acessado pelo GitHub público e possui uma demo web ativa, por mais que não haja updates desde 2020. Possui um escopo mais estreito sendo um jogo de browser-based, depende de microfone, com foco em exercícios específicos e não apresenta uma camada clínica, comparável a dashboard terapêutico ou equipamentos IOT terapeuticos multimodalidade com sensores dedicados.
 
-link do repositorio : https://github.com/hcilab/BubbleBreather?tab=readme-ov-file
-
 <img width="1915" height="947" alt="image" src="https://github.com/user-attachments/assets/45f80ec5-01ce-4d98-9ae2-b7e611d33471" />
+
+link do repositorio : https://github.com/hcilab/BubbleBreather?tab=readme-ov-file
 
 público-alvo : pessoas com problemas respiratorios(todas as idades)
 
