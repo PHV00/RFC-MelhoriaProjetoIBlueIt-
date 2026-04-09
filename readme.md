@@ -35,6 +35,8 @@ Nesse âmbito o software já desenvolvido pela inciativa de pesquisa da Udesc, I
 
 <img width="675" height="318" alt="image" src="https://github.com/user-attachments/assets/27040498-d538-4f3c-86c5-6c2aa9d87c31" />
 
+<img width="676" height="350" alt="image" src="https://github.com/user-attachments/assets/560cfbed-2ad8-4cab-9aac-4f24ad650252" />
+
 link auxiliar com dados sobre software: https://udescmove2learn.wordpress.com/2018/04/26/i-blue-it/
 
 
