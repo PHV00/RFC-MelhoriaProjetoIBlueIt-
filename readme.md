@@ -57,18 +57,6 @@ Nesse contexto, tendo em mente o fim de ajudar ainda mais as equipes medicas no 
 
 ## 1.3 Análise de Soluções Existentes (Benchmark)
 
-Investigue **3 a 5 soluções existentes** que tentam resolver o mesmo problema.
-
-Para cada solução apresente:
-
-- nome do produto
-- link
-- público-alvo
-- funcionalidades principais
-- limitações
-
-Inclua **prints da interface ou diagramas simplificados**.
-
 **BubbleBreather (2020)**
 Uma pequena coleção de jogos/atividades para exercícios respiratórios focados apenas há recuperação de pneumonia.Pode ser acessado pelo GitHub público e possui uma demo web ativa, por mais que não haja updates desde 2020. Possui um escopo mais estreito sendo um jogo de browser-based, depende de microfone, com foco em exercícios específicos e não apresenta uma camada clínica, comparável a dashboard terapêutico ou equipamentos IOT terapeuticos multimodalidade com sensores dedicados.
 
