@@ -115,20 +115,11 @@ Dado isto percebemos a lacuna nitida de uma ferramenta completa ao ambiente fisi
 
 ## 1.4 Público-Alvo
 
-Defina quem usará o sistema.
+O sistema terá dois públicos principais:
 
-Exemplos:
+Paciente em reabilitação respiratória: crianças e adultos que realizam exercícios terapêuticos respiratórios com acompanhamento profissional.
 
-- estudantes
-- contadores
-- equipes de suporte
-- jogadores
-
-Descreva:
-
-- perfil do usuário
-- contexto de uso
-- nível de conhecimento técnico esperado
+Profissional de saúde: fisioterapeutas respiratórios, fisioterapeutas clínicos, pneumologistas e demais especialistas que acompanham a sessão dos pacientes, definem parâmetros terapêuticos e analisam os resultados.
 
 ---
 
