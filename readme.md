@@ -23,76 +23,76 @@
 
 # 1. Visão do Produto e Impacto (O Problema)
   
-Este projeto tem como fim identificar e melhorar o já consolidade jogo sério I Blue It, um software desenvolvido pela Universidade do Estado de Santa Catarina (UDESC) com o prinncipio de auxiliar na fisioterapia de pacientes com problemas respiratorios, isso por meio da gamificação dos seus exercícios e análises dos resultados.Assim o projeto pretende análisar o software e aplicar as melhorias que forem encontradas, tanto tecnicas, como de demandas da comunidade que já o utiliza.
+Este projeto tem como fim identificar e melhorar o já consolidado jogo sério I Blue It, um software desenvolvido pela Universidade do Estado de Santa Catarina (UDESC) com o princípio de auxiliar na fisioterapia de pacientes com problemas respiratórios, isso por meio da gamificação dos seus exercícios e análises dos resultados. Assim o projeto pretende analisar o software e aplicar as melhorias que forem encontradas, tanto técnicas, como de demandas da comunidade que já o utiliza.
 
 ---
 
 ## 1.1 Contexto e Problema
 
-A reabilitação respiratória é um processo terapêutico onde pacientes com disfunções respiratórias, usam de  uma abordagem de longo prazo ,sistemática e repetitiva, o que pode levar a reduzir a adesão do paciente ao tratamento.Nesse contexto os jogos sérios surgem como uma forma de tornar os exercícios mais motivadores, lúdicos e engajadores aos pacientes.
+A reabilitação respiratória é um processo terapêutico onde pacientes com disfunções respiratórias, usam de uma abordagem de longo prazo, sistemática e repetitiva, o que pode levar a reduzir a adesão do paciente ao tratamento. Nesse contexto os jogos sérios surgem como uma forma de tornar os exercícios mais motivadores, lúdicos e engajadores aos pacientes.
 
-Nesse âmbito o software já desenvolvido pela inciativa de pesquisa da Udesc, I Blue It gamifica o tratamento e retorna dados uteis ao proficional da saúde que aplica o tratamento sobre paciente.O ecosistema do I blue it pode ser divido em três areas distintas sendo elas os jogos, onde possuimos o jogo principal de mesmo nome do projeto e mais alguns minigames, os dispositivos IOT chamados PITACO e Mano-BD responsaveis pela captura dos dados de respiração do paciente e o dashboard responsavel por fornecer ao profissional da saude dados relevantes dos seus pacientes. 
+Nesse âmbito o software já desenvolvido pela iniciativa de pesquisa da Udesc, I Blue It gamifica o tratamento e retorna dados úteis ao profissional da saúde que aplica o tratamento sobre paciente. O ecossistema do I Blue It pode ser dividido em três áreas distintas sendo elas os jogos, onde possuímos o jogo principal de mesmo nome do projeto e mais alguns minigames, os dispositivos IoT chamados PITACO e Mano-BD responsáveis pela captura dos dados de respiração do paciente e o dashboard responsável por fornecer ao profissional da saúde dados relevantes dos seus pacientes. 
 
-O jogo principal consiste em um jogo de plataforma, onde o usuario por meio de sua respiração no dipositivo PITACO movimenta verticalmente o personagem para desviar dos obstaculos, inspirando para subir e expirarando para descer assim movimentando o personagem  "Blue" (o golfinho), além disso possui outros minigames com mesmo conceito para exercicitar o paciente, sendo os dados destes exercicios utilizado pelo porfisional de saude para regular e avaliar o estado do paciente.
+O jogo principal consiste em um jogo de plataforma, onde o usuário por meio de sua respiração no dispositivo PITACO movimenta verticalmente o personagem para desviar dos obstáculos, inspirando para subir e expirando para descer assim movimentando o personagem "Blue" (o golfinho), além disso possui outros minigames com mesmo conceito para exercitar o paciente, sendo os dados destes exercícios utilizado pelo profissional de saúde para regular e avaliar o estado do paciente.
 
 Assim a solução que já está na versão 5.0 já contempla calibração, histórico do jogador, armazenamento de dados e customização de parâmetros por profissionais.
 
 <img width="675" height="318" alt="image" src="https://github.com/user-attachments/assets/27040498-d538-4f3c-86c5-6c2aa9d87c31" />
 
-[Imagem do jogo I blue It da versão 2.0]
+[Imagem do jogo I Blue It da versão 2.0]
 
 <img width="676" height="350" alt="image" src="https://github.com/user-attachments/assets/560cfbed-2ad8-4cab-9aac-4f24ad650252" />
 
-[Imagem dos dispositivos IOT]
+[Imagem dos dispositivos IoT]
 
 link auxiliar para mais informações sobre o software: https://udescmove2learn.wordpress.com/2018/04/26/i-blue-it/
 
+Entretanto a iniciativa percebeu lacunas no estado atual do software sendo estas as:
+- Necessidade de ampliar a captura de dados dos pacientes na hora dos exercícios (adicionar um novo módulo para o biossensor de saturação periférica de oxigênio (SpO2)), com a finalidade de capturar mais dados sobre o paciente).
+- Necessidade de ampliar os dados mostrados no dashboard do paciente (adicionar os dados obtidos pela adição do módulo (SpO2) para o dashboard do paciente).
+- Dificuldade em ajustar a dificuldade dos exercícios ao adicionar novo componente SpO2 no tratamento paciente (no modelo atual isso já configurado por uma IA, porém sem o módulo SpO2).
 
-Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás ás:
-- Necessidade de ampliar a captura de dados dos pacientes na hora do exercicios (adicionar um novo modulo para o biossensor de saturação periférica de oxigênio (SpO2)), com a finalidade de capturar mais dados sobre o paciente).
-- Necessidade de ampliar os dados mostrados no dashboard do paciente ( adicionar os dados obtidos pela adição do modulo (SpO2) para o dashboard do paciente).
-- Dificuldade em ajustar a dificuldade dos exercicios ao adicionar novo componente Sp02 no tratamento paciente (no modelo atual isso já configurado por uma IA, porém sem o modulo Sp02).
 ---
 
 ## 1.2 Origem da Demanda e Evidências
 
-O projeto se origina em uma iniciativa do (LARVA)LAboratory for Research on Visual Applications da UDESC em colaboração com profissionais da aréa de fisioterapia respiratória e áreas correlatas, com o objetivo de atender a problematicas reais do dominio clinico.Sendo assim desde o principio o sistema tem como foco atender as necessidade de ferramentas que auxiem no processo de atendimento medico e tratamento de pacientes com problemas respiratorios.
+O projeto se origina em uma iniciativa do (LARVA) Laboratory for Research on Visual Applications da UDESC em colaboração com profissionais da área de fisioterapia respiratória e áreas correlatas, com o objetivo de atender a problemáticas reais do domínio clínico. Sendo assim desde o princípio o sistema tem como foco atender as necessidades de ferramentas que auxiliem no processo de atendimento médico e tratamento de pacientes com problemas respiratórios.
 
-O programa que foi concebido em 2018 já se utilizava mais de 80 profissionais da saude (fisioterapeutas, médicos pneumologistas, fisioterapeutas respiratórios, neurologistas) os quais atuavam como conselheiros com a finalidade de garantir a efetividade e utilidade da ferramenta ao longo do propio desenvolvimento e que ao final o avaliaram , obtendo um resultado muito satisfatorio uma nota 4.1 de 5, demonstrando grande satisfação por parte dos envolvidos. [2018 - Santos - I Blue It Um Jogo Sério para auxiliar na Reabilitação Respiratória]
+O programa que foi concebido em 2018 já se utilizava de mais de 80 profissionais da saúde (fisioterapeutas, médicos pneumologistas, fisioterapeutas respiratórios, neurologistas) os quais atuavam como conselheiros com a finalidade de garantir a efetividade e utilidade da ferramenta ao longo do próprio desenvolvimento e que ao final o avaliaram, obtendo um resultado muito satisfatório uma nota 4.1 de 5, demonstrando grande satisfação por parte dos envolvidos. [2018 - Santos - I Blue It Um Jogo Sério para auxiliar na Reabilitação Respiratória]
 
-Desde sua fase inicial até agora houveram diversas melhorias em cada uma das versões, onde podemos montar um historico de versões de maneira resumida:
+Desde sua fase inicial até agora houveram diversas melhorias em cada uma das versões, onde podemos montar um histórico de versões de maneira resumida:
 
 - versão 01 - I Blue It / Pitaco (2018):
-  - Criação do dispositivo Pitaco(responsavel por medir fluxo de ar) e do jogo "Blue"
+  - Criação do dispositivo Pitaco (responsável por medir fluxo de ar) e do jogo "Blue"
 - versão 02 - I Blue It / ManoBD (2019):
-  - Adição de minijogos do Copo d’água e Bolo de Aniversário e concepção do dipositivo MonoDB(responsavel por medir a pressão do ar)
+  - Adição de minijogos do Copo d’água e Bolo de Aniversário e concepção do dispositivo MonoDB (responsável por medir a pressão do ar)
 - versão 03 - I Blue It / Health InfoCharts (2020):
-  - Adição de modulo de analise clinica do paciente (Historico e resultados dos jogos mostrados e armazenados)
+  - Adição de módulo de análise clínica do paciente (Histórico e resultados dos jogos mostrados e armazenados)
 - versão 04 - I Blue It / Multimodal (2020):
-  - Incorporação de arquitetura Multimodal 123-SGR oque permitiu a incoporação de dispositivos distintos como Pitaco e ManoBD
+  - Incorporação de arquitetura Multimodal 123-SGR o que permitiu a incorporação de dispositivos distintos como Pitaco e ManoBD
 - versão 04 - I Blue It / Multimodal redesign (2023):
-  - Redsign para a incorporação de IA ao projeto
+  - Redesign para a incorporação de IA ao projeto
 - versão 05 - I Blue It / Flow Psicofisiológico (2024):
-  - Incorporação de Flow Psicofisiológico(busca equlibrar a parte motivadora psiquica, com a parte fiosiologica do paciente) e IA ao projeto com o fim de controlar o Flow Psicofisiológico
+  - Incorporação de Flow Psicofisiológico (busca equilibrar a parte motivadora psíquica, com a parte fisiológica do paciente) e IA ao projeto com o fim de controlar o Flow Psicofisiológico
 
-Porém mesmo com todas estas versões e melhorias, foram identificadas algumas lacunas sendo a necessidade de aprimorar a captura e o tipo de dados, oque levou a decisão de implementar o modulo novo no IOT adicionando ao projeto o Sp02(medidor de saturação do sangue), oque acareta em mudanças e ajustes aos modulos de dashbords e IA de dificuldade de low Psicofisiológico ao novo componente.
+Porém mesmo com todas estas versões e melhorias, foram identificadas algumas lacunas sendo a necessidade de aprimorar a captura e o tipo de dados, o que levou à decisão de implementar o módulo novo no IoT adicionando ao projeto o SpO2 (medidor de saturação do sangue), o que acarreta em mudanças e ajustes aos módulos de dashboards e IA de dificuldade de Flow Psicofisiológico ao novo componente.
 
-Neste contexto este projeto de melhoria tem como ponto de partida dar continuidade no aprimoramento de uma ferramenta que auxilia a comunidade medica na recuperação de pacientes com problemas respiratorios, por meio de uma bolsa de Iniciação Cientifica adjunto a Udesc, tratando as lacunas encontradas e dando continuidade ao trabalho tecnico academico já desenvolvido.
+Neste contexto este projeto de melhoria tem como ponto de partida dar continuidade no aprimoramento de uma ferramenta que auxilia a comunidade médica na recuperação de pacientes com problemas respiratórios, por meio de uma bolsa de Iniciação Científica adjunto a Udesc, tratando as lacunas encontradas e dando continuidade ao trabalho técnico acadêmico já desenvolvido.
 
 ## 1.3 Análise de Soluções Existentes (Benchmark)
 
-**BubbleBreather**
-Uma pequena coleção de jogos/atividades para exercícios respiratórios focados apenas há recuperação de pneumonia.Pode ser acessado pelo GitHub público e possui uma demo web ativa, por mais que não haja updates desde 2020. Possui um escopo mais estreito sendo jogos feito no propio browser, depende de microfone, com foco em exercícios específicos e não apresenta uma camada clínica robusta, comparável a dashboard terapêutico ou equipamentos IOT terapeuticos multimodalidade com sensores dedicados.
+**BubbleBreather**  
+Uma pequena coleção de jogos/atividades para exercícios respiratórios focados apenas na recuperação de pneumonia. Pode ser acessado pelo GitHub público e possui uma demo web ativa, por mais que não haja updates desde 2020. Possui um escopo mais estreito sendo jogos feitos no próprio browser, depende de microfone, com foco em exercícios específicos e não apresenta uma camada clínica robusta, comparável a dashboard terapêutico ou equipamentos IoT terapêuticos multimodalidade com sensores dedicados.
 
 <img width="1915" height="947" alt="image" src="https://github.com/user-attachments/assets/45f80ec5-01ce-4d98-9ae2-b7e611d33471" />
 
-link do repositorio : https://github.com/hcilab/BubbleBreather?tab=readme-ov-file
+link do repositório : https://github.com/hcilab/BubbleBreather?tab=readme-ov-file
 
 público-alvo : pessoas em recuperação de pneumonia
 
 **PlayPhysio**
 
-Uma inicitiva originada pela demanda de um pai cuja a filha possui fibrose cística e necessitava reralizar fisiotaripia, porém o tratamento não era engajador oque dificultava a participação e o interresse da criança.Com isso em mente, decidiu-se criar uma plataforma gamificada para que sua filha pudesse realizar seus exercicios de maneira mais ludica.Para fazer isso a plataforma acopla um equipamento IOT chamado PhysioPal ao equipamento terapeutico que ao se conectar via bluetooth no aparelho celular, registrara a pontuação no app.Não parece apresentar publicamente um ecossistema clínico tão robusto quanto o I Blue It, contendo dashboard terapêutico ou equipamentos IOT com sensores dedicados acoplados diretamente ao sistema, porém contem feedback em tempo real, e forneciemtno detalhado de dados.
+Uma iniciativa originada pela demanda de um pai cuja filha possui fibrose cística e necessitava realizar fisioterapia, porém o tratamento não era engajador o que dificultava a participação e o interesse da criança. Com isso em mente, decidiu-se criar uma plataforma gamificada para que sua filha pudesse realizar seus exercícios de maneira mais lúdica. Para fazer isso a plataforma acopla um equipamento IoT chamado PhysioPal ao equipamento terapêutico que ao se conectar via bluetooth no aparelho celular, registrará a pontuação no app. Não parece apresentar publicamente um ecossistema clínico tão robusto quanto o I Blue It, contendo dashboard terapêutico ou equipamentos IoT com sensores dedicados acoplados diretamente ao sistema, porém contém feedback em tempo real, e fornecimento detalhado de dados.
 
 <img width="1922" height="952" alt="image" src="https://github.com/user-attachments/assets/0c27559d-9700-4069-ac29-197f41ecb948" />
 
@@ -100,11 +100,11 @@ links do projeto:
 - https://www.jbs.cam.ac.uk/ventures/playphysio/
 - https://play.physio/
 
-público-alvo : pessoas com problemas respiratorios(com foco em crianças)
+público-alvo : pessoas com problemas respiratórios (com foco em crianças)
 
 **ACPlus Respiratory Assessment + OmniFlow**
 
-A empresa Accelerated Care Plus produz duas soluções no ramo de terapia respiratoria sendo eles o ACPlus Respiratory Assessment uma solução voltado a ajudando a etapa de diagnóstico e decisão clinica de disfunções pulmonares, onde por meio de um dispositivo que captura os dados da respiração do paciente e os transmite a um Ipad por meio do bluetooth, que por sua vez retorna em formato de já de pronturario com a documentação clinica necessaria ao profissionais da saude.A outra chamado OmniFlow, tem como foco o tramatemnto gamificado atraves de tarapias pulmonares por meio de experiências interativas/gamificadas, onde o paciente realiza o tratamento atrávez de um dispositivo espirômetro bluetooth que capta seus dados, que são utilizados tanto nos exercicios, quanto posteriormente permite a analise por um profissional de saúde.Entre suas limitações podemos destacar a esclusividade de implantação, pois atualmente os sitemas são voltados as regulamentações e normativas do seu pais de origem Estados Unidos, oque limita a sua atuação preferencialmente apenas ao mercado estadunidense.
+A empresa Accelerated Care Plus produz duas soluções no ramo de terapia respiratória sendo eles o ACPlus Respiratory Assessment uma solução voltada a ajudar na etapa de diagnóstico e decisão clínica de disfunções pulmonares, onde por meio de um dispositivo que captura os dados da respiração do paciente e os transmite a um iPad por meio do bluetooth, que por sua vez retorna em formato de prontuário com a documentação clínica necessária aos profissionais da saúde. A outra chamado OmniFlow, tem como foco o tratamento gamificado através de terapias pulmonares por meio de experiências interativas/gamificadas, onde o paciente realiza o tratamento através de um dispositivo espirômetro bluetooth que capta seus dados, que são utilizados tanto nos exercícios, quanto posteriormente permite a análise por um profissional de saúde. Entre suas limitações podemos destacar a exclusividade de implantação, pois atualmente os sistemas são voltados às regulamentações e normativas do seu país de origem Estados Unidos, o que limita a sua atuação preferencialmente apenas ao mercado estadunidense.
 
 - OmniFlow
 - <img width="1187" height="768" alt="image" src="https://github.com/user-attachments/assets/eef6fc3f-ce31-4bc5-8d05-24394b690f87" />
@@ -114,7 +114,7 @@ links dos produtos:
 - https://acplus.com/technology/omniflow/
 - https://acplus.com/blog/success-stories/omniflow-in-action-restoring-speech-confidence-and-connection/
   
-público-alvo : pessoas com problemas respiratorios de modo amplo
+público-alvo : pessoas com problemas respiratórios de modo amplo
 
 ---
 
@@ -122,19 +122,19 @@ público-alvo : pessoas com problemas respiratorios de modo amplo
 
 | Solução | Pontos Fortes | Limitações |
 |---|---|---|
-| BubbleBreather |Permite a utilização do sistema em diversos ambientes(por ser em browser)|Não possue modulo clinico especializado|
-| PlayPhysio |Permite tramamento gamificado, com expecialização em exercicios ludicos com foco infanto juvenil| Ecosistema clinico mais simplificado|
-| OmniFlow |Permite o tratamento gamificado, e dados clinicos detalhados|Especificidade ao sistema ao ambiente estadunidense|
+| BubbleBreather |Permite a utilização do sistema em diversos ambientes (por ser em browser)|Não possui módulo clínico especializado|
+| PlayPhysio |Permite tratamento gamificado, com especialização em exercícios lúdicos com foco infantojuvenil| Ecossistema clínico mais simplificado|
+| OmniFlow |Permite o tratamento gamificado, e dados clínicos detalhados|Especificidade do sistema ao ambiente estadunidense|
 
 ---
 
 ### Diferencial do Projeto
 
-Análisando os concorentes elencados, podemos concluir que no campo das soluções respiratórias gamificadas elencadas se distribuem em três grandes grupos. O primeiro é o de soluções leves e acessíveis, como o BubbleBreather, que prioriza  a simplicidade tecnológica e acesso rápido. O segundo é o das soluções orientadas ao engajamento familiar e à adesão de maneira ludica, como o PlayPhysio. O terceiro é o das soluções com maior maturidade clínica e comercial, como o ACPlus Respiratory Assessment e o OmniFlow, fortemente ligado a atuação completa desda analise de desempenho do paciente em resposta ao tratamento, até ao tratamento gamificado e ludico.
+Analisando os concorrentes elencados, podemos concluir que no campo das soluções respiratórias gamificadas elencadas se distribuem em três grandes grupos. O primeiro é o de soluções leves e acessíveis, como o BubbleBreather, que prioriza a simplicidade tecnológica e acesso rápido. O segundo é o das soluções orientadas ao engajamento familiar e à adesão de maneira lúdica, como o PlayPhysio. O terceiro é o das soluções com maior maturidade clínica e comercial, como o ACPlus Respiratory Assessment e o OmniFlow, fortemente ligado à atuação completa desde análise de desempenho do paciente em resposta ao tratamento, até ao tratamento gamificado e lúdico.
 
-Porém podemos perceber que enquanto os dois primeiros concorentes apresentem pontos fortes especificos e distintos, e que não cobrem todo o escopo já tratado pelo software I blue it, o terceiro apresenta uma solução completa e semelhante ao software I blue it, porém trazendo comsigo uma diferença crucial, a especifidade ao ambiente estadunidense, oque impossibilita sua implementação de maneira simplificada em outros ambientes e sitemas.
+Porém podemos perceber que enquanto os dois primeiros concorrentes apresentem pontos fortes específicos e distintos, e que não cobrem todo o escopo já tratado pelo software I Blue It, o terceiro apresenta uma solução completa e semelhante ao software I Blue It, porém trazendo consigo uma diferença crucial, a especificidade ao ambiente estadunidense, o que impossibilita sua implementação de maneira simplificada em outros ambientes e sistemas.
 
-Dado isto percebemos a lacuna nitida de uma ferramenta completa ao ambiente fisioterapico brasileiro, que abranja de maneira relevante tanto a gamificação dos exercicios fisioterapicos voltados a reabilitação respiratoria, como a analise dos dados de desempenho do paciente, que é justamente a lacuna tecnica que o I blue it cobre.  
+Dado isto percebemos a lacuna nítida de uma ferramenta completa ao ambiente fisioterápico brasileiro, que abranja de maneira relevante tanto a gamificação dos exercícios fisioterápicos voltados à reabilitação respiratória, como a análise dos dados de desempenho do paciente, que é justamente a lacuna técnica que o I Blue It cobre.  
 
 ---
 
@@ -152,29 +152,18 @@ Profissional de saúde: fisioterapeutas respiratórios, fisioterapeutas clínico
 
 ### Objetivo Geral
 
-O projeto se propoém a aprimorar aquilo que já um software clinico de exelencia, por meio da incorporação de uma adição de um novo modulo de captura de dados do paciente o Sp02(que atua na capituraçãod e dados da saturação sanguinea do paciente), e por conta disto refatorar, ajustar as partes necessarias para a completa incoporação deste modulo, e por meio disso fornecer a comudiadade medica uma ferramenta ainda mais aprimorada
+O projeto se propõe a aprimorar aquilo que já é um software clínico de excelência, por meio da incorporação de uma adição de um novo módulo de captura de dados do paciente o SpO2 (que atua na captação de dados da saturação sanguínea do paciente), e por conta disto refatorar, ajustar as partes necessárias para a completa incorporação deste módulo, e por meio disso fornecer à comunidade médica uma ferramenta ainda mais aprimorada
 
 ---
 
 ### Objetivos Específicos
 
-Tendo em vista a problematica apresentada, este projeto tem como fim sanar as lacunas identificadas pela comunidade com fim de entregar uma plataforma mais completa e otimizada.Baseando-se nisso segue abaixo os objetivos a serem tratados:
+Tendo em vista a problemática apresentada, este projeto tem como fim sanar as lacunas identificadas pela comunidade com fim de entregar uma plataforma mais completa e otimizada. Baseando-se nisso segue abaixo os objetivos a serem tratados:
 
 - Integrar um sensor de SpO2 ao ecossistema do jogo para monitoramento fisiológico complementar.
-- Implementar um módulo de ajuste dinâmico de dificuldade com base no desempenho e nos sinais do paciente, utilizando Inteligencia Artificial, de modo a suportar todos os modulos IOT.
+- Implementar um módulo de ajuste dinâmico de dificuldade com base no desempenho e nos sinais do paciente, utilizando Inteligência Artificial, de modo a suportar todos os módulos IoT.
 - Ampliar o dashboard clínico para exibir e correlacionar dados respiratórios, de SpO2 e de desempenho no jogo.
 [2018 - Santos - I Blue It Um Jogo Sério para auxiliar na Reabilitação Respiratória (2).pdf](https://github.com/user-attachments/files/26648094/2018.-.Santos.-.I.Blue.It.Um.Jogo.Serio.para.auxiliar.na.Reabilitacao.Respiratoria.2.pdf)
-
----
-
-## 1.6 Métricas de Sucesso (KPIs)
-
-As Metricas de sucesso estipuladas são:
-
-- Registro correto de sessões com dados respiratórios do novo componente SpO2.
-- Ajuste dinâmico de dificuldade executado em tempo real durante a sessão, por meio de uma IA previamente treinada para suportar todos os modulos IOT.
-- Tempo de resposta do sistema inferior a 300 ms para feedback em gameplay.
-- Adição dos dados obtidos pelo Sp02 ao dashboard apresentando todos os dados já existente e novos pertinentes.
 
 ---
 
