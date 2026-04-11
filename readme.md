@@ -134,7 +134,7 @@ Análisando os concorentes elencados, podemos concluir que no campo das soluçõ
 
 Porém podemos perceber que enquanto os dois primeiros concorentes apresentem pontos fortes especificos e distintos, e que não cobrem todo o escopo já tratado pelo software I blue it, o terceiro apresenta uma solução completa e semelhante ao software I blue it, porém trazendo comsigo uma diferença crucial, a especifidade ao ambiente estadunidense, oque impossibilita sua implementação de maneira simplificada em outros ambientes e sitemas.
 
-Dado isto percebemos a lacuna nitida de uma ferramenta completa ao ambiente fisioterapico brasileiro, que abranja de maneira relevante tanto a gamificação dos exercicios fisioterapicos, como a analise dos dados de desempenho do paciente, que é justamente a lacuna que o I blue it cobre.  
+Dado isto percebemos a lacuna nitida de uma ferramenta completa ao ambiente fisioterapico brasileiro, que abranja de maneira relevante tanto a gamificação dos exercicios fisioterapicos voltados a reabilitação respiratoria, como a analise dos dados de desempenho do paciente, que é justamente a lacuna tecnica que o I blue it cobre.  
 
 ---
 
@@ -152,7 +152,7 @@ Profissional de saúde: fisioterapeutas respiratórios, fisioterapeutas clínico
 
 ### Objetivo Geral
 
-Qual transformação o projeto pretende gerar.
+O projeto se propoém a aprimorar aquilo que já um software clinico de exelencia, por meio da incorporação de uma adição de um novo modulo de captura de dados do paciente o Sp02(que atua na capituraçãod e dados da saturação sanguinea do paciente), e por conta disto refatorar, ajustar as partes necessarias para a completa incoporação deste modulo, e por meio disso fornecer a comudiadade medica uma ferramenta ainda mais aprimorada
 
 ---
 
