@@ -134,8 +134,6 @@ Análisando os concorentes elencados, podemos concluir que no campo das soluçõ
 
 Porém podemos perceber que enquanto os dois primeiros concorentes apresentem pontos fortes especificos e distintos, e que não cobrem todo o escopo já tratado pelo software I blue it, o terceiro apresenta uma solução completa e semelhante ao software I blue it, porém trazendo comsigo uma diferença crucial, a especifidade ao ambiente estadunidense, oque impossibilita sua implementação de maneira simplificada em outros ambientes e sitemas.
 
-Ainda vale resaltar que o I blue it já possue base academica e medica, que acompanha e utiliza o software oque também implica em dizer que mesmo que algum concorente possua certa similariadade ou pequenas diferenças ou leve superioridade levaria um tempo para implementar a troca destes ambientes e ferramentas, e está troca so se justificaria caso fosse uma diferenças gritantes entre o modelo atual e a nova ferramenta, assim justificando a melhoria do software a arquitetuara atual em detrimento de uma 
-
 Dado isto percebemos a lacuna nitida de uma ferramenta completa ao ambiente fisioterapico brasileiro, que abranja de maneira relevante tanto a gamificação dos exercicios fisioterapicos, como a analise dos dados de desempenho do paciente, que é justamente a lacuna que o I blue it cobre.  
 
 ---
