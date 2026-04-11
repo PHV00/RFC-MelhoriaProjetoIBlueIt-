@@ -49,19 +49,35 @@ link auxiliar para mais informações sobre o software: https://udescmove2learn.
 
 
 Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás ás:
-- Dificuldade em ajustar a dificuldade dos exercicios ao estado atual do tratamento paciente (no modelo atual isso é configurado pelo profissional da saude oque pode levar algum tempo e erros exporadicos).
 - Necessidade de ampliar a captura de dados dos pacientes na hora do exercicios (adicionar um novo modulo para o biossensor de saturação periférica de oxigênio (SpO2)), com a finalidade de capturar mais dados sobre o paciente).
 - Necessidade de ampliar os dados mostrados no dashboard do paciente ( adicionar os dados obtidos pela adição do modulo (SpO2) para o dashboard do paciente).
+- Dificuldade em ajustar a dificuldade dos exercicios ao adicionar novo componente Sp02 no tratamento paciente (no modelo atual isso já configurado por uma IA, porém sem o modulo Sp02).
 ---
 
 ## 1.2 Origem da Demanda e Evidências
 
-O projeto foi concebido em uma iniciativa do (LARVA)LAboratory for Research on Visual Applications da UDESC em colaboração com profissionais da aréa de fisioterapia respiratória e áreas correlatas, com o objetivo de atender a problematicas reais do dominio clinico.Sendo assim desde o principio o sistema tem como foco atender as necessidade de ferramentas que auxiem no processo de atendimento medico e tratamento de pacientes com problemas respiratorios.
+O projeto se origina em uma iniciativa do (LARVA)LAboratory for Research on Visual Applications da UDESC em colaboração com profissionais da aréa de fisioterapia respiratória e áreas correlatas, com o objetivo de atender a problematicas reais do dominio clinico.Sendo assim desde o principio o sistema tem como foco atender as necessidade de ferramentas que auxiem no processo de atendimento medico e tratamento de pacientes com problemas respiratorios.
 
-O programa que foi concebido em 2018 já se utilizava mais de 80 profissionais da saude (fisioterapeutas, médicos pneumologistas, fisioterapeutas respiratórios, neurologistas) os quais ajudaram a garantir a efetividade e utilidade da ferramenta ao longo do desenvolvimento e que ao final o avaliaram possitivamente , com um nota 4.1 de 5, demonstrando grande satisfação por parte dos envolvidos. [2018 - Santos - I Blue It Um Jogo Sério para auxiliar na Reabilitação Respiratória]
+O programa que foi concebido em 2018 já se utilizava mais de 80 profissionais da saude (fisioterapeutas, médicos pneumologistas, fisioterapeutas respiratórios, neurologistas) os quais atuavam como conselheiros com a finalidade de garantir a efetividade e utilidade da ferramenta ao longo do propio desenvolvimento e que ao final o avaliaram , obtendo um resultado muito satisfatorio uma nota 4.1 de 5, demonstrando grande satisfação por parte dos envolvidos. [2018 - Santos - I Blue It Um Jogo Sério para auxiliar na Reabilitação Respiratória]
 
-Nesse contexto tendo como foco ajudar ainda mais as equipes medicas no tratamento de doenças respiratorias, por meio da resolução das lacunas encontradas que este projeto se origina, ao final buscando de fornecer uma ferramenta mais completa a comunidade e dar continuidade ao trabalho acâdemico em andamento desde 2018.
+Desde sua fase inicial até agora houveram diversas melhorias em cada uma das versões, onde podemos montar um historico de versões de maneira resumida:
 
+- versão 01 - I Blue It / Pitaco (2018):
+  - Criação do dispositivo Pitaco(responsavel por medir fluxo de ar) e do jogo "Blue"
+- versão 02 - I Blue It / ManoBD (2019):
+  - Adição de minijogos do Copo d’água e Bolo de Aniversário e concepção do dipositivo MonoDB(responsavel por medir a pressão do ar)
+- versão 03 - I Blue It / Health InfoCharts (2020):
+  - Adição de modulo de analise clinica do paciente (Historico e resultados dos jogos mostrados e armazenados)
+- versão 04 - I Blue It / Multimodal (2020):
+  - Incorporação de arquitetura Multimodal 123-SGR oque permitiu a incoporação de dispositivos distintos como Pitaco e ManoBD
+- versão 04 - I Blue It / Multimodal redesign (2023):
+  - Redsign para a incorporação de IA ao projeto
+- versão 05 - I Blue It / Flow Psicofisiológico (2024):
+  - Incorporação de Flow Psicofisiológico(busca equlibrar a parte motivadora psiquica, com a parte fiosiologica do paciente) e IA ao projeto com o fim de controlar o Flow Psicofisiológico
+
+Porém mesmo com todas estas versões e melhorias, foram identificadas algumas lacunas sendo a necessidade de aprimorar a captura e o tipo de dados, oque levou a decisão de implementar o modulo novo no IOT adicionando ao projeto o Sp02(medidor de saturação do sangue), oque acareta em mudanças e ajustes aos modulos de dashbords e IA de dificuldade de low Psicofisiológico ao novo componente.
+
+Neste contexto este projeto de melhoria tem como ponto de partida dar continuidade no aprimoramento de uma ferramenta que auxilia a comunidade medica na recuperação de pacientes com problemas respiratorios, por meio de uma bolsa de Iniciação Cientifica adjunto a Udesc, tratando as lacunas encontradas e dando continuidade ao trabalho tecnico academico já desenvolvido.
 
 ## 1.3 Análise de Soluções Existentes (Benchmark)
 
@@ -145,7 +161,7 @@ Qual transformação o projeto pretende gerar.
 Tendo em vista a problematica apresentada, este projeto tem como fim sanar as lacunas identificadas pela comunidade com fim de entregar uma plataforma mais completa e otimizada.Baseando-se nisso segue abaixo os objetivos a serem tratados:
 
 - Integrar um sensor de SpO2 ao ecossistema do jogo para monitoramento fisiológico complementar.
-- Implementar um módulo de ajuste dinâmico de dificuldade com base no desempenho e nos sinais do paciente.
+- Implementar um módulo de ajuste dinâmico de dificuldade com base no desempenho e nos sinais do paciente, utilizando Inteligencia Artificial, de modo a suportar todos os modulos IOT.
 - Ampliar o dashboard clínico para exibir e correlacionar dados respiratórios, de SpO2 e de desempenho no jogo.
 [2018 - Santos - I Blue It Um Jogo Sério para auxiliar na Reabilitação Respiratória (2).pdf](https://github.com/user-attachments/files/26648094/2018.-.Santos.-.I.Blue.It.Um.Jogo.Serio.para.auxiliar.na.Reabilitacao.Respiratoria.2.pdf)
 
@@ -153,12 +169,12 @@ Tendo em vista a problematica apresentada, este projeto tem como fim sanar as la
 
 ## 1.6 Métricas de Sucesso (KPIs)
 
-- Registro correto de sessões com dados respiratórios e de SpO2.
+As Metricas de sucesso estipuladas são:
+
+- Registro correto de sessões com dados respiratórios do novo componente SpO2.
+- Ajuste dinâmico de dificuldade executado em tempo real durante a sessão, por meio de uma IA previamente treinada para suportar todos os modulos IOT.
 - Tempo de resposta do sistema inferior a 300 ms para feedback em gameplay.
-- Ajuste dinâmico de dificuldade executado em tempo real durante a sessão.
-- Dashboard apresentando histórico por paciente, sessão e indicadores fisiológicos.
-- Avaliação de utilidade por profissionais com média mínima de 4,0/5 em validação inicial.
-- Disponibilidade de exportação de dados para análise clínica.
+- Adição dos dados obtidos pelo Sp02 ao dashboard apresentando todos os dados já existente e novos pertinentes.
 
 ---
 
