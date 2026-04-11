@@ -23,15 +23,19 @@
 
 # 1. Visão do Produto e Impacto (O Problema)
   
-Este projeto tem como fim identificar e melhorar o já consolidade jogo sério I Blue It, um software desenvolvido pela Universidade do Estado de Santa Catarina (UDESC) com o fim de auxiliar na fisioterapia de pacientes com problemas respiratorios, isso por meio da gamificação dos seus exercícios e análises dos resultados.Assim o projeto pretende análisar o software e aplicar as melhorias que forem encontradas, tanto tecnicas, como de demandas da comunidade que já utiliza o software.    
+Este projeto tem como fim identificar e melhorar o já consolidade jogo sério I Blue It, um software desenvolvido pela Universidade do Estado de Santa Catarina (UDESC) com o prinncipio de auxiliar na fisioterapia de pacientes com problemas respiratorios, isso por meio da gamificação dos seus exercícios e análises dos resultados.Assim o projeto pretende análisar o software e aplicar as melhorias que forem encontradas, tanto tecnicas, como de demandas da comunidade que já o utiliza.
 
 ---
 
 ## 1.1 Contexto e Problema
 
-A reabilitação respiratória é um processo terapêutico onde pacientes com disfunções respiratórias, usam de  uma abordagem sistemática, repetitiva e de longo prazo, o que pode reduzir a adesão do paciente ao tratamento.Nesse contexto os jogos sérios surgem como uma alternativa há tornar os exercícios mais motivadores, lúdicos e engajadores aos pacientes.
+A reabilitação respiratória é um processo terapêutico onde pacientes com disfunções respiratórias, usam de  uma abordagem de longo prazo ,sistemática e repetitiva, o que pode levar a reduzir a adesão do paciente ao tratamento.Nesse contexto os jogos sérios surgem como uma forma de tornar os exercícios mais motivadores, lúdicos e engajadores aos pacientes.
 
-Nesse âmbito o software já desenvolvido pela inciativa de pesquisa da Udesc, I Blue It gamifica o tratamento e retorna dados uteis ao proficional da saúde que aplica o tratamento sobre paciente.O jogo consiste em um jogo de plataforma onde o usuario por meio de sua respiração em um equipamento IOT chamado PITACO no qual os valores obtidos são transformados em movimentos verticais inspirar sobe expirar desce assim fazendo o personagem controlado  "Blue" (o golfinho) desviar dos obstaculos ou capturar, além de possuir outros minigames com mesmo conceitos para exercicitar o paciente.Assim a solução atual já contempla calibração, histórico do jogador, armazenamento de dados e customização de parâmetros por profissionais.
+Nesse âmbito o software já desenvolvido pela inciativa de pesquisa da Udesc, I Blue It gamifica o tratamento e retorna dados uteis ao proficional da saúde que aplica o tratamento sobre paciente.O ecosistema do I blue it pode ser divido em três areas distintas sendo elas os jogos, onde possuimos o jogo principal de mesmo nome do projeto e mais alguns minigames, os dispositivos IOT chamados PITACO e Mano-BD responsaveis pela captura dos dados de respiração do paciente e o dashboard responsavel por fornecer ao profissional da saude dados relevantes dos seus pacientes. 
+
+O jogo principal consiste em um jogo de plataforma, onde o usuario por meio de sua respiração no dipositivo PITACO movimenta verticalmente o personagem para desviar dos obstaculos, inspirando para subir e expirarando para descer assim movimentando o personagem  "Blue" (o golfinho), além disso possui outros minigames com mesmo conceito para exercicitar o paciente, sendo os dados destes exercicios utilizado pelo porfisional de saude para regular e avaliar o estado do paciente.
+
+Assim a solução que já está na versão 5.0 já contempla calibração, histórico do jogador, armazenamento de dados e customização de parâmetros por profissionais.
 
 <img width="675" height="318" alt="image" src="https://github.com/user-attachments/assets/27040498-d538-4f3c-86c5-6c2aa9d87c31" />
 
@@ -40,7 +44,7 @@ Nesse âmbito o software já desenvolvido pela inciativa de pesquisa da Udesc, I
 link auxiliar com dados sobre software: https://udescmove2learn.wordpress.com/2018/04/26/i-blue-it/
 
 Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás ás:
-- Dificuldade em ajustar a dificuldade dos exercicios ao estado atual do tratamento paciente (no modelo atual isso é configurado pelo profissional da saude oque pode acabar acaretando em erros).
+- Dificuldade em ajustar a dificuldade dos exercicios ao estado atual do tratamento paciente (no modelo atual isso é configurado pelo profissional da saude oque pode levar algum tempo e erros exporadicos).
 - Necessidade de ampliar a captura de dados dos pacientes na hora do exercicios (adicionar um novo modulo para o biossensor de saturação periférica de oxigênio (SpO2)), com a finalidade de capturar mais dados sobre o paciente).
 - Necessidade de ampliar os dados mostrados no dashboard do paciente ( adicionar os dados obtidos pela adição do modulo (SpO2) para o dashboard do paciente).
 ---
