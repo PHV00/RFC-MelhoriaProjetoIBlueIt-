@@ -39,9 +39,14 @@ Assim a solução que já está na versão 5.0 já contempla calibração, hist�
 
 <img width="675" height="318" alt="image" src="https://github.com/user-attachments/assets/27040498-d538-4f3c-86c5-6c2aa9d87c31" />
 
+[Imagem do jogo I blue It da versão 2.0]
+
 <img width="676" height="350" alt="image" src="https://github.com/user-attachments/assets/560cfbed-2ad8-4cab-9aac-4f24ad650252" />
 
-link auxiliar com dados sobre software: https://udescmove2learn.wordpress.com/2018/04/26/i-blue-it/
+[Imagem dos dispositivos IOT]
+
+link auxiliar para mais informações sobre o software: https://udescmove2learn.wordpress.com/2018/04/26/i-blue-it/
+
 
 Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás ás:
 - Dificuldade em ajustar a dificuldade dos exercicios ao estado atual do tratamento paciente (no modelo atual isso é configurado pelo profissional da saude oque pode levar algum tempo e erros exporadicos).
