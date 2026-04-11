@@ -56,11 +56,11 @@ Entretanto a iniativa percebeu lacunas no estado atual do software sendo estás 
 
 ## 1.2 Origem da Demanda e Evidências
 
-O software foi concebido em uma iniciativa do (LARVA)LAboratory for Research on Visual Applications da UDESC em colaboração com profissionais da aréa de fisioterapia respiratória e áreas correlatas, com o objetivo de atender a problematicas reais do dominio clinico.Sendo assim desde o principio o sistema tem como foco atender as necessidade de ferramentas que auxiem no processo de atendimento medico e tratamento de pacientes com problemas respiratorios.
+O projeto foi concebido em uma iniciativa do (LARVA)LAboratory for Research on Visual Applications da UDESC em colaboração com profissionais da aréa de fisioterapia respiratória e áreas correlatas, com o objetivo de atender a problematicas reais do dominio clinico.Sendo assim desde o principio o sistema tem como foco atender as necessidade de ferramentas que auxiem no processo de atendimento medico e tratamento de pacientes com problemas respiratorios.
 
-O programa que foi concebido em 2018 já está atualmente na sua versão 5.0 e como tal já possue alguma experimentação por parte dos profissionais de saude, que o avaliaram possitivamente desde sua primeira versão, como pode-se ver nas avaliações de feitas já em 2018, onde os profissionais que tiveram contato com a ferramenta a avaliaram com nota de 4.1 de 5, demonstrando grande satisfação por parte dos envolvidos, já nos estagios iniciais do software. [referencia 2018 - Santos - I Blue It Um Jogo Sério para auxiliar na Reabilitação Respiratória.pdf]
+O programa que foi concebido em 2018 já se utilizava mais de 80 profissionais da saude (fisioterapeutas, médicos pneumologistas, fisioterapeutas respiratórios, neurologistas) os quais ajudaram a garantir a efetividade e utilidade da ferramenta ao longo do desenvolvimento e que ao final o avaliaram possitivamente , com um nota 4.1 de 5, demonstrando grande satisfação por parte dos envolvidos. [2018 - Santos - I Blue It Um Jogo Sério para auxiliar na Reabilitação Respiratória]
 
-Nesse contexto, tendo em mente o fim de ajudar ainda mais as equipes medicas no tratamento de doenças respiratorias, atrávez do aprimoramento das funcionalidades do software, que este projeto se origina, se propondo a aprimorar o software nas lacunas identificadas pela comunidade, com o fim de fornecer ao final uma ferramenta mais completa aos profissionais de saude.
+Nesse contexto tendo como foco ajudar ainda mais as equipes medicas no tratamento de doenças respiratorias, por meio da resolução das lacunas encontradas que este projeto se origina, ao final buscando de fornecer uma ferramenta mais completa a comunidade e dar continuidade ao trabalho acâdemico em andamento desde 2018.
 
 
 ## 1.3 Análise de Soluções Existentes (Benchmark)
@@ -147,6 +147,7 @@ Tendo em vista a problematica apresentada, este projeto tem como fim sanar as la
 - Integrar um sensor de SpO2 ao ecossistema do jogo para monitoramento fisiológico complementar.
 - Implementar um módulo de ajuste dinâmico de dificuldade com base no desempenho e nos sinais do paciente.
 - Ampliar o dashboard clínico para exibir e correlacionar dados respiratórios, de SpO2 e de desempenho no jogo.
+[2018 - Santos - I Blue It Um Jogo Sério para auxiliar na Reabilitação Respiratória (2).pdf](https://github.com/user-attachments/files/26648094/2018.-.Santos.-.I.Blue.It.Um.Jogo.Serio.para.auxiliar.na.Reabilitacao.Respiratoria.2.pdf)
 
 ---
 
