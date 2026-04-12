@@ -167,6 +167,17 @@ Tendo em vista a problemática apresentada, este projeto tem como fim sanar as l
 
 ---
 
+## 1.6 Métricas de Sucesso (KPIs)
+
+As Metricas de sucesso estipuladas são:
+
+- Registro correto de sessões com dados respiratórios do novo componente SpO2.
+- Ajuste dinâmico de dificuldade executado em tempo real durante a sessão, por meio de uma IA previamente treinada para suportar todos os modulos IOT.
+- Tempo de resposta do sistema inferior a 300 ms para feedback em gameplay.
+- Adição dos dados obtidos pelo Sp02 ao dashboard apresentando todos os dados já existente e novos pertinentes.
+
+---
+
 # 2. Engenharia de Requisitos
 
 Esta seção define **o que o sistema fará**.
