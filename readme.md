@@ -171,10 +171,10 @@ Tendo em vista a problemática apresentada, este projeto tem como fim sanar as l
 
 As Metricas de sucesso estipuladas são:
 
-- Registro correto de sessões com dados respiratórios do novo componente SpO2.
-- Ajuste dinâmico de dificuldade executado em tempo real durante a sessão, por meio de uma IA previamente treinada para suportar todos os modulos IOT.
+- Registro correto de sessões com dados respiratórios do novo componente SpO2 mantendo a velocidade e metricas do sistema atual.
+- Ajuste dinâmico com delay de até 300ms na dificuldade durante a sessão, ao utilizar a nova IA que suporta todos os modulos IOT.
 - Tempo de resposta do sistema inferior a 300 ms para feedback em gameplay.
-- Adição dos dados obtidos pelo Sp02 ao dashboard apresentando todos os dados já existente e novos pertinentes.
+- Adição dos dados obtidos pelo Sp02 ao dashboard apresentando todos os dados já existente e novos pertinentes, mantendo o tempo de resposta atual.
 
 ---
 
