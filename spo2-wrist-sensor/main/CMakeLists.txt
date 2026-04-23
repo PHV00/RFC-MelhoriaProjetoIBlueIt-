@@ -1,0 +1,21 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "app/app_controller.c"
+        "app/app_state_machine.c"
+        "drivers/i2c_bus.c"
+        "drivers/max3010x_driver.c"
+        "sensing/sample_buffer.c"
+        "sensing/ppg_sampler.c"
+        "processing/signal_quality.c"
+        "processing/hr_estimator.c"
+        "processing/spo2_estimator.c"
+        "safety/confidence_engine.c"
+        "transport/serial_telemetry.c"
+        "storage/config_repo.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        driver
+        esp_timer
+)
