@@ -1,0 +1,1844 @@
+Command: /home/pedro/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/pedro/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/pedro/Documentos/git/portifolio/RFC-MelhoriaProjetoIBlueIt-/spo2-wrist-sensor/build/sp02_ble.elf /home/pedro/Documentos/git/portifolio/RFC-MelhoriaProjetoIBlueIt-/spo2-wrist-sensor/build/bootloader/bootloader.elf -m '/home/pedro/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/pedro/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;32mI (102) esp_image: segment 3: paddr=00020020 vaddr=42000020 sizeESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40383748
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fbc
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v6.0 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 22 2026 23:32:10[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=08f04h ( 36612) map[0m
+[0;32mI (89) esp_image: segment 1: paddr=00018f2c vaddr=3fc8ae00 size=018e8h (  6376) load[0m
+[0;32mI (91) esp_image: segment 2: paddr=0001a81c vaddr=40380000 size=057fch ( 22524) load[0m
+[0;32mI (102) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=13d58h ( 81240) map[0m
+[0;32mI (118) esp_image: segment 4: paddr=00033d80 vaddr=403857fc size=0559ch ( 21916) load[0m
+[0;32mI (122) esp_image: segment 5: paddr=00039324 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (126) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (127) boot: Disabling RNG early entropy source...[0m
+[0;32mI (143) cpu_start: Unicore app[0m
+[0;32mI (151) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (151) cpu_start: Pro cpu start user code[0m
+[0;32mI (151) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (153) app_init: Application information:[0m
+[0;32mI (157) app_init: Project name:     sp02_ble[0m
+[0;32mI (161) app_init: App version:      79b011a-dirty[0m
+[0;32mI (166) app_init: Compile time:     Apr 22 2026 23:32:00[0m
+[0;32mI (171) app_init: ELF file SHA256:  dca45b170...[0m
+[0;32mI (175) app_init: ESP-IDF:          v6.0[0m
+[0;32mI (179) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (182) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (186) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (190) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (197) heap_init: At 3FC8DEB0 len 00032150 (200 KiB): RAM[0m
+[0;32mI (202) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (208) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (214) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (220) spi_flash: detected chip: generic[0m
+[0;32mI (223) spi_flash: flash io: dio[0m
+[0;33mW (226) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (238) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (248) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (254) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (261) main_task: Started on CPU0[0m
+[0;32mI (261) main_task: Calling app_main()[0m
+[0;32mI (261) APP: Inicializando sistema...[0m
+[0;32mI (291) I2C_SCAN: Dispositivo encontrado em 0x57[0m
+[0;32mI (301) APP: Sistema inicializado.[0m
+[RAW] seq=4 ts=232 red=619 ir=417
+[RAW] seq=8 ts=432 red=702 ir=472
+[RAW] seq=12 ts=632 red=751 ir=536
+[RAW] seq=16 ts=832 red=748 ir=546
+[RAW] seq=20 ts=1032 red=663 ir=530
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=502.5 ac_ir=136.0 pi=0.2706 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=24 ts=1232 red=620 ir=435
+[RAW] seq=28 ts=1432 red=709 ir=455
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=502.2 ac_ir=136.0 pi=0.2708 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=32 ts=1632 red=732 ir=537
+[RAW] seq=36 ts=1832 red=759 ir=553
+[RAW] seq=40 ts=2032 red=654 ir=522
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=502.4 ac_ir=144.0 pi=0.2866 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=44 ts=2232 red=759 ir=530
+[RAW] seq=48 ts=2432 red=743 ir=541
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=509.3 ac_ir=144.0 pi=0.2828 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=52 ts=2632 red=745 ir=533
+[RAW] seq=56 ts=2832 red=728 ir=538
+[RAW] seq=60 ts=3032 red=2958 ir=2283
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=544.7 ac_ir=1866.0 pi=3.4258 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=64 ts=3232 red=1038 ir=762
+[RAW] seq=68 ts=3432 red=870 ir=607
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=601.9 ac_ir=2279.0 pi=3.7866 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=72 ts=3632 red=815 ir=513
+[RAW] seq=76 ts=3832 red=769 ir=460
+[RAW] seq=80 ts=4032 red=744 ir=452
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=586.9 ac_ir=2279.0 pi=3.8834 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=84 ts=4232 red=763 ir=465
+[RAW] seq=88 ts=4432 red=747 ir=427
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=570.8 ac_ir=2279.0 pi=3.9925 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=92 ts=4632 red=773 ir=427
+[RAW] seq=96 ts=4832 red=799 ir=420
+[RAW] seq=100 ts=5032 red=778 ir=411
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=555.5 ac_ir=2303.0 pi=4.1459 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=104 ts=5232 red=752 ir=413
+[RAW] seq=108 ts=5432 red=739 ir=394
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=541.4 ac_ir=2308.0 pi=4.2633 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=112 ts=5632 red=730 ir=401
+[RAW] seq=116 ts=5832 red=738 ir=390
+[RAW] seq=120 ts=6032 red=719 ir=367
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=528.4 ac_ir=2329.0 pi=4.4076 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=124 ts=6232 red=693 ir=361
+[RAW] seq=128 ts=6432 red=695 ir=356
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=514.2 ac_ir=2375.0 pi=4.6187 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=132 ts=6632 red=663 ir=347
+[RAW] seq=136 ts=6832 red=671 ir=324
+[RAW] seq=140 ts=7032 red=661 ir=302
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=500.0 ac_ir=2397.0 pi=4.7944 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=144 ts=7232 red=660 ir=295
+[RAW] seq=148 ts=7432 red=653 ir=301
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=484.5 ac_ir=2402.0 pi=4.9574 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=152 ts=7632 red=645 ir=302
+[RAW] seq=156 ts=7832 red=629 ir=300
+[RAW] seq=160 ts=8032 red=623 ir=302
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=468.9 ac_ir=2404.0 pi=5.1268 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=164 ts=8232 red=614 ir=319
+[RAW] seq=168 ts=8432 red=587 ir=312
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=454.6 ac_ir=2404.0 pi=5.2883 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=172 ts=8632 red=584 ir=308
+[RAW] seq=176 ts=8832 red=566 ir=306
+[RAW] seq=180 ts=9032 red=690 ir=278
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=437.5 ac_ir=2418.0 pi=5.5266 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=184 ts=9232 red=978 ir=0
+[RAW] seq=188 ts=9432 red=739 ir=425
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=376.1 ac_ir=816.0 pi=2.1695 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=192 ts=9632 red=822 ir=507
+[RAW] seq=196 ts=9832 red=1732 ir=1441
+[RAW] seq=200 ts=10032 red=3623 ir=4800
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=457.5 ac_ir=4800.0 pi=10.4922 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=204 ts=10232 red=105957 ir=126235
+[RAW] seq=208 ts=10432 red=145110 ir=148998
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=9451.9 ac_ir=159507.0 pi=16.8757 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.56
+[RAW] seq=212 ts=10632 red=120831 ir=137841
+[RAW] seq=216 ts=10832 red=123316 ir=141844
+[RAW] seq=220 ts=11032 red=123391 ir=142146
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=20444.4 ac_ir=159507.0 pi=7.8020 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.27
+[RAW] seq=224 ts=11232 red=123699 ir=142419
+[RAW] seq=228 ts=11432 red=123620 ir=142386
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=31536.6 ac_ir=159507.0 pi=5.0578 q=0.60 hr_valid=1 hr=80.00 spo2_valid=1 spo2=87.18
+[RAW] seq=232 ts=11632 red=123789 ir=142776
+[RAW] seq=236 ts=11832 red=123788 ir=142809
+[RAW] seq=240 ts=12032 red=123672 ir=142494
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=42657.5 ac_ir=159507.0 pi=3.7392 q=0.60 hr_valid=1 hr=96.00 spo2_valid=1 spo2=87.13
+[RAW] seq=244 ts=12232 red=123521 ir=142180
+[RAW] seq=248 ts=12432 red=123451 ir=142123
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=53736.4 ac_ir=159507.0 pi=2.9683 q=0.60 hr_valid=1 hr=96.00 spo2_valid=1 spo2=87.10
+[RAW] seq=252 ts=12632 red=123390 ir=141977
+[RAW] seq=256 ts=12832 red=123390 ir=142037
+[RAW] seq=260 ts=13032 red=123378 ir=141990
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=64804.1 ac_ir=159507.0 pi=2.4614 q=0.60 hr_valid=1 hr=75.00 spo2_valid=1 spo2=87.08
+[RAW] seq=264 ts=13232 red=123373 ir=142043
+[RAW] seq=268 ts=13432 red=123292 ir=142035
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=75875.9 ac_ir=159507.0 pi=2.1022 q=0.60 hr_valid=1 hr=85.71 spo2_valid=1 spo2=87.06
+[RAW] seq=272 ts=13632 red=123371 ir=142069
+[RAW] seq=276 ts=13832 red=123460 ir=142206
+[RAW] seq=280 ts=14032 red=123429 ir=142171
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=86957.2 ac_ir=159507.0 pi=1.8343 q=0.60 hr_valid=1 hr=86.96 spo2_valid=1 spo2=87.05
+[RAW] seq=284 ts=14232 red=123431 ir=142235
+[RAW] seq=288 ts=14432 red=123343 ir=142073
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=98036.4 ac_ir=159507.0 pi=1.6270 q=0.60 hr_valid=1 hr=94.74 spo2_valid=1 spo2=87.03
+[RAW] seq=292 ts=14632 red=123264 ir=141893
+[RAW] seq=296 ts=14832 red=123195 ir=141821
+[RAW] seq=300 ts=15032 red=123160 ir=141774
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=109093.1 ac_ir=159507.0 pi=1.4621 q=0.60 hr_valid=1 hr=94.74 spo2_valid=1 spo2=87.02
+[RAW] seq=304 ts=15232 red=123111 ir=141701
+[RAW] seq=308 ts=15432 red=123109 ir=141712
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=120139.5 ac_ir=159507.0 pi=1.3277 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.00
+[RAW] seq=312 ts=15632 red=123036 ir=141542
+[RAW] seq=316 ts=15832 red=123032 ir=141585
+[RAW] seq=320 ts=16032 red=123017 ir=141565
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=131179.1 ac_ir=158967.0 pi=1.2118 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=86.91
+[RAW] seq=324 ts=16232 red=122982 ir=141501
+[RAW] seq=328 ts=16432 red=122975 ir=141481
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=141676.9 ac_ir=41150.0 pi=0.2904 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=78.80
+[RAW] seq=332 ts=16632 red=122915 ir=141352
+[RAW] seq=336 ts=16832 red=122943 ir=141396
+[RAW] seq=340 ts=17032 red=122862 ir=141260
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.91 dc_ir=141907.7 ac_ir=4472.0 pi=0.0315 q=0.91 hr_valid=0 hr=0.00 spo2_valid=1 spo2=90.07
+[RAW] seq=344 ts=17232 red=122766 ir=141142
+[RAW] seq=348 ts=17432 red=122809 ir=141237
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.68 dc_ir=141898.9 ac_ir=1846.0 pi=0.0130 q=0.68 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.14
+[RAW] seq=352 ts=17632 red=122785 ir=141165
+[RAW] seq=356 ts=17832 red=122792 ir=141176
+[RAW] seq=360 ts=18032 red=122748 ir=141145
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.68 dc_ir=141797.4 ac_ir=1846.0 pi=0.0130 q=0.68 hr_valid=1 hr=171.43 spo2_valid=1 spo2=91.30
+[RAW] seq=364 ts=18232 red=122750 ir=141188
+[RAW] seq=368 ts=18432 red=122778 ir=141227
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.57 dc_ir=141680.5 ac_ir=1167.0 pi=0.0082 q=0.57 hr_valid=1 hr=128.57 spo2_valid=1 spo2=90.73
+[RAW] seq=372 ts=18632 red=122699 ir=141123
+[RAW] seq=376 ts=18832 red=122707 ir=141165
+[RAW] seq=380 ts=19032 red=122675 ir=141113
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.57 dc_ir=141606.2 ac_ir=1140.0 pi=0.0081 q=0.57 hr_valid=1 hr=128.57 spo2_valid=1 spo2=90.82
+[RAW] seq=384 ts=19232 red=122654 ir=141064
+[RAW] seq=388 ts=19432 red=122650 ir=141162
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.58 dc_ir=141535.8 ac_ir=1179.0 pi=0.0083 q=0.58 hr_valid=1 hr=120.00 spo2_valid=1 spo2=90.80
+[RAW] seq=392 ts=19632 red=122686 ir=141242
+[RAW] seq=396 ts=19832 red=122743 ir=141360
+[RAW] seq=400 ts=20032 red=122692 ir=141211
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.58 dc_ir=141476.0 ac_ir=1179.0 pi=0.0083 q=0.58 hr_valid=1 hr=171.43 spo2_valid=1 spo2=90.42
+[RAW] seq=404 ts=20232 red=122688 ir=141275
+[RAW] seq=408 ts=20432 red=122703 ir=141320
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.58 dc_ir=141408.2 ac_ir=1179.0 pi=0.0083 q=0.58 hr_valid=1 hr=50.00 spo2_valid=1 spo2=89.90
+[RAW] seq=412 ts=20632 red=122722 ir=141393
+[RAW] seq=416 ts=20832 red=122742 ir=141431
+[RAW] seq=420 ts=21032 red=122747 ir=141470
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.53 dc_ir=141355.6 ac_ir=882.0 pi=0.0062 q=0.53 hr_valid=1 hr=133.33 spo2_valid=1 spo2=88.90
+[RAW] seq=424 ts=21232 red=122792 ir=141516
+[RAW] seq=428 ts=21432 red=122729 ir=141423
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.50 dc_ir=141331.5 ac_ir=676.0 pi=0.0048 q=0.50 hr_valid=1 hr=133.33 spo2_valid=1 spo2=89.38
+[RAW] seq=432 ts=21632 red=122742 ir=141425
+[RAW] seq=436 ts=21832 red=122744 ir=141497
+[RAW] seq=440 ts=22032 red=122722 ir=141429
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.49 dc_ir=141313.2 ac_ir=582.0 pi=0.0041 q=0.49 hr_valid=1 hr=144.00 spo2_valid=1 spo2=90.04
+[RAW] seq=444 ts=22232 red=122511 ir=141110
+[RAW] seq=448 ts=22432 red=122460 ir=140962
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.49 dc_ir=141277.2 ac_ir=603.0 pi=0.0043 q=0.49 hr_valid=1 hr=144.00 spo2_valid=1 spo2=89.63
+[RAW] seq=452 ts=22632 red=122387 ir=140933
+[RAW] seq=456 ts=22832 red=122055 ir=140524
+[RAW] seq=460 ts=23032 red=122278 ir=140808
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.55 dc_ir=141221.5 ac_ir=1041.0 pi=0.0074 q=0.55 hr_valid=1 hr=150.00 spo2_valid=1 spo2=88.20
+[RAW] seq=464 ts=23232 red=122440 ir=141014
+[RAW] seq=468 ts=23432 red=122587 ir=141165
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.56 dc_ir=141199.3 ac_ir=1041.0 pi=0.0074 q=0.56 hr_valid=1 hr=150.00 spo2_valid=1 spo2=88.56
+[RAW] seq=472 ts=23632 red=122560 ir=141121
+[RAW] seq=476 ts=23832 red=122536 ir=141018
+[RAW] seq=480 ts=24032 red=122550 ir=141090
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.56 dc_ir=141192.8 ac_ir=1041.0 pi=0.0074 q=0.56 hr_valid=1 hr=150.00 spo2_valid=1 spo2=88.92
+[RAW] seq=484 ts=24232 red=122540 ir=141121
+[RAW] seq=488 ts=24432 red=122549 ir=141096
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.56 dc_ir=141183.8 ac_ir=1041.0 pi=0.0074 q=0.56 hr_valid=1 hr=150.00 spo2_valid=1 spo2=89.45
+[RAW] seq=492 ts=24632 red=122372 ir=140832
+[RAW] seq=496 ts=24832 red=122382 ir=140834
+[RAW] seq=500 ts=25032 red=122404 ir=140889
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.56 dc_ir=141158.8 ac_ir=1041.0 pi=0.0074 q=0.56 hr_valid=1 hr=150.00 spo2_valid=1 spo2=90.02
+[RAW] seq=504 ts=25232 red=122386 ir=140922
+[RAW] seq=508 ts=25432 red=122443 ir=140988
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.56 dc_ir=141143.1 ac_ir=1041.0 pi=0.0074 q=0.56 hr_valid=1 hr=150.00 spo2_valid=1 spo2=90.20
+[RAW] seq=512 ts=25632 red=122341 ir=140787
+[RAW] seq=516 ts=25832 red=122415 ir=140859
+[RAW] seq=520 ts=26032 red=122333 ir=140747
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.56 dc_ir=141118.7 ac_ir=1041.0 pi=0.0074 q=0.56 hr_valid=1 hr=92.31 spo2_valid=1 spo2=90.68
+[RAW] seq=524 ts=26232 red=122248 ir=140586
+[RAW] seq=528 ts=26432 red=122120 ir=140411
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=141057.1 ac_ir=1314.0 pi=0.0093 q=0.60 hr_valid=1 hr=150.00 spo2_valid=1 spo2=91.42
+[RAW] seq=532 ts=26632 red=122005 ir=140235
+[RAW] seq=536 ts=26832 red=121950 ir=140165
+[RAW] seq=540 ts=27032 red=122004 ir=140196
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.61 dc_ir=140972.1 ac_ir=1400.0 pi=0.0099 q=0.61 hr_valid=1 hr=150.00 spo2_valid=1 spo2=91.79
+[RAW] seq=544 ts=27232 red=122048 ir=140271
+[RAW] seq=548 ts=27432 red=121944 ir=140107
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.63 dc_ir=140874.6 ac_ir=1525.0 pi=0.0108 q=0.63 hr_valid=1 hr=109.09 spo2_valid=1 spo2=91.92
+[RAW] seq=552 ts=27632 red=121984 ir=140131
+[RAW] seq=556 ts=27832 red=121827 ir=139862
+[RAW] seq=560 ts=28032 red=121722 ir=139712
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.67 dc_ir=140752.7 ac_ir=1785.0 pi=0.0127 q=0.67 hr_valid=1 hr=51.06 spo2_valid=1 spo2=92.23
+[RAW] seq=564 ts=28232 red=121699 ir=139694
+[RAW] seq=568 ts=28432 red=121653 ir=139563
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.68 dc_ir=140611.5 ac_ir=1785.0 pi=0.0127 q=0.68 hr_valid=1 hr=64.86 spo2_valid=1 spo2=92.50
+[RAW] seq=572 ts=28632 red=121569 ir=139476
+[RAW] seq=576 ts=28832 red=121559 ir=139456
+[RAW] seq=580 ts=29032 red=121541 ir=139424
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.67 dc_ir=140487.5 ac_ir=1768.0 pi=0.0126 q=0.67 hr_valid=1 hr=76.60 spo2_valid=1 spo2=92.44
+[RAW] seq=584 ts=29232 red=121590 ir=139508
+[RAW] seq=588 ts=29432 red=121638 ir=139618
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.67 dc_ir=140399.9 ac_ir=1768.0 pi=0.0126 q=0.67 hr_valid=1 hr=76.60 spo2_valid=1 spo2=92.30
+[RAW] seq=592 ts=29632 red=121736 ir=139748
+[RAW] seq=596 ts=29832 red=121700 ir=139722
+[RAW] seq=600 ts=30032 red=121723 ir=139703
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.67 dc_ir=140294.6 ac_ir=1751.0 pi=0.0125 q=0.67 hr_valid=1 hr=68.57 spo2_valid=1 spo2=92.33
+[RAW] seq=604 ts=30232 red=121629 ir=139566
+[RAW] seq=608 ts=30432 red=121664 ir=139629
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.67 dc_ir=140176.7 ac_ir=1751.0 pi=0.0125 q=0.67 hr_valid=1 hr=75.00 spo2_valid=1 spo2=92.42
+[RAW] seq=612 ts=30632 red=121693 ir=139644
+[RAW] seq=616 ts=30832 red=121699 ir=139687
+[RAW] seq=620 ts=31032 red=121718 ir=139670
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.65 dc_ir=140069.8 ac_ir=1600.0 pi=0.0114 q=0.65 hr_valid=1 hr=120.00 spo2_valid=1 spo2=92.50
+[RAW] seq=624 ts=31232 red=121715 ir=139680
+[RAW] seq=628 ts=31432 red=121656 ir=139592
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.65 dc_ir=139974.6 ac_ir=1600.0 pi=0.0114 q=0.65 hr_valid=1 hr=120.00 spo2_valid=1 spo2=92.50
+[RAW] seq=632 ts=31632 red=121623 ir=139541
+[RAW] seq=636 ts=31832 red=121619 ir=139467
+[RAW] seq=640 ts=32032 red=121708 ir=139574
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.63 dc_ir=139864.7 ac_ir=1472.0 pi=0.0105 q=0.63 hr_valid=1 hr=44.44 spo2_valid=1 spo2=92.43
+[RAW] seq=644 ts=32232 red=121651 ir=139525
+[RAW] seq=648 ts=32432 red=121696 ir=139544
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.59 dc_ir=139767.5 ac_ir=1229.0 pi=0.0088 q=0.59 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.92
+[RAW] seq=652 ts=32632 red=121719 ir=139656
+[RAW] seq=656 ts=32832 red=121771 ir=139668
+[RAW] seq=660 ts=33032 red=121798 ir=139699
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.54 dc_ir=139709.1 ac_ir=893.0 pi=0.0064 q=0.54 hr_valid=0 hr=0.00 spo2_valid=1 spo2=93.08
+[RAW] seq=664 ts=33232 red=121810 ir=139724
+[RAW] seq=668 ts=33432 red=121828 ir=139738
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.54 dc_ir=139671.5 ac_ir=893.0 pi=0.0064 q=0.54 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.29
+[RAW] seq=672 ts=33632 red=121808 ir=139698
+[RAW] seq=676 ts=33832 red=121820 ir=139710
+[RAW] seq=680 ts=34032 red=121877 ir=139768
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.50 dc_ir=139638.2 ac_ir=632.0 pi=0.0045 q=0.50 hr_valid=0 hr=0.00 spo2_valid=1 spo2=89.39
+[RAW] seq=684 ts=34232 red=121880 ir=139821
+[RAW] seq=688 ts=34432 red=121865 ir=139756
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.46 dc_ir=139633.5 ac_ir=424.0 pi=0.0030 q=0.46 hr_valid=1 hr=96.00 spo2_valid=1 spo2=87.09
+[RAW] seq=692 ts=34632 red=121826 ir=139729
+[RAW] seq=696 ts=34832 red=121864 ir=139789
+[RAW] seq=700 ts=35032 red=121618 ir=139276
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=139642.8 ac_ir=549.0 pi=0.0039 q=0.48 hr_valid=1 hr=109.09 spo2_valid=1 spo2=87.36
+[RAW] seq=704 ts=35232 red=121737 ir=139581
+[RAW] seq=708 ts=35432 red=121885 ir=139754
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=139656.1 ac_ir=549.0 pi=0.0039 q=0.48 hr_valid=1 hr=100.00 spo2_valid=1 spo2=88.32
+[RAW] seq=712 ts=35632 red=121935 ir=139870
+[RAW] seq=716 ts=35832 red=121964 ir=139888
+[RAW] seq=720 ts=36032 red=122063 ir=140033
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.52 dc_ir=139675.9 ac_ir=757.0 pi=0.0054 q=0.52 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.82
+[RAW] seq=724 ts=36232 red=122041 ir=140004
+[RAW] seq=728 ts=36432 red=121928 ir=139865
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.52 dc_ir=139694.4 ac_ir=795.0 pi=0.0057 q=0.52 hr_valid=0 hr=0.00 spo2_valid=1 spo2=88.01
+[RAW] seq=732 ts=36632 red=121632 ir=139508
+[RAW] seq=736 ts=36832 red=121770 ir=139667
+[RAW] seq=740 ts=37032 red=121633 ir=139614
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.52 dc_ir=139693.0 ac_ir=795.0 pi=0.0057 q=0.52 hr_valid=0 hr=0.00 spo2_valid=1 spo2=88.74
+[RAW] seq=744 ts=37232 red=122356 ir=140126
+[RAW] seq=748 ts=37432 red=122447 ir=140187
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.54 dc_ir=139728.5 ac_ir=1002.0 pi=0.0072 q=0.54 hr_valid=0 hr=0.00 spo2_valid=1 spo2=84.29
+[RAW] seq=752 ts=37632 red=122437 ir=140157
+[RAW] seq=756 ts=37832 red=122118 ir=139751
+[RAW] seq=760 ts=38032 red=122258 ir=139903
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.54 dc_ir=139751.2 ac_ir=1002.0 pi=0.0072 q=0.54 hr_valid=1 hr=46.15 spo2_valid=1 spo2=82.40
+[RAW] seq=764 ts=38232 red=122413 ir=140059
+[RAW] seq=768 ts=38432 red=122753 ir=140486
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=139809.0 ac_ir=1387.0 pi=0.0099 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=81.34
+[RAW] seq=772 ts=38632 red=122858 ir=140619
+[RAW] seq=776 ts=38832 red=122965 ir=140632
+[RAW] seq=780 ts=39032 red=123146 ir=140899
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.63 dc_ir=139895.5 ac_ir=1623.0 pi=0.0116 q=0.63 hr_valid=0 hr=0.00 spo2_valid=1 spo2=81.19
+[RAW] seq=784 ts=39232 red=123275 ir=141062
+[RAW] seq=788 ts=39432 red=123482 ir=141316
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.70 dc_ir=140012.4 ac_ir=2094.0 pi=0.0150 q=0.70 hr_valid=0 hr=0.00 spo2_valid=1 spo2=82.87
+[RAW] seq=792 ts=39632 red=123486 ir=141318
+[RAW] seq=796 ts=39832 red=123517 ir=141373
+[RAW] seq=800 ts=40032 red=123597 ir=141401
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.71 dc_ir=140138.6 ac_ir=2125.0 pi=0.0152 q=0.71 hr_valid=1 hr=88.89 spo2_valid=1 spo2=83.52
+[RAW] seq=804 ts=40232 red=123634 ir=141459
+[RAW] seq=808 ts=40432 red=123637 ir=141419
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.72 dc_ir=140268.7 ac_ir=2202.0 pi=0.0157 q=0.72 hr_valid=1 hr=150.00 spo2_valid=1 spo2=83.78
+[RAW] seq=812 ts=40632 red=123555 ir=141316
+[RAW] seq=816 ts=40832 red=123512 ir=141285
+[RAW] seq=820 ts=41032 red=123417 ir=141156
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.72 dc_ir=140386.2 ac_ir=2202.0 pi=0.0157 q=0.72 hr_valid=1 hr=150.00 spo2_valid=1 spo2=83.89
+[RAW] seq=824 ts=41232 red=123315 ir=141026
+[RAW] seq=828 ts=41432 red=123488 ir=141278
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.71 dc_ir=140505.8 ac_ir=2152.0 pi=0.0153 q=0.71 hr_valid=1 hr=150.00 spo2_valid=1 spo2=83.71
+[RAW] seq=832 ts=41632 red=123506 ir=141334
+[RAW] seq=836 ts=41832 red=123536 ir=141366
+[RAW] seq=840 ts=42032 red=123367 ir=141118
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.71 dc_ir=140628.6 ac_ir=2152.0 pi=0.0153 q=0.71 hr_valid=1 hr=78.26 spo2_valid=1 spo2=83.97
+[RAW] seq=844 ts=42232 red=123333 ir=141111
+[RAW] seq=848 ts=42432 red=123329 ir=141111
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.71 dc_ir=140719.5 ac_ir=2152.0 pi=0.0153 q=0.71 hr_valid=1 hr=78.26 spo2_valid=1 spo2=84.34
+[RAW] seq=852 ts=42632 red=123280 ir=141064
+[RAW] seq=856 ts=42832 red=123311 ir=141113
+[RAW] seq=860 ts=43032 red=123335 ir=141125
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.71 dc_ir=140818.2 ac_ir=2152.0 pi=0.0153 q=0.71 hr_valid=1 hr=78.26 spo2_valid=1 spo2=85.04
+[RAW] seq=864 ts=43232 red=123379 ir=141197
+[RAW] seq=868 ts=43432 red=123333 ir=141149
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.66 dc_ir=140939.9 ac_ir=1756.0 pi=0.0125 q=0.66 hr_valid=1 hr=78.26 spo2_valid=1 spo2=86.33
+[RAW] seq=872 ts=43632 red=123374 ir=141209
+[RAW] seq=876 ts=43832 red=123488 ir=141386
+[RAW] seq=880 ts=44032 red=123480 ir=141357
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.66 dc_ir=141029.0 ac_ir=1756.0 pi=0.0125 q=0.66 hr_valid=0 hr=0.00 spo2_valid=1 spo2=86.75
+[RAW] seq=884 ts=44232 red=123590 ir=141524
+[RAW] seq=888 ts=44432 red=123585 ir=141523
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.62 dc_ir=141155.1 ac_ir=1514.0 pi=0.0107 q=0.62 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.23
+[RAW] seq=892 ts=44632 red=123606 ir=141574
+[RAW] seq=896 ts=44832 red=123522 ir=141402
+[RAW] seq=900 ts=45032 red=123624 ir=141503
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.57 dc_ir=141243.5 ac_ir=1111.0 pi=0.0079 q=0.57 hr_valid=0 hr=0.00 spo2_valid=1 spo2=89.05
+[RAW] seq=904 ts=45232 red=123561 ir=141453
+[RAW] seq=908 ts=45432 red=123527 ir=141369
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.49 dc_ir=141298.7 ac_ir=576.0 pi=0.0041 q=0.49 hr_valid=1 hr=92.31 spo2_valid=1 spo2=89.74
+[RAW] seq=912 ts=45632 red=123517 ir=141350
+[RAW] seq=916 ts=45832 red=123504 ir=141345
+[RAW] seq=920 ts=46032 red=123504 ir=141287
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.49 dc_ir=141305.1 ac_ir=569.0 pi=0.0040 q=0.49 hr_valid=1 hr=92.31 spo2_valid=1 spo2=89.86
+[RAW] seq=924 ts=46232 red=123430 ir=141167
+[RAW] seq=928 ts=46432 red=123438 ir=141131
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.49 dc_ir=141291.6 ac_ir=569.0 pi=0.0040 q=0.49 hr_valid=1 hr=92.31 spo2_valid=1 spo2=90.34
+[RAW] seq=932 ts=46632 red=123439 ir=141083
+[RAW] seq=936 ts=46832 red=123461 ir=141123
+[RAW] seq=940 ts=47032 red=123442 ir=141108
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.49 dc_ir=141269.3 ac_ir=569.0 pi=0.0040 q=0.49 hr_valid=1 hr=92.31 spo2_valid=1 spo2=91.58
+[RAW] seq=944 ts=47232 red=123438 ir=141062
+[RAW] seq=948 ts=47432 red=123509 ir=141156
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.49 dc_ir=141259.9 ac_ir=569.0 pi=0.0040 q=0.49 hr_valid=1 hr=92.31 spo2_valid=1 spo2=92.08
+[RAW] seq=952 ts=47632 red=123452 ir=141088
+[RAW] seq=956 ts=47832 red=123387 ir=140935
+[RAW] seq=960 ts=48032 red=123303 ir=140825
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.52 dc_ir=141243.4 ac_ir=766.0 pi=0.0054 q=0.52 hr_valid=1 hr=92.31 spo2_valid=1 spo2=93.14
+[RAW] seq=964 ts=48232 red=123249 ir=140754
+[RAW] seq=968 ts=48432 red=123154 ir=140639
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.55 dc_ir=141198.7 ac_ir=985.0 pi=0.0070 q=0.55 hr_valid=1 hr=92.31 spo2_valid=1 spo2=94.13
+[RAW] seq=972 ts=48632 red=123163 ir=140589
+[RAW] seq=976 ts=48832 red=123146 ir=140547
+[RAW] seq=980 ts=49032 red=123085 ir=140434
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.58 dc_ir=141156.2 ac_ir=1157.0 pi=0.0082 q=0.58 hr_valid=1 hr=92.31 spo2_valid=1 spo2=94.78
+[RAW] seq=984 ts=49232 red=122976 ir=140323
+[RAW] seq=988 ts=49432 red=123035 ir=140401
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.61 dc_ir=141094.2 ac_ir=1329.0 pi=0.0094 q=0.61 hr_valid=1 hr=92.31 spo2_valid=1 spo2=94.64
+[RAW] seq=992 ts=49632 red=122926 ir=140228
+[RAW] seq=996 ts=49832 red=122959 ir=140295
+[RAW] seq=1000 ts=50032 red=122993 ir=140345
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.61 dc_ir=141021.8 ac_ir=1391.0 pi=0.0099 q=0.61 hr_valid=1 hr=92.31 spo2_valid=1 spo2=94.24
+[RAW] seq=1004 ts=50232 red=123049 ir=140444
+[RAW] seq=1008 ts=50432 red=123154 ir=140578
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.61 dc_ir=140952.4 ac_ir=1391.0 pi=0.0099 q=0.61 hr_valid=1 hr=150.00 spo2_valid=1 spo2=94.04
+[RAW] seq=1012 ts=50632 red=123244 ir=140708
+[RAW] seq=1016 ts=50832 red=123372 ir=140865
+[RAW] seq=1020 ts=51032 red=123440 ir=140939
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.61 dc_ir=140899.2 ac_ir=1391.0 pi=0.0099 q=0.61 hr_valid=0 hr=0.00 spo2_valid=1 spo2=93.79
+[RAW] seq=1024 ts=51232 red=123476 ir=141017
+[RAW] seq=1028 ts=51432 red=123404 ir=140920
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=140855.8 ac_ir=1323.0 pi=0.0094 q=0.60 hr_valid=1 hr=120.00 spo2_valid=1 spo2=93.34
+[RAW] seq=1032 ts=51632 red=123203 ir=140677
+[RAW] seq=1036 ts=51832 red=123243 ir=140687
+[RAW] seq=1040 ts=52032 red=123204 ir=140567
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.58 dc_ir=140796.9 ac_ir=1145.0 pi=0.0081 q=0.58 hr_valid=1 hr=102.86 spo2_valid=1 spo2=92.93
+[RAW] seq=1044 ts=52232 red=123149 ir=140506
+[RAW] seq=1048 ts=52432 red=123097 ir=140480
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.55 dc_ir=140733.5 ac_ir=994.0 pi=0.0071 q=0.55 hr_valid=1 hr=120.00 spo2_valid=1 spo2=92.39
+[RAW] seq=1052 ts=52632 red=123030 ir=140346
+[RAW] seq=1056 ts=52832 red=122941 ir=140204
+[RAW] seq=1060 ts=53032 red=122928 ir=140123
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.57 dc_ir=140660.5 ac_ir=1078.0 pi=0.0077 q=0.57 hr_valid=1 hr=85.71 spo2_valid=1 spo2=92.09
+[RAW] seq=1064 ts=53232 red=122899 ir=140091
+[RAW] seq=1068 ts=53432 red=122910 ir=140082
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.57 dc_ir=140582.4 ac_ir=1112.0 pi=0.0079 q=0.57 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.96
+[RAW] seq=1072 ts=53632 red=122900 ir=140078
+[RAW] seq=1076 ts=53832 red=122938 ir=140157
+[RAW] seq=1080 ts=54032 red=122981 ir=140113
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.55 dc_ir=140505.0 ac_ir=989.0 pi=0.0070 q=0.55 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.02
+[RAW] seq=1084 ts=54232 red=122958 ir=140079
+[RAW] seq=1088 ts=54432 red=123080 ir=140272
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.56 dc_ir=140450.0 ac_ir=1029.0 pi=0.0073 q=0.56 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.19
+[RAW] seq=1092 ts=54632 red=123212 ir=140477
+[RAW] seq=1096 ts=54832 red=123334 ir=140589
+[RAW] seq=1100 ts=55032 red=123378 ir=140684
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.56 dc_ir=140443.7 ac_ir=1029.0 pi=0.0073 q=0.56 hr_valid=1 hr=92.31 spo2_valid=1 spo2=91.43
+[RAW] seq=1104 ts=55232 red=123536 ir=140927
+[RAW] seq=1108 ts=55432 red=123603 ir=141031
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.55 dc_ir=140475.5 ac_ir=1030.0 pi=0.0073 q=0.55 hr_valid=0 hr=0.00 spo2_valid=1 spo2=90.38
+[RAW] seq=1112 ts=55632 red=123628 ir=141089
+[RAW] seq=1116 ts=55832 red=123507 ir=140923
+[RAW] seq=1120 ts=56032 red=123618 ir=141100
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.56 dc_ir=140530.7 ac_ir=1077.0 pi=0.0077 q=0.56 hr_valid=0 hr=0.00 spo2_valid=1 spo2=90.28
+[RAW] seq=1124 ts=56232 red=123516 ir=140902
+[RAW] seq=1128 ts=56432 red=123602 ir=141031
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.56 dc_ir=140587.4 ac_ir=1084.0 pi=0.0077 q=0.56 hr_valid=1 hr=120.00 spo2_valid=1 spo2=90.24
+[RAW] seq=1132 ts=56632 red=123498 ir=140895
+[RAW] seq=1136 ts=56832 red=123351 ir=140696
+[RAW] seq=1140 ts=57032 red=123315 ir=140656
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.56 dc_ir=140602.1 ac_ir=1084.0 pi=0.0077 q=0.56 hr_valid=1 hr=133.33 spo2_valid=1 spo2=90.30
+[RAW] seq=1144 ts=57232 red=123092 ir=140313
+[RAW] seq=1148 ts=57432 red=122932 ir=139993
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.63 dc_ir=140541.7 ac_ir=1506.0 pi=0.0107 q=0.63 hr_valid=1 hr=133.33 spo2_valid=1 spo2=90.45
+[RAW] seq=1152 ts=57632 red=122704 ir=139536
+[RAW] seq=1156 ts=57832 red=122568 ir=139386
+[RAW] seq=1160 ts=58032 red=122481 ir=139269
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.71 dc_ir=140423.8 ac_ir=2011.0 pi=0.0143 q=0.71 hr_valid=1 hr=133.33 spo2_valid=1 spo2=91.16
+[RAW] seq=1164 ts=58232 red=122696 ir=139538
+[RAW] seq=1168 ts=58432 red=122732 ir=139502
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.71 dc_ir=140335.8 ac_ir=2011.0 pi=0.0143 q=0.71 hr_valid=1 hr=133.33 spo2_valid=1 spo2=91.70
+[RAW] seq=1172 ts=58632 red=122908 ir=139866
+[RAW] seq=1176 ts=58832 red=122808 ir=139671
+[RAW] seq=1180 ts=59032 red=122762 ir=139588
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.71 dc_ir=140276.9 ac_ir=2011.0 pi=0.0143 q=0.71 hr_valid=1 hr=133.33 spo2_valid=1 spo2=91.95
+[RAW] seq=1184 ts=59232 red=122750 ir=139626
+[RAW] seq=1188 ts=59432 red=122727 ir=139553
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.71 dc_ir=140230.0 ac_ir=2011.0 pi=0.0143 q=0.71 hr_valid=1 hr=133.33 spo2_valid=1 spo2=92.22
+[RAW] seq=1192 ts=59632 red=123073 ir=140119
+[RAW] seq=1196 ts=59832 red=116950 ir=131125
+[RAW] seq=1200 ts=60032 red=816 ir=609
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=135972.8 ac_ir=140498.0 pi=1.0333 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.07
+[RAW] seq=1204 ts=60232 red=1135 ir=457
+[RAW] seq=1208 ts=60432 red=841 ir=336
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=125059.1 ac_ir=140821.0 pi=1.1260 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.09
+[RAW] seq=1212 ts=60632 red=775 ir=491
+[RAW] seq=1216 ts=60832 red=802 ir=533
+[RAW] seq=1220 ts=61032 red=912 ir=731
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=114143.6 ac_ir=140821.0 pi=1.2337 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.08
+[RAW] seq=1224 ts=61232 red=1340 ir=1569
+[RAW] seq=1228 ts=61432 red=1393 ir=1591
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=103270.4 ac_ir=140821.0 pi=1.3636 q=0.60 hr_valid=1 hr=103.70 spo2_valid=1 spo2=87.06
+[RAW] seq=1232 ts=61632 red=1432 ir=1546
+[RAW] seq=1236 ts=61832 red=1442 ir=1507
+[RAW] seq=1240 ts=62032 red=1460 ir=1512
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=92375.3 ac_ir=140821.0 pi=1.5244 q=0.60 hr_valid=1 hr=101.41 spo2_valid=1 spo2=87.06
+[RAW] seq=1244 ts=62232 red=1464 ir=1526
+[RAW] seq=1248 ts=62432 red=1478 ir=1523
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=81477.1 ac_ir=140745.0 pi=1.7274 q=0.60 hr_valid=1 hr=95.24 spo2_valid=1 spo2=87.06
+[RAW] seq=1252 ts=62632 red=1471 ir=1541
+[RAW] seq=1256 ts=62832 red=1473 ir=1551
+[RAW] seq=1260 ts=63032 red=1443 ir=1518
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=70584.2 ac_ir=140477.0 pi=1.9902 q=0.60 hr_valid=1 hr=123.08 spo2_valid=1 spo2=87.06
+[RAW] seq=1264 ts=63232 red=1432 ir=1491
+[RAW] seq=1268 ts=63432 red=1412 ir=1450
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=59713.2 ac_ir=140046.0 pi=2.3453 q=0.60 hr_valid=1 hr=123.08 spo2_valid=1 spo2=87.07
+[RAW] seq=1272 ts=63632 red=1381 ir=1410
+[RAW] seq=1276 ts=63832 red=1379 ir=1368
+[RAW] seq=1280 ts=64032 red=1351 ir=1356
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=48886.5 ac_ir=140046.0 pi=2.8647 q=0.60 hr_valid=1 hr=138.46 spo2_valid=1 spo2=87.08
+[RAW] seq=1284 ts=64232 red=1313 ir=1332
+[RAW] seq=1288 ts=64432 red=1346 ir=1426
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=38101.4 ac_ir=140046.0 pi=3.6756 q=0.60 hr_valid=1 hr=138.46 spo2_valid=1 spo2=87.10
+[RAW] seq=1292 ts=64632 red=1328 ir=1392
+[RAW] seq=1296 ts=64832 red=1322 ir=1417
+[RAW] seq=1300 ts=65032 red=1322 ir=1375
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=27307.9 ac_ir=140046.0 pi=5.1284 q=0.60 hr_valid=1 hr=120.00 spo2_valid=1 spo2=87.14
+[RAW] seq=1304 ts=65232 red=1278 ir=1341
+[RAW] seq=1308 ts=65432 red=1276 ir=1286
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=16498.9 ac_ir=140046.0 pi=8.4882 q=0.60 hr_valid=1 hr=171.43 spo2_valid=1 spo2=87.22
+[RAW] seq=1312 ts=65632 red=1238 ir=1188
+[RAW] seq=1316 ts=65832 red=1132 ir=1087
+[RAW] seq=1320 ts=66032 red=1037 ir=935
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=5673.3 ac_ir=140046.0 pi=24.6850 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.60
+[RAW] seq=1324 ts=66232 red=984 ir=889
+[RAW] seq=1328 ts=66432 red=998 ir=887
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1233.7 ac_ir=1755.0 pi=1.4226 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=94.44
+[RAW] seq=1332 ts=66632 red=1009 ir=907
+[RAW] seq=1336 ts=66832 red=1026 ir=911
+[RAW] seq=1340 ts=67032 red=990 ir=893
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1272.5 ac_ir=1558.0 pi=1.2244 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.65
+[RAW] seq=1344 ts=67232 red=997 ir=907
+[RAW] seq=1348 ts=67432 red=987 ir=908
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1292.7 ac_ir=1165.0 pi=0.9012 q=0.60 hr_valid=1 hr=88.89 spo2_valid=1 spo2=92.09
+[RAW] seq=1352 ts=67632 red=968 ir=920
+[RAW] seq=1356 ts=67832 red=944 ir=907
+[RAW] seq=1360 ts=68032 red=935 ir=924
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1240.6 ac_ir=687.0 pi=0.5538 q=0.60 hr_valid=1 hr=65.45 spo2_valid=1 spo2=91.23
+[RAW] seq=1364 ts=68232 red=914 ir=923
+[RAW] seq=1368 ts=68432 red=914 ir=933
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1194.5 ac_ir=687.0 pi=0.5751 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=90.68
+[RAW] seq=1372 ts=68632 red=916 ir=930
+[RAW] seq=1376 ts=68832 red=914 ir=952
+[RAW] seq=1380 ts=69032 red=923 ir=1001
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1149.3 ac_ir=687.0 pi=0.5977 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=90.13
+[RAW] seq=1384 ts=69232 red=938 ir=1024
+[RAW] seq=1388 ts=69432 red=936 ir=1058
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1111.0 ac_ir=615.0 pi=0.5536 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=89.36
+[RAW] seq=1392 ts=69632 red=938 ir=1079
+[RAW] seq=1396 ts=69832 red=954 ir=1079
+[RAW] seq=1400 ts=70032 red=957 ir=1088
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1082.0 ac_ir=553.0 pi=0.5111 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=88.78
+[RAW] seq=1404 ts=70232 red=995 ir=1113
+[RAW] seq=1408 ts=70432 red=1034 ir=1118
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1062.8 ac_ir=553.0 pi=0.5203 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=89.08
+[RAW] seq=1412 ts=70632 red=1072 ir=1116
+[RAW] seq=1416 ts=70832 red=1088 ir=1124
+[RAW] seq=1420 ts=71032 red=1112 ir=1119
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1045.1 ac_ir=553.0 pi=0.5291 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=89.50
+[RAW] seq=1424 ts=71232 red=1106 ir=1126
+[RAW] seq=1428 ts=71432 red=1108 ir=1114
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1024.2 ac_ir=465.0 pi=0.4540 q=0.60 hr_valid=1 hr=184.62 spo2_valid=1 spo2=89.43
+[RAW] seq=1432 ts=71632 red=1126 ir=1126
+[RAW] seq=1436 ts=71832 red=1009 ir=1112
+[RAW] seq=1440 ts=72032 red=1054 ir=1168
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1012.3 ac_ir=292.0 pi=0.2885 q=0.60 hr_valid=1 hr=141.18 spo2_valid=1 spo2=91.34
+[RAW] seq=1444 ts=72232 red=1107 ir=1218
+[RAW] seq=1448 ts=72432 red=1119 ir=1225
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1026.5 ac_ir=351.0 pi=0.3419 q=0.60 hr_valid=1 hr=129.73 spo2_valid=1 spo2=92.73
+[RAW] seq=1452 ts=72632 red=1143 ir=1212
+[RAW] seq=1456 ts=72832 red=1211 ir=1244
+[RAW] seq=1460 ts=73032 red=1224 ir=1262
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1053.3 ac_ir=378.0 pi=0.3589 q=0.60 hr_valid=1 hr=200.00 spo2_valid=1 spo2=90.78
+[RAW] seq=1464 ts=73232 red=1210 ir=1231
+[RAW] seq=1468 ts=73432 red=1236 ir=1255
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1080.3 ac_ir=378.0 pi=0.3499 q=0.60 hr_valid=1 hr=156.52 spo2_valid=1 spo2=88.46
+[RAW] seq=1472 ts=73632 red=1214 ir=1239
+[RAW] seq=1476 ts=73832 red=1202 ir=1232
+[RAW] seq=1480 ts=74032 red=1194 ir=1223
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1106.1 ac_ir=361.0 pi=0.3264 q=0.60 hr_valid=1 hr=145.45 spo2_valid=1 spo2=86.01
+[RAW] seq=1484 ts=74232 red=1197 ir=1221
+[RAW] seq=1488 ts=74432 red=1165 ir=1203
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1129.0 ac_ir=342.0 pi=0.3029 q=0.60 hr_valid=1 hr=153.85 spo2_valid=1 spo2=83.82
+[RAW] seq=1492 ts=74632 red=1192 ir=1195
+[RAW] seq=1496 ts=74832 red=1175 ir=1190
+[RAW] seq=1500 ts=75032 red=1181 ir=1188
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1149.5 ac_ir=318.0 pi=0.2766 q=0.60 hr_valid=1 hr=145.45 spo2_valid=1 spo2=80.69
+[RAW] seq=1504 ts=75232 red=1176 ir=1189
+[RAW] seq=1508 ts=75432 red=1195 ir=1200
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1166.3 ac_ir=243.0 pi=0.2083 q=0.60 hr_valid=1 hr=145.45 spo2_valid=1 spo2=76.68
+[RAW] seq=1512 ts=75632 red=1166 ir=1129
+[RAW] seq=1516 ts=75832 red=1062 ir=949
+[RAW] seq=1520 ts=76032 red=1050 ir=932
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1162.7 ac_ir=331.0 pi=0.2847 q=0.60 hr_valid=1 hr=133.33 spo2_valid=1 spo2=84.24
+[RAW] seq=1524 ts=76232 red=1056 ir=902
+[RAW] seq=1528 ts=76432 red=1027 ir=920
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1148.9 ac_ir=367.0 pi=0.3194 q=0.60 hr_valid=1 hr=150.00 spo2_valid=1 spo2=91.40
+[RAW] seq=1532 ts=76632 red=1040 ir=914
+[RAW] seq=1536 ts=76832 red=1042 ir=905
+[RAW] seq=1540 ts=77032 red=1066 ir=984
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1133.9 ac_ir=367.0 pi=0.3237 q=0.60 hr_valid=1 hr=153.85 spo2_valid=1 spo2=93.58
+[RAW] seq=1544 ts=77232 red=1045 ir=953
+[RAW] seq=1548 ts=77432 red=1031 ir=961
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1121.0 ac_ir=367.0 pi=0.3274 q=0.60 hr_valid=1 hr=156.52 spo2_valid=1 spo2=93.96
+[RAW] seq=1552 ts=77632 red=1015 ir=981
+[RAW] seq=1556 ts=77832 red=996 ir=995
+[RAW] seq=1560 ts=78032 red=971 ir=979
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1109.6 ac_ir=367.0 pi=0.3307 q=0.60 hr_valid=1 hr=154.84 spo2_valid=1 spo2=93.37
+[RAW] seq=1564 ts=78232 red=964 ir=1001
+[RAW] seq=1568 ts=78432 red=970 ir=991
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1098.1 ac_ir=367.0 pi=0.3342 q=0.60 hr_valid=1 hr=154.84 spo2_valid=1 spo2=93.00
+[RAW] seq=1572 ts=78632 red=960 ir=992
+[RAW] seq=1576 ts=78832 red=954 ir=1042
+[RAW] seq=1580 ts=79032 red=938 ir=1068
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1084.3 ac_ir=367.0 pi=0.3385 q=0.60 hr_valid=1 hr=153.19 spo2_valid=1 spo2=91.51
+[RAW] seq=1584 ts=79232 red=976 ir=1136
+[RAW] seq=1588 ts=79432 red=966 ir=1134
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1072.7 ac_ir=363.0 pi=0.3384 q=0.60 hr_valid=1 hr=153.85 spo2_valid=1 spo2=90.41
+[RAW] seq=1592 ts=79632 red=939 ir=942
+[RAW] seq=1596 ts=79832 red=927 ir=970
+[RAW] seq=1600 ts=80032 red=943 ir=992
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1050.5 ac_ir=344.0 pi=0.3275 q=0.60 hr_valid=1 hr=154.84 spo2_valid=1 spo2=89.78
+[RAW] seq=1604 ts=80232 red=951 ir=983
+[RAW] seq=1608 ts=80432 red=926 ir=1045
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1033.2 ac_ir=332.0 pi=0.3213 q=0.60 hr_valid=1 hr=150.00 spo2_valid=1 spo2=88.83
+[RAW] seq=1612 ts=80632 red=943 ir=1067
+[RAW] seq=1616 ts=80832 red=986 ir=1095
+[RAW] seq=1620 ts=81032 red=969 ir=1116
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1024.9 ac_ir=310.0 pi=0.3025 q=0.60 hr_valid=1 hr=58.54 spo2_valid=1 spo2=88.66
+[RAW] seq=1624 ts=81232 red=983 ir=1153
+[RAW] seq=1628 ts=81432 red=1033 ir=1197
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1022.8 ac_ir=308.0 pi=0.3011 q=0.60 hr_valid=1 hr=36.36 spo2_valid=1 spo2=90.69
+[RAW] seq=1632 ts=81632 red=1077 ir=1212
+[RAW] seq=1636 ts=81832 red=1109 ir=1217
+[RAW] seq=1640 ts=82032 red=1126 ir=1209
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1024.8 ac_ir=322.0 pi=0.3142 q=0.60 hr_valid=1 hr=69.23 spo2_valid=1 spo2=93.88
+[RAW] seq=1644 ts=82232 red=1154 ir=1201
+[RAW] seq=1648 ts=82432 red=1171 ir=1203
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1043.7 ac_ir=322.0 pi=0.3085 q=0.60 hr_valid=1 hr=81.36 spo2_valid=1 spo2=92.52
+[RAW] seq=1652 ts=82632 red=1180 ir=1194
+[RAW] seq=1656 ts=82832 red=1196 ir=1197
+[RAW] seq=1660 ts=83032 red=1205 ir=1229
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1066.5 ac_ir=326.0 pi=0.3057 q=0.60 hr_valid=1 hr=180.00 spo2_valid=1 spo2=89.61
+[RAW] seq=1664 ts=83232 red=1190 ir=1208
+[RAW] seq=1668 ts=83432 red=1207 ir=1238
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1088.2 ac_ir=319.0 pi=0.2931 q=0.60 hr_valid=1 hr=171.43 spo2_valid=1 spo2=87.22
+[RAW] seq=1672 ts=83632 red=1198 ir=1236
+[RAW] seq=1676 ts=83832 red=1216 ir=1270
+[RAW] seq=1680 ts=84032 red=1227 ir=1264
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1110.7 ac_ir=351.0 pi=0.3160 q=0.60 hr_valid=1 hr=167.44 spo2_valid=1 spo2=85.31
+[RAW] seq=1684 ts=84232 red=1209 ir=1250
+[RAW] seq=1688 ts=84432 red=1213 ir=1267
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1132.1 ac_ir=351.0 pi=0.3100 q=0.60 hr_valid=1 hr=147.37 spo2_valid=1 spo2=83.72
+[RAW] seq=1692 ts=84632 red=1209 ir=1241
+[RAW] seq=1696 ts=84832 red=1224 ir=1247
+[RAW] seq=1700 ts=85032 red=1208 ir=1219
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1151.0 ac_ir=351.0 pi=0.3050 q=0.60 hr_valid=1 hr=163.64 spo2_valid=1 spo2=82.16
+[RAW] seq=1704 ts=85232 red=1218 ir=1197
+[RAW] seq=1708 ts=85432 red=1192 ir=1189
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1161.9 ac_ir=351.0 pi=0.3021 q=0.60 hr_valid=1 hr=171.43 spo2_valid=1 spo2=81.89
+[RAW] seq=1712 ts=85632 red=1188 ir=1170
+[RAW] seq=1716 ts=85832 red=1203 ir=1173
+[RAW] seq=1720 ts=86032 red=1172 ir=1162
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1170.2 ac_ir=351.0 pi=0.3000 q=0.60 hr_valid=1 hr=171.43 spo2_valid=1 spo2=81.44
+[RAW] seq=1724 ts=86232 red=1180 ir=1143
+[RAW] seq=1728 ts=86432 red=1146 ir=1130
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1183.1 ac_ir=291.0 pi=0.2460 q=0.60 hr_valid=1 hr=171.43 spo2_valid=1 spo2=77.68
+[RAW] seq=1732 ts=86632 red=1146 ir=1087
+[RAW] seq=1736 ts=86832 red=1126 ir=1077
+[RAW] seq=1740 ts=87032 red=1124 ir=1074
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1187.3 ac_ir=219.0 pi=0.1844 q=0.60 hr_valid=1 hr=171.43 spo2_valid=1 spo2=79.54
+[RAW] seq=1744 ts=87232 red=1104 ir=1075
+[RAW] seq=1748 ts=87432 red=1082 ir=1085
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1184.1 ac_ir=219.0 pi=0.1849 q=0.60 hr_valid=1 hr=171.43 spo2_valid=1 spo2=86.81
+[RAW] seq=1752 ts=87632 red=1039 ir=1066
+[RAW] seq=1756 ts=87832 red=1178 ir=1136
+[RAW] seq=1760 ts=88032 red=1161 ir=1127
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1177.9 ac_ir=219.0 pi=0.1859 q=0.60 hr_valid=1 hr=163.64 spo2_valid=1 spo2=90.90
+[RAW] seq=1764 ts=88232 red=1158 ir=1129
+[RAW] seq=1768 ts=88432 red=1135 ir=1078
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1171.9 ac_ir=219.0 pi=0.1869 q=0.60 hr_valid=1 hr=160.00 spo2_valid=1 spo2=92.06
+[RAW] seq=1772 ts=88632 red=1124 ir=1107
+[RAW] seq=1776 ts=88832 red=1090 ir=1074
+[RAW] seq=1780 ts=89032 red=1076 ir=1064
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1162.7 ac_ir=219.0 pi=0.1884 q=0.60 hr_valid=1 hr=160.00 spo2_valid=1 spo2=91.48
+[RAW] seq=1784 ts=89232 red=1106 ir=1068
+[RAW] seq=1788 ts=89432 red=1105 ir=1083
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1152.4 ac_ir=219.0 pi=0.1900 q=0.60 hr_valid=1 hr=163.64 spo2_valid=1 spo2=91.29
+[RAW] seq=1792 ts=89632 red=1062 ir=1105
+[RAW] seq=1796 ts=89832 red=1038 ir=1104
+[RAW] seq=1800 ts=90032 red=1024 ir=1091
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1142.6 ac_ir=219.0 pi=0.1917 q=0.60 hr_valid=1 hr=171.43 spo2_valid=1 spo2=89.25
+[RAW] seq=1804 ts=90232 red=1028 ir=1103
+[RAW] seq=1808 ts=90432 red=994 ir=1086
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1129.0 ac_ir=253.0 pi=0.2241 q=0.60 hr_valid=1 hr=80.00 spo2_valid=1 spo2=85.43
+[RAW] seq=1812 ts=90632 red=740 ir=609
+[RAW] seq=1816 ts=90832 red=631 ir=395
+[RAW] seq=1820 ts=91032 red=649 ir=424
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1068.5 ac_ir=857.0 pi=0.8021 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.61
+[RAW] seq=1824 ts=91232 red=651 ir=452
+[RAW] seq=1828 ts=91432 red=655 ir=451
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1007.0 ac_ir=802.0 pi=0.7964 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.22
+[RAW] seq=1832 ts=91632 red=675 ir=493
+[RAW] seq=1836 ts=91832 red=678 ir=494
+[RAW] seq=1840 ts=92032 red=717 ir=610
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=955.2 ac_ir=797.0 pi=0.8344 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1844 ts=92232 red=746 ir=646
+[RAW] seq=1848 ts=92432 red=780 ir=658
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=914.4 ac_ir=762.0 pi=0.8333 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1852 ts=92632 red=800 ir=674
+[RAW] seq=1856 ts=92832 red=806 ir=676
+[RAW] seq=1860 ts=93032 red=827 ir=669
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=879.1 ac_ir=762.0 pi=0.8667 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1864 ts=93232 red=835 ir=656
+[RAW] seq=1868 ts=93432 red=842 ir=682
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=846.9 ac_ir=762.0 pi=0.8998 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1872 ts=93632 red=857 ir=682
+[RAW] seq=1876 ts=93832 red=871 ir=666
+[RAW] seq=1880 ts=94032 red=874 ir=684
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=815.8 ac_ir=762.0 pi=0.9341 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1884 ts=94232 red=859 ir=690
+[RAW] seq=1888 ts=94432 red=861 ir=685
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=782.2 ac_ir=756.0 pi=0.9665 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1892 ts=94632 red=866 ir=686
+[RAW] seq=1896 ts=94832 red=860 ir=700
+[RAW] seq=1900 ts=95032 red=864 ir=680
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=749.0 ac_ir=714.0 pi=0.9532 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1904 ts=95232 red=861 ir=694
+[RAW] seq=1908 ts=95432 red=874 ir=690
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=718.6 ac_ir=714.0 pi=0.9936 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1912 ts=95632 red=867 ir=663
+[RAW] seq=1916 ts=95832 red=852 ir=673
+[RAW] seq=1920 ts=96032 red=859 ir=666
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=686.3 ac_ir=714.0 pi=1.0404 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1924 ts=96232 red=842 ir=628
+[RAW] seq=1928 ts=96432 red=849 ir=623
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=650.4 ac_ir=714.0 pi=1.0977 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1932 ts=96632 red=862 ir=682
+[RAW] seq=1936 ts=96832 red=876 ir=673
+[RAW] seq=1940 ts=97032 red=862 ir=719
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=625.5 ac_ir=324.0 pi=0.5180 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1944 ts=97232 red=853 ir=682
+[RAW] seq=1948 ts=97432 red=873 ir=667
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=645.8 ac_ir=296.0 pi=0.4583 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1952 ts=97632 red=838 ir=658
+[RAW] seq=1956 ts=97832 red=860 ir=647
+[RAW] seq=1960 ts=98032 red=890 ir=627
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=660.6 ac_ir=240.0 pi=0.3633 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1964 ts=98232 red=861 ir=632
+[RAW] seq=1968 ts=98432 red=862 ir=601
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=665.7 ac_ir=123.0 pi=0.1848 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1972 ts=98632 red=841 ir=603
+[RAW] seq=1976 ts=98832 red=808 ir=593
+[RAW] seq=1980 ts=99032 red=819 ir=554
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=660.7 ac_ir=165.0 pi=0.2498 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1984 ts=99232 red=803 ir=571
+[RAW] seq=1988 ts=99432 red=783 ir=541
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=650.9 ac_ir=183.0 pi=0.2811 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=1992 ts=99632 red=798 ir=537
+[RAW] seq=1996 ts=99832 red=778 ir=522
+[RAW] seq=2000 ts=100032 red=752 ir=545
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=640.8 ac_ir=200.0 pi=0.3121 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2004 ts=100232 red=735 ir=525
+[RAW] seq=2008 ts=100432 red=732 ir=529
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=629.8 ac_ir=200.0 pi=0.3176 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2012 ts=100632 red=708 ir=564
+[RAW] seq=2016 ts=100832 red=690 ir=547
+[RAW] seq=2020 ts=101032 red=718 ir=554
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=619.5 ac_ir=200.0 pi=0.3229 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2024 ts=101232 red=722 ir=594
+[RAW] seq=2028 ts=101432 red=708 ir=604
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=612.0 ac_ir=200.0 pi=0.3268 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2032 ts=101632 red=729 ir=630
+[RAW] seq=2036 ts=101832 red=726 ir=638
+[RAW] seq=2040 ts=102032 red=727 ir=651
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=608.7 ac_ir=200.0 pi=0.3285 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2044 ts=102232 red=719 ir=660
+[RAW] seq=2048 ts=102432 red=762 ir=704
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=610.0 ac_ir=200.0 pi=0.3279 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2052 ts=102632 red=768 ir=719
+[RAW] seq=2056 ts=102832 red=813 ir=737
+[RAW] seq=2060 ts=103032 red=850 ir=766
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=617.4 ac_ir=247.0 pi=0.4001 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2064 ts=103232 red=841 ir=744
+[RAW] seq=2068 ts=103432 red=860 ir=729
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=621.2 ac_ir=247.0 pi=0.3976 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2072 ts=103632 red=840 ir=695
+[RAW] seq=2076 ts=103832 red=829 ir=668
+[RAW] seq=2080 ts=104032 red=840 ir=655
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=621.6 ac_ir=247.0 pi=0.3973 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2084 ts=104232 red=840 ir=656
+[RAW] seq=2088 ts=104432 red=824 ir=625
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=621.9 ac_ir=247.0 pi=0.3972 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2092 ts=104632 red=838 ir=637
+[RAW] seq=2096 ts=104832 red=820 ir=621
+[RAW] seq=2100 ts=105032 red=819 ir=622
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=623.8 ac_ir=247.0 pi=0.3959 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2104 ts=105232 red=800 ir=629
+[RAW] seq=2108 ts=105432 red=829 ir=605
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=626.8 ac_ir=247.0 pi=0.3940 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2112 ts=105632 red=837 ir=630
+[RAW] seq=2116 ts=105832 red=823 ir=654
+[RAW] seq=2120 ts=106032 red=845 ir=652
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=635.1 ac_ir=247.0 pi=0.3889 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2124 ts=106232 red=825 ir=654
+[RAW] seq=2128 ts=106432 red=803 ir=661
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=644.4 ac_ir=241.0 pi=0.3740 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2132 ts=106632 red=845 ir=623
+[RAW] seq=2136 ts=106832 red=855 ir=629
+[RAW] seq=2140 ts=107032 red=837 ir=650
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=652.3 ac_ir=219.0 pi=0.3357 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2144 ts=107232 red=821 ir=641
+[RAW] seq=2148 ts=107432 red=818 ir=628
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=658.3 ac_ir=189.0 pi=0.2871 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2152 ts=107632 red=830 ir=621
+[RAW] seq=2156 ts=107832 red=823 ir=622
+[RAW] seq=2160 ts=108032 red=800 ir=572
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=658.5 ac_ir=194.0 pi=0.2946 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2164 ts=108232 red=818 ir=548
+[RAW] seq=2168 ts=108432 red=1275 ir=773
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=656.4 ac_ir=250.0 pi=0.3809 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2172 ts=108632 red=914 ir=553
+[RAW] seq=2176 ts=108832 red=949 ir=585
+[RAW] seq=2180 ts=109032 red=956 ir=581
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=647.5 ac_ir=250.0 pi=0.3861 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2184 ts=109232 red=914 ir=534
+[RAW] seq=2188 ts=109432 red=832 ir=475
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=630.2 ac_ir=315.0 pi=0.4998 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2192 ts=109632 red=832 ir=485
+[RAW] seq=2196 ts=109832 red=842 ir=483
+[RAW] seq=2200 ts=110032 red=813 ir=456
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=609.8 ac_ir=340.0 pi=0.5576 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2204 ts=110232 red=817 ir=447
+[RAW] seq=2208 ts=110432 red=804 ir=429
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=592.3 ac_ir=365.0 pi=0.6162 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2212 ts=110632 red=796 ir=432
+[RAW] seq=2216 ts=110832 red=801 ir=400
+[RAW] seq=2220 ts=111032 red=782 ir=409
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=574.3 ac_ir=391.0 pi=0.6808 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2224 ts=111232 red=764 ir=402
+[RAW] seq=2228 ts=111432 red=774 ir=415
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=557.2 ac_ir=391.0 pi=0.7017 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2232 ts=111632 red=736 ir=423
+[RAW] seq=2236 ts=111832 red=746 ir=400
+[RAW] seq=2240 ts=112032 red=697 ir=384
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=540.4 ac_ir=404.0 pi=0.7476 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2244 ts=112232 red=659 ir=351
+[RAW] seq=2248 ts=112432 red=625 ir=351
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=517.3 ac_ir=460.0 pi=0.8892 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2252 ts=112632 red=572 ir=340
+[RAW] seq=2256 ts=112832 red=595 ir=374
+[RAW] seq=2260 ts=113032 red=612 ir=432
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=496.5 ac_ir=460.0 pi=0.9265 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2264 ts=113232 red=618 ir=475
+[RAW] seq=2268 ts=113432 red=618 ir=537
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=484.9 ac_ir=460.0 pi=0.9486 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2272 ts=113632 red=620 ir=551
+[RAW] seq=2276 ts=113832 red=646 ir=597
+[RAW] seq=2280 ts=114032 red=605 ir=591
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=481.7 ac_ir=460.0 pi=0.9549 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2284 ts=114232 red=642 ir=632
+[RAW] seq=2288 ts=114432 red=825 ir=486
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=475.4 ac_ir=489.0 pi=1.0286 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2292 ts=114632 red=665 ir=393
+[RAW] seq=2296 ts=114832 red=649 ir=451
+[RAW] seq=2300 ts=115032 red=685 ir=448
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=460.9 ac_ir=333.0 pi=0.7225 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2304 ts=115232 red=678 ir=451
+[RAW] seq=2308 ts=115432 red=677 ir=486
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=450.7 ac_ir=333.0 pi=0.7389 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2312 ts=115632 red=706 ir=492
+[RAW] seq=2316 ts=115832 red=719 ir=525
+[RAW] seq=2320 ts=116032 red=704 ir=507
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=451.2 ac_ir=333.0 pi=0.7381 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2324 ts=116232 red=700 ir=517
+[RAW] seq=2328 ts=116432 red=702 ir=518
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=454.7 ac_ir=333.0 pi=0.7324 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2332 ts=116632 red=742 ir=510
+[RAW] seq=2336 ts=116832 red=711 ir=504
+[RAW] seq=2340 ts=117032 red=741 ir=572
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=461.9 ac_ir=333.0 pi=0.7209 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2344 ts=117232 red=828 ir=664
+[RAW] seq=2348 ts=117432 red=894 ir=584
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=478.7 ac_ir=410.0 pi=0.8565 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2352 ts=117632 red=757 ir=513
+[RAW] seq=2356 ts=117832 red=766 ir=499
+[RAW] seq=2360 ts=118032 red=768 ir=495
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=485.1 ac_ir=410.0 pi=0.8452 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2364 ts=118232 red=815 ir=498
+[RAW] seq=2368 ts=118432 red=1243 ir=915
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=504.2 ac_ir=616.0 pi=1.2217 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2372 ts=118632 red=2075 ir=1872
+[RAW] seq=2376 ts=118832 red=16702 ir=18384
+[RAW] seq=2380 ts=119032 red=12718 ir=12809
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1170.4 ac_ir=18085.0 pi=15.4515 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=90.06
+[RAW] seq=2384 ts=119232 red=18584 ir=20917
+[RAW] seq=2388 ts=119432 red=68075 ir=67787
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=4873.1 ac_ir=132287.0 pi=27.1461 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=88.25
+[RAW] seq=2392 ts=119632 red=111635 ir=137455
+[RAW] seq=2396 ts=119832 red=113280 ir=138292
+[RAW] seq=2400 ts=120032 red=115202 ir=139764
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=15636.5 ac_ir=139465.0 pi=8.9192 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.64
+[RAW] seq=2404 ts=120232 red=116132 ir=140435
+[RAW] seq=2408 ts=120432 red=116679 ir=140827
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=26573.0 ac_ir=140790.0 pi=5.2982 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.41
+[RAW] seq=2412 ts=120632 red=117013 ir=140993
+[RAW] seq=2416 ts=120832 red=117333 ir=141066
+[RAW] seq=2420 ts=121032 red=117683 ir=141286
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=37555.7 ac_ir=140879.0 pi=3.7512 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.30
+[RAW] seq=2424 ts=121232 red=117855 ir=141486
+[RAW] seq=2428 ts=121432 red=117878 ir=141347
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=48567.0 ac_ir=141046.0 pi=2.9042 q=0.60 hr_valid=1 hr=92.31 spo2_valid=1 spo2=87.25
+[RAW] seq=2432 ts=121632 red=117866 ir=141193
+[RAW] seq=2436 ts=121832 red=117961 ir=141257
+[RAW] seq=2440 ts=122032 red=117820 ir=140976
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=59558.7 ac_ir=141012.0 pi=2.3676 q=0.60 hr_valid=1 hr=100.00 spo2_valid=1 spo2=87.21
+[RAW] seq=2444 ts=122232 red=117902 ir=141067
+[RAW] seq=2448 ts=122432 red=117854 ir=140964
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=70536.9 ac_ir=141012.0 pi=1.9991 q=0.60 hr_valid=1 hr=112.50 spo2_valid=1 spo2=87.20
+[RAW] seq=2452 ts=122632 red=117960 ir=141088
+[RAW] seq=2456 ts=122832 red=117981 ir=140992
+[RAW] seq=2460 ts=123032 red=117866 ir=140775
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=81509.1 ac_ir=141012.0 pi=1.7300 q=0.60 hr_valid=1 hr=120.00 spo2_valid=1 spo2=87.19
+[RAW] seq=2464 ts=123232 red=117906 ir=140750
+[RAW] seq=2468 ts=123432 red=117945 ir=140740
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=92461.7 ac_ir=141012.0 pi=1.5251 q=0.60 hr_valid=1 hr=120.00 spo2_valid=1 spo2=87.19
+[RAW] seq=2472 ts=123632 red=117951 ir=140653
+[RAW] seq=2476 ts=123832 red=117874 ir=140554
+[RAW] seq=2480 ts=124032 red=117640 ir=140204
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=103396.8 ac_ir=141012.0 pi=1.3638 q=0.60 hr_valid=1 hr=103.45 spo2_valid=1 spo2=87.20
+[RAW] seq=2484 ts=124232 red=117678 ir=140311
+[RAW] seq=2488 ts=124432 red=117693 ir=140302
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=114317.5 ac_ir=140990.0 pi=1.2333 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.23
+[RAW] seq=2492 ts=124632 red=117412 ir=139829
+[RAW] seq=2496 ts=124832 red=117451 ir=139841
+[RAW] seq=2500 ts=125032 red=117645 ir=140156
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=125181.6 ac_ir=137514.0 pi=1.0985 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.33
+[RAW] seq=2504 ts=125232 red=117725 ir=140243
+[RAW] seq=2508 ts=125432 red=117821 ir=140353
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=135170.0 ac_ir=122844.0 pi=0.9088 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.45
+[RAW] seq=2512 ts=125632 red=117826 ir=140262
+[RAW] seq=2516 ts=125832 red=117920 ir=140273
+[RAW] seq=2520 ts=126032 red=117798 ir=140132
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.84 dc_ir=140563.1 ac_ir=3725.0 pi=0.0265 q=0.84 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=2524 ts=126232 red=117845 ir=140180
+[RAW] seq=2528 ts=126432 red=117852 ir=140126
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.67 dc_ir=140646.3 ac_ir=1922.0 pi=0.0137 q=0.67 hr_valid=1 hr=133.33 spo2_valid=1 spo2=86.97
+[RAW] seq=2532 ts=126632 red=117820 ir=140036
+[RAW] seq=2536 ts=126832 red=117668 ir=139787
+[RAW] seq=2540 ts=127032 red=117898 ir=140123
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.70 dc_ir=140587.6 ac_ir=1922.0 pi=0.0137 q=0.70 hr_valid=1 hr=133.33 spo2_valid=1 spo2=96.23
+[RAW] seq=2544 ts=127232 red=117872 ir=140101
+[RAW] seq=2548 ts=127432 red=117858 ir=140056
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.71 dc_ir=140503.6 ac_ir=1922.0 pi=0.0137 q=0.71 hr_valid=1 hr=150.00 spo2_valid=1 spo2=98.15
+[RAW] seq=2552 ts=127632 red=117785 ir=139954
+[RAW] seq=2556 ts=127832 red=117877 ir=140125
+[RAW] seq=2560 ts=128032 red=117880 ir=140065
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.67 dc_ir=140403.1 ac_ir=1707.0 pi=0.0122 q=0.67 hr_valid=1 hr=141.18 spo2_valid=1 spo2=97.32
+[RAW] seq=2564 ts=128232 red=117930 ir=140111
+[RAW] seq=2568 ts=128432 red=117928 ir=140132
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.65 dc_ir=140324.0 ac_ir=1564.0 pi=0.0111 q=0.65 hr_valid=1 hr=66.67 spo2_valid=1 spo2=96.23
+[RAW] seq=2572 ts=128632 red=117964 ir=140182
+[RAW] seq=2576 ts=128832 red=117963 ir=140127
+[RAW] seq=2580 ts=129032 red=118025 ir=140199
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.63 dc_ir=140256.3 ac_ir=1483.0 pi=0.0106 q=0.63 hr_valid=0 hr=0.00 spo2_valid=1 spo2=94.16
+[RAW] seq=2584 ts=129232 red=118049 ir=140281
+[RAW] seq=2588 ts=129432 red=118063 ir=140303
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.59 dc_ir=140206.9 ac_ir=1224.0 pi=0.0087 q=0.59 hr_valid=0 hr=0.00 spo2_valid=1 spo2=90.50
+[RAW] seq=2592 ts=129632 red=118045 ir=140252
+[RAW] seq=2596 ts=129832 red=118044 ir=140279
+[RAW] seq=2600 ts=130032 red=118002 ir=140238
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.56 dc_ir=140170.5 ac_ir=1080.0 pi=0.0077 q=0.56 hr_valid=0 hr=0.00 spo2_valid=1 spo2=85.60
+[RAW] seq=2604 ts=130232 red=117977 ir=140203
+[RAW] seq=2608 ts=130432 red=117960 ir=140210
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.52 dc_ir=140150.0 ac_ir=811.0 pi=0.0058 q=0.52 hr_valid=1 hr=57.14 spo2_valid=1 spo2=81.44
+[RAW] seq=2612 ts=130632 red=117972 ir=140263
+[RAW] seq=2616 ts=130832 red=117984 ir=140187
+[RAW] seq=2620 ts=131032 red=117953 ir=140204
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.51 dc_ir=140148.0 ac_ir=799.0 pi=0.0057 q=0.51 hr_valid=0 hr=0.00 spo2_valid=1 spo2=81.91
+[RAW] seq=2624 ts=131232 red=117977 ir=140234
+[RAW] seq=2628 ts=131432 red=117987 ir=140210
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.49 dc_ir=140168.7 ac_ir=578.0 pi=0.0041 q=0.49 hr_valid=0 hr=0.00 spo2_valid=1 spo2=86.32
+[RAW] seq=2632 ts=131632 red=117915 ir=140071
+[RAW] seq=2636 ts=131832 red=117978 ir=140193
+[RAW] seq=2640 ts=132032 red=118044 ir=140251
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=140159.5 ac_ir=535.0 pi=0.0038 q=0.48 hr_valid=1 hr=100.00 spo2_valid=1 spo2=87.13
+[RAW] seq=2644 ts=132232 red=117988 ir=140250
+[RAW] seq=2648 ts=132432 red=117953 ir=140105
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=140157.3 ac_ir=535.0 pi=0.0038 q=0.48 hr_valid=1 hr=100.00 spo2_valid=1 spo2=87.69
+[RAW] seq=2652 ts=132632 red=117833 ir=139970
+[RAW] seq=2656 ts=132832 red=117833 ir=139863
+[RAW] seq=2660 ts=133032 red=117829 ir=139723
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.53 dc_ir=140133.1 ac_ir=799.0 pi=0.0057 q=0.53 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.21
+[RAW] seq=2664 ts=133232 red=117897 ir=139841
+[RAW] seq=2668 ts=133432 red=117891 ir=139841
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.53 dc_ir=140116.5 ac_ir=799.0 pi=0.0057 q=0.53 hr_valid=1 hr=100.00 spo2_valid=1 spo2=94.37
+[RAW] seq=2672 ts=133632 red=117908 ir=139853
+[RAW] seq=2676 ts=133832 red=117894 ir=139931
+[RAW] seq=2680 ts=134032 red=117907 ir=139913
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.53 dc_ir=140106.7 ac_ir=799.0 pi=0.0057 q=0.53 hr_valid=1 hr=100.00 spo2_valid=1 spo2=95.79
+[RAW] seq=2684 ts=134232 red=117989 ir=140064
+[RAW] seq=2688 ts=134432 red=118002 ir=140043
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.53 dc_ir=140101.9 ac_ir=799.0 pi=0.0057 q=0.53 hr_valid=1 hr=100.00 spo2_valid=1 spo2=96.01
+[RAW] seq=2692 ts=134632 red=118004 ir=140063
+[RAW] seq=2696 ts=134832 red=117994 ir=140105
+[RAW] seq=2700 ts=135032 red=117962 ir=140113
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.53 dc_ir=140098.4 ac_ir=799.0 pi=0.0057 q=0.53 hr_valid=1 hr=100.00 spo2_valid=1 spo2=95.94
+[RAW] seq=2704 ts=135232 red=117972 ir=140132
+[RAW] seq=2708 ts=135432 red=117961 ir=140161
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.53 dc_ir=140094.3 ac_ir=799.0 pi=0.0057 q=0.53 hr_valid=1 hr=120.00 spo2_valid=1 spo2=95.96
+[RAW] seq=2712 ts=135632 red=117811 ir=140054
+[RAW] seq=2716 ts=135832 red=117670 ir=139878
+[RAW] seq=2720 ts=136032 red=117729 ir=139916
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.53 dc_ir=140072.8 ac_ir=799.0 pi=0.0057 q=0.53 hr_valid=1 hr=51.06 spo2_valid=1 spo2=93.75
+[RAW] seq=2724 ts=136232 red=117681 ir=139886
+[RAW] seq=2728 ts=136432 red=117672 ir=139859
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.52 dc_ir=140045.3 ac_ir=785.0 pi=0.0056 q=0.52 hr_valid=1 hr=68.57 spo2_valid=1 spo2=91.03
+[RAW] seq=2732 ts=136632 red=117685 ir=139903
+[RAW] seq=2736 ts=136832 red=117614 ir=139777
+[RAW] seq=2740 ts=137032 red=117595 ir=139825
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.52 dc_ir=140013.6 ac_ir=785.0 pi=0.0056 q=0.52 hr_valid=1 hr=60.00 spo2_valid=1 spo2=88.48
+[RAW] seq=2744 ts=137232 red=117568 ir=139756
+[RAW] seq=2748 ts=137432 red=117580 ir=139779
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.52 dc_ir=139982.7 ac_ir=785.0 pi=0.0056 q=0.52 hr_valid=1 hr=70.59 spo2_valid=1 spo2=86.08
+[RAW] seq=2752 ts=137632 red=117615 ir=139824
+[RAW] seq=2756 ts=137832 red=117609 ir=139763
+[RAW] seq=2760 ts=138032 red=117606 ir=139783
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.52 dc_ir=139951.8 ac_ir=785.0 pi=0.0056 q=0.52 hr_valid=0 hr=0.00 spo2_valid=1 spo2=84.32
+[RAW] seq=2764 ts=138232 red=117643 ir=139841
+[RAW] seq=2768 ts=138432 red=117573 ir=139795
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.52 dc_ir=139920.9 ac_ir=767.0 pi=0.0055 q=0.52 hr_valid=1 hr=70.59 spo2_valid=1 spo2=82.01
+[RAW] seq=2772 ts=138632 red=117623 ir=139784
+[RAW] seq=2776 ts=138832 red=117616 ir=139813
+[RAW] seq=2780 ts=139032 red=117608 ir=139800
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.50 dc_ir=139896.2 ac_ir=638.0 pi=0.0046 q=0.50 hr_valid=1 hr=70.59 spo2_valid=1 spo2=80.15
+[RAW] seq=2784 ts=139232 red=117614 ir=139836
+[RAW] seq=2788 ts=139432 red=117588 ir=139825
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.46 dc_ir=139901.9 ac_ir=443.0 pi=0.0032 q=0.46 hr_valid=1 hr=70.59 spo2_valid=1 spo2=77.56
+[RAW] seq=2792 ts=139632 red=117613 ir=139805
+[RAW] seq=2796 ts=139832 red=117615 ir=139728
+[RAW] seq=2800 ts=140032 red=117622 ir=139764
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.47 dc_ir=139894.5 ac_ir=482.0 pi=0.0034 q=0.47 hr_valid=1 hr=70.59 spo2_valid=1 spo2=79.02
+[RAW] seq=2804 ts=140232 red=117586 ir=139718
+[RAW] seq=2808 ts=140432 red=117536 ir=139598
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=139876.1 ac_ir=570.0 pi=0.0041 q=0.48 hr_valid=1 hr=63.16 spo2_valid=1 spo2=81.96
+[RAW] seq=2812 ts=140632 red=117558 ir=139666
+[RAW] seq=2816 ts=140832 red=117514 ir=139622
+[RAW] seq=2820 ts=141032 red=117633 ir=139764
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=139845.2 ac_ir=570.0 pi=0.0041 q=0.48 hr_valid=0 hr=0.00 spo2_valid=1 spo2=84.82
+[RAW] seq=2824 ts=141232 red=117673 ir=139787
+[RAW] seq=2828 ts=141432 red=117716 ir=139882
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=139822.0 ac_ir=570.0 pi=0.0041 q=0.48 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.37
+[RAW] seq=2832 ts=141632 red=117950 ir=139910
+[RAW] seq=2836 ts=141832 red=118021 ir=140052
+[RAW] seq=2840 ts=142032 red=118110 ir=140170
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.49 dc_ir=139815.4 ac_ir=604.0 pi=0.0043 q=0.49 hr_valid=0 hr=0.00 spo2_valid=1 spo2=82.30
+[RAW] seq=2844 ts=142232 red=118033 ir=140132
+[RAW] seq=2848 ts=142432 red=118048 ir=140207
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.49 dc_ir=139831.5 ac_ir=631.0 pi=0.0045 q=0.49 hr_valid=1 hr=133.33 spo2_valid=1 spo2=81.06
+[RAW] seq=2852 ts=142632 red=118079 ir=140253
+[RAW] seq=2856 ts=142832 red=118073 ir=140245
+[RAW] seq=2860 ts=143032 red=118096 ir=140263
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.51 dc_ir=139862.4 ac_ir=721.0 pi=0.0052 q=0.51 hr_valid=1 hr=80.00 spo2_valid=1 spo2=82.81
+[RAW] seq=2864 ts=143232 red=118143 ir=140374
+[RAW] seq=2868 ts=143432 red=118142 ir=140452
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.53 dc_ir=139907.2 ac_ir=868.0 pi=0.0062 q=0.53 hr_valid=1 hr=85.71 spo2_valid=1 spo2=84.67
+[RAW] seq=2872 ts=143632 red=118069 ir=140398
+[RAW] seq=2876 ts=143832 red=118168 ir=140481
+[RAW] seq=2880 ts=144032 red=118174 ir=140567
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.55 dc_ir=139959.1 ac_ir=976.0 pi=0.0070 q=0.55 hr_valid=1 hr=92.31 spo2_valid=1 spo2=86.45
+[RAW] seq=2884 ts=144232 red=118205 ir=140626
+[RAW] seq=2888 ts=144432 red=118201 ir=140609
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.57 dc_ir=140024.2 ac_ir=1139.0 pi=0.0081 q=0.57 hr_valid=1 hr=80.00 spo2_valid=1 spo2=87.96
+[RAW] seq=2892 ts=144632 red=117979 ir=140293
+[RAW] seq=2896 ts=144832 red=117912 ir=140231
+[RAW] seq=2900 ts=145032 red=117996 ir=140335
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.57 dc_ir=140061.6 ac_ir=1139.0 pi=0.0081 q=0.57 hr_valid=1 hr=77.42 spo2_valid=1 spo2=88.51
+[RAW] seq=2904 ts=145232 red=118142 ir=140695
+[RAW] seq=2908 ts=145432 red=118245 ir=140890
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.63 dc_ir=140138.8 ac_ir=1450.0 pi=0.0103 q=0.63 hr_valid=1 hr=70.59 spo2_valid=1 spo2=90.30
+[RAW] seq=2912 ts=145632 red=118242 ir=140945
+[RAW] seq=2916 ts=145832 red=118381 ir=141200
+[RAW] seq=2920 ts=146032 red=118663 ir=141598
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.71 dc_ir=140247.0 ac_ir=2026.0 pi=0.0144 q=0.71 hr_valid=1 hr=44.44 spo2_valid=1 spo2=92.14
+[RAW] seq=2924 ts=146232 red=118832 ir=141961
+[RAW] seq=2928 ts=146432 red=118749 ir=141843
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.83 dc_ir=140411.0 ac_ir=2769.0 pi=0.0197 q=0.83 hr_valid=1 hr=85.71 spo2_valid=1 spo2=93.25
+[RAW] seq=2932 ts=146632 red=117743 ir=140503
+[RAW] seq=2936 ts=146832 red=117295 ir=140017
+[RAW] seq=2940 ts=147032 red=117904 ir=140800
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.82 dc_ir=140495.2 ac_ir=2738.0 pi=0.0195 q=0.82 hr_valid=0 hr=0.00 spo2_valid=1 spo2=93.23
+[RAW] seq=2944 ts=147232 red=118038 ir=140582
+[RAW] seq=2948 ts=147432 red=118641 ir=141370
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.80 dc_ir=140589.9 ac_ir=2606.0 pi=0.0185 q=0.80 hr_valid=0 hr=0.00 spo2_valid=1 spo2=93.50
+[RAW] seq=2952 ts=147632 red=118693 ir=141466
+[RAW] seq=2956 ts=147832 red=118884 ir=142030
+[RAW] seq=2960 ts=148032 red=119065 ir=142436
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.78 dc_ir=140763.7 ac_ir=2524.0 pi=0.0179 q=0.78 hr_valid=1 hr=40.00 spo2_valid=1 spo2=93.43
+[RAW] seq=2964 ts=148232 red=118899 ir=142138
+[RAW] seq=2968 ts=148432 red=118361 ir=141307
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.77 dc_ir=140896.4 ac_ir=2494.0 pi=0.0177 q=0.77 hr_valid=1 hr=40.00 spo2_valid=1 spo2=93.26
+[RAW] seq=2972 ts=148632 red=118410 ir=141469
+[RAW] seq=2976 ts=148832 red=118306 ir=141502
+[RAW] seq=2980 ts=149032 red=118040 ir=141211
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.77 dc_ir=140987.7 ac_ir=2494.0 pi=0.0177 q=0.77 hr_valid=1 hr=50.00 spo2_valid=1 spo2=92.99
+[RAW] seq=2984 ts=149232 red=118121 ir=141792
+[RAW] seq=2988 ts=149432 red=118086 ir=141559
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.77 dc_ir=141084.0 ac_ir=2494.0 pi=0.0177 q=0.77 hr_valid=1 hr=40.00 spo2_valid=1 spo2=92.56
+[RAW] seq=2992 ts=149632 red=118147 ir=141576
+[RAW] seq=2996 ts=149832 red=118159 ir=141591
+[RAW] seq=3000 ts=150032 red=118262 ir=141675
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.77 dc_ir=141178.0 ac_ir=2494.0 pi=0.0177 q=0.77 hr_valid=1 hr=40.00 spo2_valid=1 spo2=92.24
+[RAW] seq=3004 ts=150232 red=118336 ir=141684
+[RAW] seq=3008 ts=150432 red=118400 ir=141833
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.77 dc_ir=141276.5 ac_ir=2494.0 pi=0.0177 q=0.77 hr_valid=1 hr=40.00 spo2_valid=1 spo2=92.03
+[RAW] seq=3012 ts=150632 red=118554 ir=142084
+[RAW] seq=3016 ts=150832 red=118435 ir=141904
+[RAW] seq=3020 ts=151032 red=118877 ir=142371
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.77 dc_ir=141401.4 ac_ir=2503.0 pi=0.0177 q=0.77 hr_valid=1 hr=40.00 spo2_valid=1 spo2=91.85
+[RAW] seq=3024 ts=151232 red=118725 ir=142144
+[RAW] seq=3028 ts=151432 red=118543 ir=141644
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.77 dc_ir=141522.9 ac_ir=2503.0 pi=0.0177 q=0.77 hr_valid=1 hr=66.67 spo2_valid=1 spo2=90.60
+[RAW] seq=3032 ts=151632 red=118508 ir=141515
+[RAW] seq=3036 ts=151832 red=118453 ir=141438
+[RAW] seq=3040 ts=152032 red=118476 ir=141398
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.77 dc_ir=141569.1 ac_ir=2503.0 pi=0.0177 q=0.77 hr_valid=1 hr=40.00 spo2_valid=1 spo2=89.78
+[RAW] seq=3044 ts=152232 red=118549 ir=141469
+[RAW] seq=3048 ts=152432 red=118445 ir=141307
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.77 dc_ir=141569.0 ac_ir=2503.0 pi=0.0177 q=0.77 hr_valid=1 hr=40.00 spo2_valid=1 spo2=89.76
+[RAW] seq=3052 ts=152632 red=118533 ir=141405
+[RAW] seq=3056 ts=152832 red=118541 ir=141439
+[RAW] seq=3060 ts=153032 red=118562 ir=141438
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.77 dc_ir=141554.6 ac_ir=2503.0 pi=0.0177 q=0.77 hr_valid=1 hr=200.00 spo2_valid=1 spo2=89.81
+[RAW] seq=3064 ts=153232 red=118547 ir=141457
+[RAW] seq=3068 ts=153432 red=118575 ir=141441
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.72 dc_ir=141611.4 ac_ir=2110.0 pi=0.0149 q=0.72 hr_valid=1 hr=200.00 spo2_valid=1 spo2=89.69
+[RAW] seq=3072 ts=153632 red=118586 ir=141467
+[RAW] seq=3076 ts=153832 red=118526 ir=141311
+[RAW] seq=3080 ts=154032 red=118555 ir=141318
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.63 dc_ir=141638.6 ac_ir=1559.0 pi=0.0110 q=0.63 hr_valid=1 hr=200.00 spo2_valid=1 spo2=88.28
+[RAW] seq=3084 ts=154232 red=118611 ir=141374
+[RAW] seq=3088 ts=154432 red=118529 ir=141294
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.64 dc_ir=141567.7 ac_ir=1559.0 pi=0.0110 q=0.64 hr_valid=1 hr=200.00 spo2_valid=1 spo2=88.90
+[RAW] seq=3092 ts=154632 red=118549 ir=141268
+[RAW] seq=3096 ts=154832 red=118629 ir=141337
+[RAW] seq=3100 ts=155032 red=118553 ir=141192
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.64 dc_ir=141544.9 ac_ir=1559.0 pi=0.0110 q=0.64 hr_valid=1 hr=200.00 spo2_valid=1 spo2=89.12
+[RAW] seq=3104 ts=155232 red=118570 ir=141236
+[RAW] seq=3108 ts=155432 red=118598 ir=141279
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=141537.8 ac_ir=1328.0 pi=0.0094 q=0.60 hr_valid=1 hr=200.00 spo2_valid=1 spo2=90.97
+[RAW] seq=3112 ts=155632 red=118588 ir=141171
+[RAW] seq=3116 ts=155832 red=118546 ir=141163
+[RAW] seq=3120 ts=156032 red=118534 ir=141157
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.61 dc_ir=141505.9 ac_ir=1391.0 pi=0.0098 q=0.61 hr_valid=1 hr=200.00 spo2_valid=1 spo2=94.92
+[RAW] seq=3124 ts=156232 red=118519 ir=141069
+[RAW] seq=3128 ts=156432 red=118529 ir=141083
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.63 dc_ir=141465.1 ac_ir=1467.0 pi=0.0104 q=0.63 hr_valid=1 hr=200.00 spo2_valid=1 spo2=98.07
+[RAW] seq=3132 ts=156632 red=118531 ir=141106
+[RAW] seq=3136 ts=156832 red=118580 ir=141096
+[RAW] seq=3140 ts=157032 red=118591 ir=141161
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.63 dc_ir=141410.7 ac_ir=1467.0 pi=0.0104 q=0.63 hr_valid=0 hr=0.00 spo2_valid=1 spo2=98.74
+[RAW] seq=3144 ts=157232 red=118701 ir=141344
+[RAW] seq=3148 ts=157432 red=118713 ir=141333
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.58 dc_ir=141344.6 ac_ir=1091.0 pi=0.0077 q=0.58 hr_valid=0 hr=0.00 spo2_valid=1 spo2=97.19
+[RAW] seq=3152 ts=157632 red=118779 ir=141353
+[RAW] seq=3156 ts=157832 red=118737 ir=141315
+[RAW] seq=3160 ts=158032 red=118885 ir=141490
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=141315.1 ac_ir=580.0 pi=0.0041 q=0.48 hr_valid=1 hr=160.00 spo2_valid=1 spo2=90.08
+[RAW] seq=3164 ts=158232 red=118953 ir=141542
+[RAW] seq=3168 ts=158432 red=118780 ir=141353
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=141313.8 ac_ir=580.0 pi=0.0041 q=0.48 hr_valid=1 hr=160.00 spo2_valid=1 spo2=86.54
+[RAW] seq=3172 ts=158632 red=118993 ir=141548
+[RAW] seq=3176 ts=158832 red=119025 ir=141459
+[RAW] seq=3180 ts=159032 red=119053 ir=141478
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=141321.4 ac_ir=580.0 pi=0.0041 q=0.48 hr_valid=1 hr=124.14 spo2_valid=1 spo2=81.36
+[RAW] seq=3184 ts=159232 red=119117 ir=141543
+[RAW] seq=3188 ts=159432 red=119085 ir=141459
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=141323.6 ac_ir=580.0 pi=0.0041 q=0.48 hr_valid=1 hr=100.00 spo2_valid=1 spo2=76.46
+[RAW] seq=3192 ts=159632 red=119021 ir=141383
+[RAW] seq=3196 ts=159832 red=119084 ir=141466
+[RAW] seq=3200 ts=160032 red=119083 ir=141446
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=141322.8 ac_ir=580.0 pi=0.0041 q=0.48 hr_valid=1 hr=94.74 spo2_valid=1 spo2=73.25
+[RAW] seq=3204 ts=160232 red=119149 ir=141491
+[RAW] seq=3208 ts=160432 red=119072 ir=141439
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=141329.7 ac_ir=580.0 pi=0.0041 q=0.48 hr_valid=1 hr=94.74 spo2_valid=1 spo2=71.92
+[RAW] seq=3212 ts=160632 red=119131 ir=141434
+[RAW] seq=3216 ts=160832 red=119275 ir=141555
+[RAW] seq=3220 ts=161032 red=119351 ir=141643
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=141347.4 ac_ir=627.0 pi=0.0044 q=0.48 hr_valid=1 hr=94.12 spo2_valid=1 spo2=70.98
+[RAW] seq=3224 ts=161232 red=119432 ir=141657
+[RAW] seq=3228 ts=161432 red=119144 ir=141302
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.49 dc_ir=141365.9 ac_ir=701.0 pi=0.0050 q=0.49 hr_valid=1 hr=50.00 spo2_valid=1 spo2=70.43
+[RAW] seq=3232 ts=161632 red=119264 ir=141473
+[RAW] seq=3236 ts=161832 red=119396 ir=141637
+[RAW] seq=3240 ts=162032 red=119504 ir=141782
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.50 dc_ir=141394.2 ac_ir=729.0 pi=0.0052 q=0.50 hr_valid=0 hr=0.00 spo2_valid=1 spo2=70.60
+[RAW] seq=3244 ts=162232 red=119494 ir=141763
+[RAW] seq=3248 ts=162432 red=119416 ir=141750
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.50 dc_ir=141438.2 ac_ir=746.0 pi=0.0053 q=0.50 hr_valid=1 hr=100.00 spo2_valid=1 spo2=71.52
+[RAW] seq=3252 ts=162632 red=119383 ir=141680
+[RAW] seq=3256 ts=162832 red=119430 ir=141702
+[RAW] seq=3260 ts=163032 red=119452 ir=141676
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.49 dc_ir=141483.1 ac_ir=703.0 pi=0.0050 q=0.49 hr_valid=1 hr=102.86 spo2_valid=0 spo2=0.00
+[RAW] seq=3264 ts=163232 red=119393 ir=141549
+[RAW] seq=3268 ts=163432 red=119247 ir=141416
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.46 dc_ir=141510.9 ac_ir=497.0 pi=0.0035 q=0.46 hr_valid=1 hr=102.86 spo2_valid=0 spo2=0.00
+[RAW] seq=3272 ts=163632 red=119242 ir=141375
+[RAW] seq=3276 ts=163832 red=119319 ir=141461
+[RAW] seq=3280 ts=164032 red=119370 ir=141443
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.46 dc_ir=141517.1 ac_ir=497.0 pi=0.0035 q=0.46 hr_valid=1 hr=102.86 spo2_valid=0 spo2=0.00
+[RAW] seq=3284 ts=164232 red=119344 ir=141361
+[RAW] seq=3288 ts=164432 red=119345 ir=141436
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.46 dc_ir=141517.0 ac_ir=497.0 pi=0.0035 q=0.46 hr_valid=1 hr=102.86 spo2_valid=1 spo2=73.38
+[RAW] seq=3292 ts=164632 red=119352 ir=141412
+[RAW] seq=3296 ts=164832 red=119269 ir=141271
+[RAW] seq=3300 ts=165032 red=119292 ir=141348
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.47 dc_ir=141511.3 ac_ir=528.0 pi=0.0037 q=0.47 hr_valid=1 hr=102.86 spo2_valid=1 spo2=80.14
+[RAW] seq=3304 ts=165232 red=119376 ir=141431
+[RAW] seq=3308 ts=165432 red=119311 ir=141321
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.48 dc_ir=141501.3 ac_ir=528.0 pi=0.0037 q=0.48 hr_valid=1 hr=102.86 spo2_valid=1 spo2=83.74
+[RAW] seq=3312 ts=165632 red=119295 ir=141251
+[RAW] seq=3316 ts=165832 red=119356 ir=141340
+[RAW] seq=3320 ts=166032 red=119302 ir=141358
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.50 dc_ir=141486.9 ac_ir=653.0 pi=0.0046 q=0.50 hr_valid=1 hr=102.86 spo2_valid=1 spo2=87.87
+[RAW] seq=3324 ts=166232 red=119386 ir=141359
+[RAW] seq=3328 ts=166432 red=119375 ir=141351
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.50 dc_ir=141482.7 ac_ir=653.0 pi=0.0046 q=0.50 hr_valid=1 hr=102.86 spo2_valid=1 spo2=90.58
+[RAW] seq=3332 ts=166632 red=119407 ir=141427
+[RAW] seq=3336 ts=166832 red=119376 ir=141428
+[RAW] seq=3340 ts=167032 red=119347 ir=141357
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.50 dc_ir=141478.8 ac_ir=653.0 pi=0.0046 q=0.50 hr_valid=1 hr=102.86 spo2_valid=1 spo2=94.02
+[RAW] seq=3344 ts=167232 red=119347 ir=141329
+[RAW] seq=3348 ts=167432 red=119341 ir=141298
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.50 dc_ir=141458.8 ac_ir=653.0 pi=0.0046 q=0.50 hr_valid=1 hr=141.18 spo2_valid=1 spo2=94.76
+[RAW] seq=3352 ts=167632 red=119303 ir=141228
+[RAW] seq=3356 ts=167832 red=119319 ir=141229
+[RAW] seq=3360 ts=168032 red=119344 ir=141235
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.50 dc_ir=141438.3 ac_ir=653.0 pi=0.0046 q=0.50 hr_valid=1 hr=141.18 spo2_valid=1 spo2=96.22
+[RAW] seq=3364 ts=168232 red=119269 ir=141178
+[RAW] seq=3368 ts=168432 red=119240 ir=141166
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.51 dc_ir=141399.9 ac_ir=696.0 pi=0.0049 q=0.51 hr_valid=0 hr=0.00 spo2_valid=1 spo2=96.19
+[RAW] seq=3372 ts=168632 red=119266 ir=141145
+[RAW] seq=3376 ts=168832 red=119190 ir=141015
+[RAW] seq=3380 ts=169032 red=119185 ir=140924
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.53 dc_ir=141344.9 ac_ir=801.0 pi=0.0057 q=0.53 hr_valid=0 hr=0.00 spo2_valid=1 spo2=95.54
+[RAW] seq=3384 ts=169232 red=119190 ir=140936
+[RAW] seq=3388 ts=169432 red=119183 ir=140927
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.51 dc_ir=141287.5 ac_ir=705.0 pi=0.0050 q=0.51 hr_valid=1 hr=80.00 spo2_valid=1 spo2=95.63
+[RAW] seq=3392 ts=169632 red=119241 ir=141068
+[RAW] seq=3396 ts=169832 red=119221 ir=141071
+[RAW] seq=3400 ts=170032 red=119379 ir=141212
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.49 dc_ir=141260.9 ac_ir=610.0 pi=0.0043 q=0.49 hr_valid=1 hr=85.71 spo2_valid=1 spo2=95.25
+[RAW] seq=3404 ts=170232 red=119209 ir=140951
+[RAW] seq=3408 ts=170432 red=119168 ir=140947
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.52 dc_ir=141228.3 ac_ir=768.0 pi=0.0054 q=0.52 hr_valid=1 hr=100.00 spo2_valid=1 spo2=94.82
+[RAW] seq=3412 ts=170632 red=119033 ir=140645
+[RAW] seq=3416 ts=170832 red=115912 ir=137581
+[RAW] seq=3420 ts=171032 red=119068 ir=140392
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=141079.6 ac_ir=4694.0 pi=0.0333 q=0.89 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.46
+[RAW] seq=3424 ts=171232 red=118936 ir=140063
+[RAW] seq=3428 ts=171432 red=119314 ir=140505
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=140963.5 ac_ir=4694.0 pi=0.0333 q=0.89 hr_valid=0 hr=0.00 spo2_valid=1 spo2=88.32
+[RAW] seq=3432 ts=171632 red=119167 ir=140143
+[RAW] seq=3436 ts=171832 red=119173 ir=140168
+[RAW] seq=3440 ts=172032 red=119209 ir=140276
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=140874.1 ac_ir=4694.0 pi=0.0333 q=0.89 hr_valid=0 hr=0.00 spo2_valid=1 spo2=88.82
+[RAW] seq=3444 ts=172232 red=119167 ir=140146
+[RAW] seq=3448 ts=172432 red=119098 ir=140052
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=140784.0 ac_ir=4694.0 pi=0.0333 q=0.89 hr_valid=0 hr=0.00 spo2_valid=1 spo2=89.17
+[RAW] seq=3452 ts=172632 red=119081 ir=139975
+[RAW] seq=3456 ts=172832 red=119240 ir=140239
+[RAW] seq=3460 ts=173032 red=119069 ir=139916
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=140670.4 ac_ir=4636.0 pi=0.0330 q=0.89 hr_valid=0 hr=0.00 spo2_valid=1 spo2=89.47
+[RAW] seq=3464 ts=173232 red=118951 ir=139739
+[RAW] seq=3468 ts=173432 red=118973 ir=139729
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=140545.0 ac_ir=4515.0 pi=0.0321 q=0.89 hr_valid=0 hr=0.00 spo2_valid=1 spo2=89.65
+[RAW] seq=3472 ts=173632 red=118920 ir=139716
+[RAW] seq=3476 ts=173832 red=118776 ir=139428
+[RAW] seq=3480 ts=174032 red=118843 ir=139568
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=140411.9 ac_ir=4513.0 pi=0.0321 q=0.89 hr_valid=0 hr=0.00 spo2_valid=1 spo2=89.86
+[RAW] seq=3484 ts=174232 red=118985 ir=139758
+[RAW] seq=3488 ts=174432 red=118980 ir=139760
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=140295.9 ac_ir=4513.0 pi=0.0322 q=0.89 hr_valid=0 hr=0.00 spo2_valid=1 spo2=89.65
+[RAW] seq=3492 ts=174632 red=119035 ir=139847
+[RAW] seq=3496 ts=174832 red=119012 ir=139732
+[RAW] seq=3500 ts=175032 red=119023 ir=139694
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=140187.9 ac_ir=4513.0 pi=0.0322 q=0.89 hr_valid=0 hr=0.00 spo2_valid=1 spo2=89.13
+[RAW] seq=3504 ts=175232 red=119059 ir=139851
+[RAW] seq=3508 ts=175432 red=118996 ir=139807
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=140100.6 ac_ir=4513.0 pi=0.0322 q=0.89 hr_valid=0 hr=0.00 spo2_valid=1 spo2=88.50
+[RAW] seq=3512 ts=175632 red=118897 ir=139678
+[RAW] seq=3516 ts=175832 red=118842 ir=139585
+[RAW] seq=3520 ts=176032 red=118964 ir=139736
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=140000.1 ac_ir=4513.0 pi=0.0322 q=0.89 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.71
+[RAW] seq=3524 ts=176232 red=119135 ir=139927
+[RAW] seq=3528 ts=176432 red=119003 ir=139778
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=139893.8 ac_ir=4502.0 pi=0.0322 q=0.89 hr_valid=0 hr=0.00 spo2_valid=1 spo2=85.14
+[RAW] seq=3532 ts=176632 red=118983 ir=139755
+[RAW] seq=3536 ts=176832 red=118877 ir=139425
+[RAW] seq=3540 ts=177032 red=118904 ir=139543
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=139793.2 ac_ir=3692.0 pi=0.0264 q=0.89 hr_valid=0 hr=0.00 spo2_valid=1 spo2=81.76
+[RAW] seq=3544 ts=177232 red=118782 ir=139470
+[RAW] seq=3548 ts=177432 red=112552 ir=134704
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=137892.2 ac_ir=134953.0 pi=0.9787 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=86.93
+[RAW] seq=3552 ts=177632 red=891 ir=943
+[RAW] seq=3556 ts=177832 red=585 ir=476
+[RAW] seq=3560 ts=178032 red=616 ir=505
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=126992.6 ac_ir=139844.0 pi=1.1012 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.01
+[RAW] seq=3564 ts=178232 red=663 ir=625
+[RAW] seq=3568 ts=178432 red=634 ir=626
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=116086.4 ac_ir=139782.0 pi=1.2041 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.02
+[RAW] seq=3572 ts=178632 red=685 ir=637
+[RAW] seq=3576 ts=178832 red=722 ir=693
+[RAW] seq=3580 ts=179032 red=834 ir=801
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=105197.2 ac_ir=139782.0 pi=1.3288 q=0.60 hr_valid=1 hr=120.00 spo2_valid=1 spo2=87.02
+[RAW] seq=3584 ts=179232 red=736 ir=671
+[RAW] seq=3588 ts=179432 red=723 ir=696
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=94321.3 ac_ir=139478.0 pi=1.4788 q=0.60 hr_valid=1 hr=109.09 spo2_valid=1 spo2=87.02
+[RAW] seq=3592 ts=179632 red=1108 ir=1105
+[RAW] seq=3596 ts=179832 red=2289 ir=2748
+[RAW] seq=3600 ts=180032 red=10927 ir=14805
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=83780.7 ac_ir=139478.0 pi=1.6648 q=0.60 hr_valid=1 hr=120.00 spo2_valid=1 spo2=87.00
+[RAW] seq=3604 ts=180232 red=20777 ir=21239
+[RAW] seq=3608 ts=180432 red=19746 ir=20025
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=74395.7 ac_ir=139478.0 pi=1.8748 q=0.60 hr_valid=1 hr=124.14 spo2_valid=1 spo2=87.08
+[RAW] seq=3612 ts=180632 red=11709 ir=12001
+[RAW] seq=3616 ts=180832 red=19060 ir=19001
+[RAW] seq=3620 ts=181032 red=17883 ir=17767
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=64809.5 ac_ir=139478.0 pi=2.1521 q=0.60 hr_valid=1 hr=114.29 spo2_valid=1 spo2=87.18
+[RAW] seq=3624 ts=181232 red=17459 ir=17657
+[RAW] seq=3628 ts=181432 red=18303 ir=21912
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=55846.2 ac_ir=139478.0 pi=2.4975 q=0.60 hr_valid=1 hr=129.73 spo2_valid=1 spo2=87.29
+[RAW] seq=3632 ts=181632 red=71707 ir=58792
+[RAW] seq=3636 ts=181832 red=32676 ir=32310
+[RAW] seq=3640 ts=182032 red=24138 ir=24189
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=47908.8 ac_ir=139470.0 pi=2.9112 q=0.60 hr_valid=1 hr=124.14 spo2_valid=1 spo2=87.58
+[RAW] seq=3644 ts=182232 red=23563 ir=22580
+[RAW] seq=3648 ts=182432 red=23140 ir=22943
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=38941.2 ac_ir=139470.0 pi=3.5816 q=0.60 hr_valid=1 hr=200.00 spo2_valid=1 spo2=87.76
+[RAW] seq=3652 ts=182632 red=20709 ir=23910
+[RAW] seq=3656 ts=182832 red=27744 ir=31608
+[RAW] seq=3660 ts=183032 red=22686 ir=23630
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=30202.8 ac_ir=139315.0 pi=4.6126 q=0.60 hr_valid=1 hr=200.00 spo2_valid=1 spo2=87.87
+[RAW] seq=3664 ts=183232 red=27489 ir=29324
+[RAW] seq=3668 ts=183432 red=25431 ir=27664
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=21454.8 ac_ir=139237.0 pi=6.4898 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.86
+[RAW] seq=3672 ts=183632 red=24469 ir=27703
+[RAW] seq=3676 ts=183832 red=19608 ir=21126
+[RAW] seq=3680 ts=184032 red=7399 ir=9990
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=16470.8 ac_ir=71330.0 pi=4.3307 q=0.60 hr_valid=1 hr=48.00 spo2_valid=1 spo2=85.37
+[RAW] seq=3684 ts=184232 red=1979 ir=1679
+[RAW] seq=3688 ts=184432 red=856 ir=884
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=16570.6 ac_ir=71208.0 pi=4.2972 q=0.60 hr_valid=1 hr=48.00 spo2_valid=1 spo2=85.34
+[RAW] seq=3692 ts=184632 red=696 ir=636
+[RAW] seq=3696 ts=184832 red=572 ir=442
+[RAW] seq=3700 ts=185032 red=546 ir=413
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=16561.1 ac_ir=71380.0 pi=4.3101 q=0.60 hr_valid=1 hr=48.00 spo2_valid=1 spo2=85.36
+[RAW] seq=3704 ts=185232 red=598 ir=437
+[RAW] seq=3708 ts=185432 red=638 ir=477
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=16539.5 ac_ir=71380.0 pi=4.3157 q=0.60 hr_valid=1 hr=48.00 spo2_valid=1 spo2=85.38
+[RAW] seq=3712 ts=185632 red=543 ir=433
+[RAW] seq=3716 ts=185832 red=544 ir=406
+[RAW] seq=3720 ts=186032 red=535 ir=456
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=16512.4 ac_ir=71399.0 pi=4.3240 q=0.60 hr_valid=1 hr=48.00 spo2_valid=1 spo2=85.40
+[RAW] seq=3724 ts=186232 red=544 ir=427
+[RAW] seq=3728 ts=186432 red=569 ir=411
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=15856.1 ac_ir=71399.0 pi=4.5029 q=0.60 hr_valid=1 hr=48.00 spo2_valid=1 spo2=85.68
+[RAW] seq=3732 ts=186632 red=547 ir=410
+[RAW] seq=3736 ts=186832 red=587 ir=426
+[RAW] seq=3740 ts=187032 red=613 ir=459
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=14503.5 ac_ir=71399.0 pi=4.9229 q=0.60 hr_valid=1 hr=68.57 spo2_valid=1 spo2=85.80
+[RAW] seq=3744 ts=187232 red=623 ir=497
+[RAW] seq=3748 ts=187432 red=644 ir=506
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=13139.6 ac_ir=71399.0 pi=5.4339 q=0.60 hr_valid=1 hr=68.57 spo2_valid=1 spo2=85.86
+[RAW] seq=3752 ts=187632 red=638 ir=494
+[RAW] seq=3756 ts=187832 red=628 ir=487
+[RAW] seq=3760 ts=188032 red=556 ir=428
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=10461.1 ac_ir=40583.0 pi=3.8794 q=0.60 hr_valid=1 hr=114.29 spo2_valid=1 spo2=86.97
+[RAW] seq=3764 ts=188232 red=533 ir=403
+[RAW] seq=3768 ts=188432 red=571 ir=395
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=8096.3 ac_ir=33269.0 pi=4.1092 q=0.60 hr_valid=1 hr=114.29 spo2_valid=1 spo2=87.37
+[RAW] seq=3772 ts=188632 red=570 ir=384
+[RAW] seq=3776 ts=188832 red=562 ir=396
+[RAW] seq=3780 ts=189032 red=546 ir=368
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=6226.9 ac_ir=33293.0 pi=5.3466 q=0.60 hr_valid=1 hr=114.29 spo2_valid=1 spo2=87.50
+[RAW] seq=3784 ts=189232 red=535 ir=368
+[RAW] seq=3788 ts=189432 red=548 ir=379
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=4072.4 ac_ir=29461.0 pi=7.2343 q=0.60 hr_valid=1 hr=92.31 spo2_valid=1 spo2=87.73
+[RAW] seq=3792 ts=189632 red=531 ir=375
+[RAW] seq=3796 ts=189832 red=538 ir=386
+[RAW] seq=3800 ts=190032 red=541 ir=410
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1901.6 ac_ir=27110.0 pi=14.2561 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=88.86
+[RAW] seq=3804 ts=190232 red=549 ir=427
+[RAW] seq=3808 ts=190432 red=552 ir=411
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=487.0 ac_ir=1900.0 pi=3.9011 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3812 ts=190632 red=543 ir=428
+[RAW] seq=3816 ts=190832 red=528 ir=402
+[RAW] seq=3820 ts=191032 red=523 ir=407
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=422.8 ac_ir=227.0 pi=0.5369 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3824 ts=191232 red=512 ir=431
+[RAW] seq=3828 ts=191432 red=547 ir=452
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=421.8 ac_ir=157.0 pi=0.3722 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3832 ts=191632 red=568 ir=485
+[RAW] seq=3836 ts=191832 red=586 ir=477
+[RAW] seq=3840 ts=192032 red=590 ir=459
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=422.9 ac_ir=157.0 pi=0.3712 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3844 ts=192232 red=601 ir=464
+[RAW] seq=3848 ts=192432 red=621 ir=476
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=425.9 ac_ir=157.0 pi=0.3686 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3852 ts=192632 red=603 ir=455
+[RAW] seq=3856 ts=192832 red=596 ir=430
+[RAW] seq=3860 ts=193032 red=568 ir=412
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=427.4 ac_ir=157.0 pi=0.3673 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3864 ts=193232 red=573 ir=430
+[RAW] seq=3868 ts=193432 red=594 ir=449
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=427.2 ac_ir=157.0 pi=0.3675 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3872 ts=193632 red=604 ir=453
+[RAW] seq=3876 ts=193832 red=619 ir=450
+[RAW] seq=3880 ts=194032 red=641 ir=494
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=425.4 ac_ir=145.0 pi=0.3408 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3884 ts=194232 red=647 ir=507
+[RAW] seq=3888 ts=194432 red=630 ir=472
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=428.7 ac_ir=176.0 pi=0.4105 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3892 ts=194632 red=621 ir=481
+[RAW] seq=3896 ts=194832 red=648 ir=480
+[RAW] seq=3900 ts=195032 red=656 ir=463
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=435.3 ac_ir=176.0 pi=0.4043 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3904 ts=195232 red=643 ir=469
+[RAW] seq=3908 ts=195432 red=608 ir=443
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=441.3 ac_ir=176.0 pi=0.3988 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3912 ts=195632 red=612 ir=431
+[RAW] seq=3916 ts=195832 red=576 ir=402
+[RAW] seq=3920 ts=196032 red=577 ir=415
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=445.3 ac_ir=159.0 pi=0.3570 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3924 ts=196232 red=509 ir=375
+[RAW] seq=3928 ts=196432 red=552 ir=378
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=445.2 ac_ir=153.0 pi=0.3437 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3932 ts=196632 red=547 ir=402
+[RAW] seq=3936 ts=196832 red=544 ir=406
+[RAW] seq=3940 ts=197032 red=529 ir=380
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=443.3 ac_ir=153.0 pi=0.3451 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3944 ts=197232 red=437 ir=301
+[RAW] seq=3948 ts=197432 red=508 ir=372
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=440.2 ac_ir=248.0 pi=0.5633 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3952 ts=197632 red=1222 ir=1048
+[RAW] seq=3956 ts=197832 red=2623 ir=2359
+[RAW] seq=3960 ts=198032 red=2126 ir=1937
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=570.4 ac_ir=3686.0 pi=6.4616 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3964 ts=198232 red=591 ir=520
+[RAW] seq=3968 ts=198432 red=597 ir=530
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=579.5 ac_ir=3686.0 pi=6.3608 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3972 ts=198632 red=525 ir=427
+[RAW] seq=3976 ts=198832 red=511 ir=524
+[RAW] seq=3980 ts=199032 red=668 ir=613
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=584.5 ac_ir=3686.0 pi=6.3068 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3984 ts=199232 red=640 ir=534
+[RAW] seq=3988 ts=199432 red=658 ir=542
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=592.6 ac_ir=3686.0 pi=6.2200 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=3992 ts=199632 red=692 ir=547
+[RAW] seq=3996 ts=199832 red=679 ir=535
+[RAW] seq=4000 ts=200032 red=683 ir=530
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=599.9 ac_ir=3686.0 pi=6.1444 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=4004 ts=200232 red=628 ir=506
+[RAW] seq=4008 ts=200432 red=574 ir=427
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=599.4 ac_ir=3686.0 pi=6.1497 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=4012 ts=200632 red=615 ir=461
+[RAW] seq=4016 ts=200832 red=635 ir=481
+[RAW] seq=4020 ts=201032 red=629 ir=469
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=597.6 ac_ir=3686.0 pi=6.1678 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=4024 ts=201232 red=622 ir=462
+[RAW] seq=4028 ts=201432 red=618 ir=465
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=595.9 ac_ir=3686.0 pi=6.1860 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=4032 ts=201632 red=612 ir=442
+[RAW] seq=4036 ts=201832 red=619 ir=459
+[RAW] seq=4040 ts=202032 red=642 ir=466
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=595.9 ac_ir=3686.0 pi=6.1855 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=4044 ts=202232 red=629 ir=476
+[RAW] seq=4048 ts=202432 red=613 ir=458
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=601.0 ac_ir=3686.0 pi=6.1332 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=4052 ts=202632 red=610 ir=458
+[RAW] seq=4056 ts=202832 red=583 ir=458
+[RAW] seq=4060 ts=203032 red=599 ir=439
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=606.1 ac_ir=3686.0 pi=6.0813 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=4064 ts=203232 red=653 ir=499
+[RAW] seq=4068 ts=203432 red=694 ir=533
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=613.6 ac_ir=3686.0 pi=6.0072 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=4072 ts=203632 red=647 ir=463
+[RAW] seq=4076 ts=203832 red=654 ir=460
+[RAW] seq=4080 ts=204032 red=975 ir=828
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=619.4 ac_ir=3582.0 pi=5.7832 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=4084 ts=204232 red=1297 ir=1275
+[RAW] seq=4088 ts=204432 red=5811 ir=9700
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1033.9 ac_ir=31296.0 pi=30.2690 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=93.47
+[RAW] seq=4092 ts=204632 red=11644 ir=20871
+[RAW] seq=4096 ts=204832 red=1807 ir=3277
+[RAW] seq=4100 ts=205032 red=696 ir=847
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1641.2 ac_ir=31296.0 pi=19.0695 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.66
+[RAW] seq=4104 ts=205232 red=580 ir=418
+[RAW] seq=4108 ts=205432 red=592 ir=418
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1635.7 ac_ir=31296.0 pi=19.1331 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.71
+[RAW] seq=4112 ts=205632 red=576 ir=433
+[RAW] seq=4116 ts=205832 red=588 ir=434
+[RAW] seq=4120 ts=206032 red=566 ir=420
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1626.2 ac_ir=31296.0 pi=19.2449 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.71
+[RAW] seq=4124 ts=206232 red=561 ir=410
+[RAW] seq=4128 ts=206432 red=526 ir=409
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1616.8 ac_ir=31298.0 pi=19.3583 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.67
+[RAW] seq=4132 ts=206632 red=534 ir=394
+[RAW] seq=4136 ts=206832 red=546 ir=386
+[RAW] seq=4140 ts=207032 red=540 ir=402
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1612.5 ac_ir=31309.0 pi=19.4165 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.66
+[RAW] seq=4144 ts=207232 red=556 ir=410
+[RAW] seq=4148 ts=207432 red=518 ir=412
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1608.2 ac_ir=31309.0 pi=19.4687 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.62
+[RAW] seq=4152 ts=207632 red=533 ir=427
+[RAW] seq=4156 ts=207832 red=541 ir=412
+[RAW] seq=4160 ts=208032 red=555 ir=420
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1605.6 ac_ir=31309.0 pi=19.4996 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.58
+[RAW] seq=4164 ts=208232 red=557 ir=412
+[RAW] seq=4168 ts=208432 red=565 ir=429
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1602.5 ac_ir=31309.0 pi=19.5381 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.54
+[RAW] seq=4172 ts=208632 red=564 ir=446
+[RAW] seq=4176 ts=208832 red=577 ir=423
+[RAW] seq=4180 ts=209032 red=550 ir=422
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1598.9 ac_ir=31309.0 pi=19.5822 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.52
+[RAW] seq=4184 ts=209232 red=568 ir=421
+[RAW] seq=4188 ts=209432 red=568 ir=422
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1597.3 ac_ir=31309.0 pi=19.6009 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.50
+[RAW] seq=4192 ts=209632 red=581 ir=434
+[RAW] seq=4196 ts=209832 red=652 ir=492
+[RAW] seq=4200 ts=210032 red=676 ir=489
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1596.7 ac_ir=31309.0 pi=19.6091 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.49
+[RAW] seq=4204 ts=210232 red=607 ir=438
+[RAW] seq=4208 ts=210432 red=581 ir=508
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=1583.4 ac_ir=31309.0 pi=19.7737 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=91.43
+[RAW] seq=4212 ts=210632 red=909 ir=1077
+[RAW] seq=4216 ts=210832 red=1585 ir=1460
+[RAW] seq=4220 ts=211032 red=18764 ir=18817
+[FRAME][STATE=IDLE] valid=0 finger=0 conf=0.00 dc_ir=899.7 ac_ir=18433.0 pi=20.4875 q=0.00 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=4224 ts=211232 red=104493 ir=122193
+[RAW] seq=4228 ts=211432 red=102975 ir=124106
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=9110.5 ac_ir=124287.0 pi=13.6421 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.64
+[RAW] seq=4232 ts=211632 red=103195 ir=124345
+[RAW] seq=4236 ts=211832 red=104843 ir=125713
+[RAW] seq=4240 ts=212032 red=104120 ir=124958
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=18839.7 ac_ir=125329.0 pi=6.6524 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.36
+[RAW] seq=4244 ts=212232 red=104081 ir=124772
+[RAW] seq=4248 ts=212432 red=103614 ir=124274
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=28554.9 ac_ir=125329.0 pi=4.3891 q=0.60 hr_valid=1 hr=100.00 spo2_valid=1 spo2=87.26
+[RAW] seq=4252 ts=212632 red=104459 ir=125462
+[RAW] seq=4256 ts=212832 red=104646 ir=125978
+[RAW] seq=4260 ts=213032 red=104647 ir=125672
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=38334.0 ac_ir=125594.0 pi=3.2763 q=0.60 hr_valid=1 hr=63.16 spo2_valid=1 spo2=87.20
+[RAW] seq=4264 ts=213232 red=104578 ir=125466
+[RAW] seq=4268 ts=213432 red=104802 ir=125482
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=48112.6 ac_ir=126662.0 pi=2.6326 q=0.60 hr_valid=1 hr=63.16 spo2_valid=1 spo2=87.18
+[RAW] seq=4272 ts=213632 red=107669 ir=127599
+[RAW] seq=4276 ts=213832 red=106648 ir=126541
+[RAW] seq=4280 ts=214032 red=106815 ir=126740
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=57991.2 ac_ir=127439.0 pi=2.1976 q=0.60 hr_valid=1 hr=66.67 spo2_valid=1 spo2=87.16
+[RAW] seq=4284 ts=214232 red=106472 ir=126170
+[RAW] seq=4288 ts=214432 red=106626 ir=126341
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=67830.6 ac_ir=127439.0 pi=1.8788 q=0.60 hr_valid=1 hr=97.96 spo2_valid=1 spo2=87.15
+[RAW] seq=4292 ts=214632 red=106636 ir=126306
+[RAW] seq=4296 ts=214832 red=106540 ir=126263
+[RAW] seq=4300 ts=215032 red=106831 ir=126865
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=77665.8 ac_ir=127430.0 pi=1.6407 q=0.60 hr_valid=1 hr=97.96 spo2_valid=1 spo2=87.14
+[RAW] seq=4304 ts=215232 red=106255 ir=125845
+[RAW] seq=4308 ts=215432 red=105834 ir=125209
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=87447.6 ac_ir=127430.0 pi=1.4572 q=0.60 hr_valid=1 hr=102.86 spo2_valid=1 spo2=87.15
+[RAW] seq=4312 ts=215632 red=104136 ir=122995
+[RAW] seq=4316 ts=215832 red=104556 ir=123390
+[RAW] seq=4320 ts=216032 red=104178 ir=122941
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=97079.2 ac_ir=127416.0 pi=1.3125 q=0.60 hr_valid=1 hr=115.66 spo2_valid=1 spo2=87.16
+[RAW] seq=4324 ts=216232 red=104239 ir=122879
+[RAW] seq=4328 ts=216432 red=104329 ir=123024
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=106630.1 ac_ir=127416.0 pi=1.1949 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.21
+[RAW] seq=4332 ts=216632 red=104066 ir=122675
+[RAW] seq=4336 ts=216832 red=104266 ir=122936
+[RAW] seq=4340 ts=217032 red=104043 ir=122600
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=116171.8 ac_ir=126385.0 pi=1.0879 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.39
+[RAW] seq=4344 ts=217232 red=104113 ir=122671
+[RAW] seq=4348 ts=217432 red=104521 ir=122970
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.83 dc_ir=124579.9 ac_ir=28406.0 pi=0.2280 q=0.83 hr_valid=0 hr=0.00 spo2_valid=1 spo2=94.81
+[RAW] seq=4352 ts=217632 red=104338 ir=122582
+[RAW] seq=4356 ts=217832 red=104391 ir=122681
+[RAW] seq=4360 ts=218032 red=104594 ir=123008
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.86 dc_ir=124664.9 ac_ir=5529.0 pi=0.0444 q=0.86 hr_valid=1 hr=141.18 spo2_valid=1 spo2=89.47
+[RAW] seq=4364 ts=218232 red=104240 ir=122347
+[RAW] seq=4368 ts=218432 red=104075 ir=122222
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.87 dc_ir=124438.3 ac_ir=6142.0 pi=0.0494 q=0.87 hr_valid=1 hr=122.45 spo2_valid=1 spo2=90.61
+[RAW] seq=4372 ts=218632 red=104199 ir=122269
+[RAW] seq=4376 ts=218832 red=104224 ir=122154
+[RAW] seq=4380 ts=219032 red=103884 ir=121805
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.87 dc_ir=124226.1 ac_ir=6142.0 pi=0.0494 q=0.87 hr_valid=1 hr=115.38 spo2_valid=1 spo2=91.50
+[RAW] seq=4384 ts=219232 red=103327 ir=121090
+[RAW] seq=4388 ts=219432 red=104383 ir=122605
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.85 dc_ir=123926.9 ac_ir=7017.0 pi=0.0566 q=0.85 hr_valid=1 hr=141.18 spo2_valid=1 spo2=91.53
+[RAW] seq=4392 ts=219632 red=104887 ir=123373
+[RAW] seq=4396 ts=219832 red=105008 ir=123500
+[RAW] seq=4400 ts=220032 red=104486 ir=122824
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.87 dc_ir=123700.2 ac_ir=6193.0 pi=0.0501 q=0.87 hr_valid=1 hr=128.57 spo2_valid=1 spo2=91.38
+[RAW] seq=4404 ts=220232 red=104192 ir=122447
+[RAW] seq=4408 ts=220432 red=103626 ir=121607
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.87 dc_ir=123375.4 ac_ir=6113.0 pi=0.0495 q=0.87 hr_valid=1 hr=109.09 spo2_valid=1 spo2=91.42
+[RAW] seq=4412 ts=220632 red=104239 ir=122498
+[RAW] seq=4416 ts=220832 red=103452 ir=121493
+[RAW] seq=4420 ts=221032 red=104332 ir=122559
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.88 dc_ir=123018.8 ac_ir=6101.0 pi=0.0496 q=0.88 hr_valid=1 hr=100.00 spo2_valid=1 spo2=91.47
+[RAW] seq=4424 ts=221232 red=104175 ir=122159
+[RAW] seq=4428 ts=221432 red=104018 ir=121764
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.89 dc_ir=122703.7 ac_ir=5502.0 pi=0.0448 q=0.89 hr_valid=1 hr=200.00 spo2_valid=1 spo2=91.64
+[RAW] seq=4432 ts=221632 red=103416 ir=120941
+[RAW] seq=4436 ts=221832 red=103272 ir=120870
+[RAW] seq=4440 ts=222032 red=104011 ir=121628
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.93 dc_ir=122389.1 ac_ir=3669.0 pi=0.0300 q=0.93 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.15
+[RAW] seq=4444 ts=222232 red=103643 ir=121237
+[RAW] seq=4448 ts=222432 red=103612 ir=120936
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.93 dc_ir=122202.5 ac_ir=3024.0 pi=0.0247 q=0.93 hr_valid=1 hr=109.09 spo2_valid=1 spo2=92.25
+[RAW] seq=4452 ts=222632 red=105030 ir=122056
+[RAW] seq=4456 ts=222832 red=103947 ir=120504
+[RAW] seq=4460 ts=223032 red=103945 ir=120580
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.93 dc_ir=122075.2 ac_ir=3210.0 pi=0.0263 q=0.93 hr_valid=1 hr=60.00 spo2_valid=1 spo2=92.63
+[RAW] seq=4464 ts=223232 red=103790 ir=120623
+[RAW] seq=4468 ts=223432 red=103479 ir=120258
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.93 dc_ir=121899.1 ac_ir=3859.0 pi=0.0317 q=0.93 hr_valid=1 hr=48.98 spo2_valid=1 spo2=93.50
+[RAW] seq=4472 ts=223632 red=103466 ir=120159
+[RAW] seq=4476 ts=223832 red=103056 ir=119654
+[RAW] seq=4480 ts=224032 red=103161 ir=119849
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.93 dc_ir=121674.4 ac_ir=3983.0 pi=0.0327 q=0.93 hr_valid=1 hr=38.10 spo2_valid=1 spo2=93.92
+[RAW] seq=4484 ts=224232 red=103302 ir=119769
+[RAW] seq=4488 ts=224432 red=103158 ir=119775
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.93 dc_ir=121461.5 ac_ir=4062.0 pi=0.0334 q=0.93 hr_valid=1 hr=46.15 spo2_valid=1 spo2=94.16
+[RAW] seq=4492 ts=224632 red=102991 ir=119553
+[RAW] seq=4496 ts=224832 red=102976 ir=119679
+[RAW] seq=4500 ts=225032 red=102973 ir=119652
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.92 dc_ir=121255.4 ac_ir=4220.0 pi=0.0348 q=0.92 hr_valid=1 hr=92.31 spo2_valid=1 spo2=94.06
+[RAW] seq=4504 ts=225232 red=102955 ir=119647
+[RAW] seq=4508 ts=225432 red=103148 ir=119898
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.92 dc_ir=121093.7 ac_ir=4220.0 pi=0.0348 q=0.92 hr_valid=1 hr=92.31 spo2_valid=1 spo2=93.98
+[RAW] seq=4512 ts=225632 red=103272 ir=120260
+[RAW] seq=4516 ts=225832 red=103579 ir=120529
+[RAW] seq=4520 ts=226032 red=104617 ir=122062
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.92 dc_ir=120980.4 ac_ir=4220.0 pi=0.0349 q=0.92 hr_valid=1 hr=92.31 spo2_valid=1 spo2=93.92
+[RAW] seq=4524 ts=226232 red=102808 ir=120751
+[RAW] seq=4528 ts=226432 red=102749 ir=120851
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.92 dc_ir=120817.7 ac_ir=3563.0 pi=0.0295 q=0.92 hr_valid=1 hr=60.00 spo2_valid=1 spo2=92.93
+[RAW] seq=4532 ts=226632 red=102702 ir=120633
+[RAW] seq=4536 ts=226832 red=102371 ir=120031
+[RAW] seq=4540 ts=227032 red=102121 ir=119731
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.90 dc_ir=120653.7 ac_ir=3185.0 pi=0.0264 q=0.90 hr_valid=1 hr=80.00 spo2_valid=1 spo2=90.41
+[RAW] seq=4544 ts=227232 red=101903 ir=119534
+[RAW] seq=4548 ts=227432 red=101898 ir=119522
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.88 dc_ir=120455.6 ac_ir=4393.0 pi=0.0365 q=0.88 hr_valid=1 hr=44.44 spo2_valid=1 spo2=87.26
+[RAW] seq=4552 ts=227632 red=101542 ir=118699
+[RAW] seq=4556 ts=227832 red=101512 ir=119052
+[RAW] seq=4560 ts=228032 red=101141 ir=118561
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.87 dc_ir=120215.7 ac_ir=4282.0 pi=0.0356 q=0.87 hr_valid=1 hr=100.00 spo2_valid=1 spo2=84.12
+[RAW] seq=4564 ts=228232 red=100978 ir=118289
+[RAW] seq=4568 ts=228432 red=101412 ir=119193
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.86 dc_ir=120036.2 ac_ir=4282.0 pi=0.0357 q=0.86 hr_valid=0 hr=0.00 spo2_valid=1 spo2=81.96
+[RAW] seq=4572 ts=228632 red=101192 ir=118881
+[RAW] seq=4576 ts=228832 red=101305 ir=119209
+[RAW] seq=4580 ts=229032 red=101138 ir=118990
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.87 dc_ir=119861.0 ac_ir=4282.0 pi=0.0357 q=0.87 hr_valid=0 hr=0.00 spo2_valid=1 spo2=79.63
+[RAW] seq=4584 ts=229232 red=101483 ir=119688
+[RAW] seq=4588 ts=229432 red=100682 ir=119296
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.87 dc_ir=119754.3 ac_ir=4282.0 pi=0.0358 q=0.87 hr_valid=0 hr=0.00 spo2_valid=1 spo2=77.94
+[RAW] seq=4592 ts=229632 red=100626 ir=119535
+[RAW] seq=4596 ts=229832 red=100595 ir=119733
+[RAW] seq=4600 ts=230032 red=101097 ir=120351
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.85 dc_ir=119699.1 ac_ir=4282.0 pi=0.0358 q=0.85 hr_valid=0 hr=0.00 spo2_valid=1 spo2=76.15
+[RAW] seq=4604 ts=230232 red=101799 ir=120936
+[RAW] seq=4608 ts=230432 red=100747 ir=119404
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.81 dc_ir=119694.4 ac_ir=6027.0 pi=0.0504 q=0.81 hr_valid=0 hr=0.00 spo2_valid=1 spo2=78.41
+[RAW] seq=4612 ts=230632 red=99980 ir=118660
+[RAW] seq=4616 ts=230832 red=100368 ir=120243
+[RAW] seq=4620 ts=231032 red=95383 ir=114083
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.68 dc_ir=119523.4 ac_ir=9929.0 pi=0.0831 q=0.68 hr_valid=0 hr=0.00 spo2_valid=1 spo2=80.40
+[RAW] seq=4624 ts=231232 red=94792 ir=112632
+[RAW] seq=4628 ts=231432 red=96019 ir=107891
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=118816.2 ac_ir=18513.0 pi=0.1558 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=88.64
+[RAW] seq=4632 ts=231632 red=92513 ir=104260
+[RAW] seq=4636 ts=231832 red=88816 ir=100471
+[RAW] seq=4640 ts=232032 red=96900 ir=103990
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=117205.6 ac_ir=33056.0 pi=0.2820 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.07
+[RAW] seq=4644 ts=232232 red=96107 ir=108593
+[RAW] seq=4648 ts=232432 red=99459 ir=113711
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=116186.5 ac_ir=31866.0 pi=0.2743 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.90
+[RAW] seq=4652 ts=232632 red=103156 ir=119935
+[RAW] seq=4656 ts=232832 red=102359 ir=119269
+[RAW] seq=4660 ts=233032 red=102512 ir=120666
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=116106.7 ac_ir=31618.0 pi=0.2723 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.85
+[RAW] seq=4664 ts=233232 red=100749 ir=117818
+[RAW] seq=4668 ts=233432 red=100792 ir=117784
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=115983.4 ac_ir=31618.0 pi=0.2726 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.94
+[RAW] seq=4672 ts=233632 red=100735 ir=117918
+[RAW] seq=4676 ts=233832 red=101959 ir=120303
+[RAW] seq=4680 ts=234032 red=104548 ir=124456
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=116076.5 ac_ir=35021.0 pi=0.3017 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.95
+[RAW] seq=4684 ts=234232 red=105923 ir=126288
+[RAW] seq=4688 ts=234432 red=106300 ir=127116
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=116668.2 ac_ir=38078.0 pi=0.3264 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.77
+[RAW] seq=4692 ts=234632 red=103852 ir=123330
+[RAW] seq=4696 ts=234832 red=99675 ir=116839
+[RAW] seq=4700 ts=235032 red=99254 ir=117183
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=116779.9 ac_ir=38078.0 pi=0.3261 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.77
+[RAW] seq=4704 ts=235232 red=100438 ir=117891
+[RAW] seq=4708 ts=235432 red=102337 ir=122588
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=116816.1 ac_ir=38078.0 pi=0.3260 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.81
+[RAW] seq=4712 ts=235632 red=103046 ir=123987
+[RAW] seq=4716 ts=235832 red=103317 ir=124492
+[RAW] seq=4720 ts=236032 red=102858 ir=123782
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=117177.0 ac_ir=38078.0 pi=0.3250 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.92
+[RAW] seq=4724 ts=236232 red=101478 ir=121358
+[RAW] seq=4728 ts=236432 red=101776 ir=122050
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=117336.5 ac_ir=38078.0 pi=0.3245 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.97
+[RAW] seq=4732 ts=236632 red=97704 ir=114655
+[RAW] seq=4736 ts=236832 red=97710 ir=114538
+[RAW] seq=4740 ts=237032 red=94935 ir=110184
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=116987.8 ac_ir=38078.0 pi=0.3255 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=92.88
+[RAW] seq=4744 ts=237232 red=93410 ir=106846
+[RAW] seq=4748 ts=237432 red=109309 ir=107402
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=116248.0 ac_ir=38078.0 pi=0.3276 q=0.60 hr_valid=1 hr=42.86 spo2_valid=1 spo2=92.82
+[RAW] seq=4752 ts=237632 red=109328 ir=108588
+[RAW] seq=4756 ts=237832 red=95101 ir=109603
+[RAW] seq=4760 ts=238032 red=97010 ir=115080
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=116432.6 ac_ir=38078.0 pi=0.3270 q=0.60 hr_valid=1 hr=42.86 spo2_valid=1 spo2=92.91
+[RAW] seq=4764 ts=238232 red=96767 ir=113726
+[RAW] seq=4768 ts=238432 red=96850 ir=114839
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=117692.1 ac_ir=28735.0 pi=0.2442 q=0.60 hr_valid=1 hr=42.86 spo2_valid=1 spo2=92.27
+[RAW] seq=4772 ts=238632 red=96538 ir=114477
+[RAW] seq=4776 ts=238832 red=96558 ir=115029
+[RAW] seq=4780 ts=239032 red=93356 ir=110009
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=117871.9 ac_ir=24199.0 pi=0.2053 q=0.60 hr_valid=1 hr=42.86 spo2_valid=1 spo2=91.09
+[RAW] seq=4784 ts=239232 red=96255 ir=115103
+[RAW] seq=4788 ts=239432 red=93394 ir=108307
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=117138.9 ac_ir=24615.0 pi=0.2101 q=0.60 hr_valid=1 hr=42.86 spo2_valid=1 spo2=90.73
+[RAW] seq=4792 ts=239632 red=93160 ir=110838
+[RAW] seq=4796 ts=239832 red=94223 ir=112183
+[RAW] seq=4800 ts=240032 red=91072 ir=107292
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=116620.5 ac_ir=24615.0 pi=0.2111 q=0.60 hr_valid=1 hr=61.54 spo2_valid=1 spo2=89.98
+[RAW] seq=4804 ts=240232 red=91924 ir=108742
+[RAW] seq=4808 ts=240432 red=7244 ir=8293
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=112501.1 ac_ir=126374.0 pi=1.1233 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.43
+[RAW] seq=4812 ts=240632 red=953 ir=668
+[RAW] seq=4816 ts=240832 red=715 ir=551
+[RAW] seq=4820 ts=241032 red=741 ir=586
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=102668.8 ac_ir=124011.0 pi=1.2079 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.14
+[RAW] seq=4824 ts=241232 red=952 ir=1165
+[RAW] seq=4828 ts=241432 red=1112 ir=2134
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=93487.5 ac_ir=124011.0 pi=1.3265 q=0.60 hr_valid=1 hr=109.09 spo2_valid=1 spo2=87.06
+[RAW] seq=4832 ts=241632 red=3608 ir=11243
+[RAW] seq=4836 ts=241832 red=3976 ir=7190
+[RAW] seq=4840 ts=242032 red=1543 ir=3603
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=84828.9 ac_ir=124011.0 pi=1.4619 q=0.60 hr_valid=1 hr=97.67 spo2_valid=1 spo2=86.85
+[RAW] seq=4844 ts=242232 red=635 ir=538
+[RAW] seq=4848 ts=242432 red=609 ir=428
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=75178.4 ac_ir=121741.0 pi=1.6194 q=0.60 hr_valid=1 hr=93.51 spo2_valid=1 spo2=86.86
+[RAW] seq=4852 ts=242632 red=614 ir=416
+[RAW] seq=4856 ts=242832 red=611 ir=426
+[RAW] seq=4860 ts=243032 red=618 ir=442
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=65791.8 ac_ir=117124.0 pi=1.7802 q=0.60 hr_valid=1 hr=142.86 spo2_valid=1 spo2=86.87
+[RAW] seq=4864 ts=243232 red=620 ir=423
+[RAW] seq=4868 ts=243432 red=642 ir=462
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=56973.4 ac_ir=117124.0 pi=2.0558 q=0.60 hr_valid=1 hr=124.14 spo2_valid=1 spo2=86.88
+[RAW] seq=4872 ts=243632 red=662 ir=496
+[RAW] seq=4876 ts=243832 red=630 ir=486
+[RAW] seq=4880 ts=244032 red=653 ir=483
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=48636.9 ac_ir=117124.0 pi=2.4081 q=0.60 hr_valid=1 hr=142.86 spo2_valid=1 spo2=86.92
+[RAW] seq=4884 ts=244232 red=678 ir=559
+[RAW] seq=4888 ts=244432 red=954 ir=1071
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=39919.4 ac_ir=117124.0 pi=2.9340 q=0.60 hr_valid=1 hr=126.32 spo2_valid=1 spo2=86.93
+[RAW] seq=4892 ts=244632 red=10452 ir=14754
+[RAW] seq=4896 ts=244832 red=66437 ir=82307
+[RAW] seq=4900 ts=245032 red=73648 ir=104003
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=35758.4 ac_ir=115699.0 pi=3.2356 q=0.60 hr_valid=1 hr=120.00 spo2_valid=1 spo2=86.80
+[RAW] seq=4904 ts=245232 red=74681 ir=110807
+[RAW] seq=4908 ts=245432 red=85603 ir=127435
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=36106.9 ac_ir=127019.0 pi=3.5179 q=0.60 hr_valid=1 hr=200.00 spo2_valid=1 spo2=86.87
+[RAW] seq=4912 ts=245632 red=83148 ir=121621
+[RAW] seq=4916 ts=245832 red=86814 ir=128352
+[RAW] seq=4920 ts=246032 red=87939 ir=129987
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=37576.1 ac_ir=135682.0 pi=3.6109 q=0.60 hr_valid=1 hr=200.00 spo2_valid=1 spo2=86.98
+[RAW] seq=4924 ts=246232 red=88329 ir=130204
+[RAW] seq=4928 ts=246432 red=88537 ir=130233
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=39061.6 ac_ir=135682.0 pi=3.4735 q=0.60 hr_valid=1 hr=200.00 spo2_valid=1 spo2=87.09
+[RAW] seq=4932 ts=246632 red=88649 ir=130287
+[RAW] seq=4936 ts=246832 red=88823 ir=130384
+[RAW] seq=4940 ts=247032 red=88960 ir=130386
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=45570.7 ac_ir=135682.0 pi=2.9774 q=0.60 hr_valid=1 hr=85.71 spo2_valid=1 spo2=87.08
+[RAW] seq=4944 ts=247232 red=88980 ir=130294
+[RAW] seq=4948 ts=247432 red=89017 ir=130346
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=55705.8 ac_ir=135682.0 pi=2.4357 q=0.60 hr_valid=1 hr=90.00 spo2_valid=1 spo2=87.06
+[RAW] seq=4952 ts=247632 red=89077 ir=130296
+[RAW] seq=4956 ts=247832 red=89365 ir=130664
+[RAW] seq=4960 ts=248032 red=89609 ir=130870
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=65698.1 ac_ir=135682.0 pi=2.0652 q=0.60 hr_valid=1 hr=90.00 spo2_valid=1 spo2=87.10
+[RAW] seq=4964 ts=248232 red=89790 ir=130983
+[RAW] seq=4968 ts=248432 red=89865 ir=130927
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=75247.9 ac_ir=135682.0 pi=1.8031 q=0.60 hr_valid=1 hr=84.21 spo2_valid=1 spo2=87.14
+[RAW] seq=4972 ts=248632 red=89861 ir=130909
+[RAW] seq=4976 ts=248832 red=89949 ir=130918
+[RAW] seq=4980 ts=249032 red=90003 ir=130975
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=85441.1 ac_ir=135675.0 pi=1.5879 q=0.60 hr_valid=1 hr=84.21 spo2_valid=1 spo2=87.13
+[RAW] seq=4984 ts=249232 red=90102 ir=130889
+[RAW] seq=4988 ts=249432 red=90298 ir=130929
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=95636.2 ac_ir=135675.0 pi=1.4187 q=0.60 hr_valid=1 hr=82.19 spo2_valid=1 spo2=87.13
+[RAW] seq=4992 ts=249632 red=90369 ir=130954
+[RAW] seq=4996 ts=249832 red=90433 ir=130988
+[RAW] seq=5000 ts=250032 red=90559 ir=131062
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=105833.2 ac_ir=135619.0 pi=1.2814 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.14
+[RAW] seq=5004 ts=250232 red=90599 ir=131053
+[RAW] seq=5008 ts=250432 red=90686 ir=131091
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=116034.0 ac_ir=135571.0 pi=1.1684 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.18
+[RAW] seq=5012 ts=250632 red=90467 ir=130665
+[RAW] seq=5016 ts=250832 red=90644 ir=130870
+[RAW] seq=5020 ts=251032 red=90605 ir=130778
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=126011.5 ac_ir=104402.0 pi=0.8285 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.79
+[RAW] seq=5024 ts=251232 red=90732 ir=130958
+[RAW] seq=5028 ts=251432 red=90736 ir=130937
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=130034.2 ac_ir=25291.0 pi=0.1945 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=70.17
+[RAW] seq=5032 ts=251632 red=90771 ir=130937
+[RAW] seq=5036 ts=251832 red=90749 ir=130907
+[RAW] seq=5040 ts=252032 red=90862 ir=131022
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.85 dc_ir=130608.0 ac_ir=4404.0 pi=0.0337 q=0.85 hr_valid=0 hr=0.00 spo2_valid=0 spo2=0.00
+[RAW] seq=5044 ts=252232 red=90916 ir=131073
+[RAW] seq=5048 ts=252432 red=91031 ir=131175
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.52 dc_ir=130784.1 ac_ir=1122.0 pi=0.0086 q=0.52 hr_valid=1 hr=200.00 spo2_valid=0 spo2=0.00
+[RAW] seq=5052 ts=252632 red=90980 ir=131040
+[RAW] seq=5056 ts=252832 red=90848 ir=130888
+[RAW] seq=5060 ts=253032 red=91075 ir=131184
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.51 dc_ir=130845.2 ac_ir=1002.0 pi=0.0077 q=0.51 hr_valid=1 hr=200.00 spo2_valid=0 spo2=0.00
+[RAW] seq=5064 ts=253232 red=110087 ir=142810
+[RAW] seq=5068 ts=253432 red=933 ir=744
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=125314.4 ac_ir=142286.0 pi=1.1354 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.21
+[RAW] seq=5072 ts=253632 red=730 ir=497
+[RAW] seq=5076 ts=253832 red=889 ir=598
+[RAW] seq=5080 ts=254032 red=1447 ir=1263
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=115194.6 ac_ir=142327.0 pi=1.2355 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.15
+[RAW] seq=5084 ts=254232 red=2360 ir=2196
+[RAW] seq=5088 ts=254432 red=3564 ir=3894
+[FRAME][STATE=TRACKING] valid=1 finger=1 conf=0.60 dc_ir=105211.1 ac_ir=142327.0 pi=1.3528 q=0.60 hr_valid=0 hr=0.00 spo2_valid=1 spo2=87.17
+[RAW] seq=5092 ts=254632 red=5891 ir=5784
+[RAW] s

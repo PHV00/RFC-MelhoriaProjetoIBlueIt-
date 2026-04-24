@@ -6,3 +6,4 @@ codigo em si
 rodar modo de desenvolvedor para passar o esp32
 
 . $HOME/esp/esp-idf/export.sh
+

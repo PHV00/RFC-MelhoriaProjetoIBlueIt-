@@ -11,6 +11,8 @@ idf_component_register(
         "processing/hr_estimator.c"
         "processing/spo2_estimator.c"
         "safety/confidence_engine.c"
+        "safety/contact_detector.c"
+        "safety/pulse_detector.c"
         "transport/serial_telemetry.c"
         "storage/config_repo.c"
     INCLUDE_DIRS
