@@ -23,7 +23,7 @@
 
 # 1. Visão do Produto e Impacto (O Problema)
   
-Este projeto tem como fim identificar e melhorar o já consolidado jogo sério I Blue It, um software desenvolvido pela Universidade do Estado de Santa Catarina (UDESC) com o princípio de auxiliar na fisioterapia de pacientes com problemas respiratórios, isso por meio da gamificação dos seus exercícios e análises dos resultados. Assim o projeto pretende analisar o software e aplicar as melhorias que forem encontradas, tanto técnicas, como de demandas da comunidade que já o utiliza.
+Este projeto tem como fim melhorar o já consolidado jogo sério I Blue It, um software desenvolvido pela Universidade do Estado de Santa Catarina (UDESC) com o princípio de auxiliar na fisioterapia de pacientes com problemas respiratórios, isso por meio da gamificação dos seus exercícios e análises dos resultados. Assim o projeto pretende aplicar as melhorias que foram encontradas, tanto técnicas, como de demandas da comunidade que já o utiliza.
 
 ---
 
