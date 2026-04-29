@@ -177,9 +177,11 @@ As Metricas de sucesso estipuladas são:
 
 # 2. Engenharia de Requisitos
 
-Esta seção define **o que o sistema fará**.
+Esta seção define o que o sistema deverá realizar para atender às melhorias no projeto I Blue It. O foco dos requisitos está na incorporação de um novo módulo de monitoramento fisiológico por SpO2, na ampliação dos dados apresentados aos profissionais de saúde e no ajuste do módulo de Inteligência Artificial responsável pela adaptação dinâmica da dificuldade dos exercícios ao novo parametro.
 
-Evite descrições vagas.
+O projeto considera que o I Blue It já possui uma base funcional composta por jogo sério, dispositivos IoT para captura respiratória, armazenamento de dados, calibração e acompanhamento por profissional. Sendo assim, os requisitos abaixo descrevem principalmente as funcionalidades necessárias para integrar o novo componente de saturação periférica de oxigênio ao ecossistema existente.
+
+[ia]
 
 ---
 
@@ -195,6 +197,43 @@ Inclua:
 - principais dificuldades
 
 Adicionar **imagens ou ilustrações** pode ajudar na compreensão.
+
+### Persona 1 — Ana Clara, paciente em reabilitação respiratória
+
+**Contexto:**  
+Ana Clara uma criança de 12 anos realiza sessões de fisioterapia respiratória, por possuir problemas respiratorios. Ela apresenta dificuldade em manter a constancia dos exercícios, considerando o tratamento repetitivo e cansativo. Durante as sessões, utiliza o jogo I Blue It com acompanhamento de um fisioterapeuta.
+
+**Objetivos:**  
+- Proporsionar os exercícios respiratórios de uma forma mais lúdica e motivadora.
+- Receber feedback visual durante a sessão de tratamento.
+- Conseguir completar os niveis e desafios do jogo sem sentir excessivamente desconfortavel.
+- Evoluir gradualmente a dificuldade, conforme sua melhora na capacidade respiratória.
+
+**Principais dificuldades:**  
+- Perde a motivação quando os exercícios são repetitivos.
+- Em exercicios longos pode apresentar fadiga ou desconforto.
+- Não pussue semsibilidade necessario para perceber quando está realizando esforço excessivo.
+- Dependente da orientação de um profissional para realizar adequada dos exercícios propostos.
+
+---
+
+### Persona 2 — Dr. Marcos, fisioterapeuta respiratório
+
+**Contexto:**  
+Dr. Marcos atua em uma clínica voltada ao tatamento fisioterapico, na area respiratória onde acompanha pacientes com diferentes quadros clínicos. Ele se faz uso de ferramentas de apoio em vista de tornar os seus tratamentos mais motivador e ludico, assim o auxiliando na apicação do tratamento, acompanhamento e evolução dos pacientes ao longo das sessões.
+
+**Objetivos:**  
+- Configurar parâmetros para exercício seguindo o perfil clínico do paciente.
+- Acompanhar os dados respiratórios e fisiológicos em tempo de execução durante a sessão.
+- Visualizar histórico do paciente analisando seu desempenho e evolução.
+- Identificar sinais de alerta tais como queda de saturação, fadiga ou baixo resultado ao exercício.
+- Utilizar os dados obtidos e processados pelo sistema como apoio na tomada de decisão especializada.
+
+**Principais dificuldades:**  
+- Necessita acompanhar simultaneamente a execução respiratória do paciente suas condições fisiológica e seu desempenho no jogo.
+- Necessita de dados objetivamente organizados e claros para sua avaliação de evolução e tomada de decisão.
+- Precisa evitar que o paciente seja submetido a esforços inadequados.
+- Precisa ajustar a dificuldade do exercício de maneira a não interroper a sessão.
 
 ---
 
