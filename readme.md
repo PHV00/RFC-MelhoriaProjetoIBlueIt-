@@ -186,18 +186,6 @@ O projeto considera que o I Blue It já possui uma base funcional composta por j
 ---
 
 ## 2.1 Personas
-
-Crie **1 a 3 personas principais**.
-
-Inclua:
-
-- nome fictício
-- contexto
-- objetivos
-- principais dificuldades
-
-Adicionar **imagens ou ilustrações** pode ajudar na compreensão.
-
 ### Persona 1 — Ana Clara, paciente em reabilitação respiratória
 
 **Contexto:**  
