@@ -47,10 +47,9 @@ Assim a solução que já está na versão 5.0 já contempla calibração, hist�
 
 link auxiliar para mais informações sobre o software: https://udescmove2learn.wordpress.com/2018/04/26/i-blue-it/
 
-Entretanto a iniciativa percebeu lacunas no estado atual do software sendo estas as:
-- Necessidade de ampliar a captura de dados dos pacientes na hora dos exercícios (adicionar um novo módulo para o biossensor de saturação periférica de oxigênio (SpO2)), com a finalidade de capturar mais dados sobre o paciente).
-- Necessidade de ampliar os dados mostrados no dashboard do paciente (adicionar os dados obtidos pela adição do módulo (SpO2) para o dashboard do paciente).
-- Dificuldade em ajustar a dificuldade dos exercícios ao adicionar novo componente SpO2 no tratamento paciente (no modelo atual isso já configurado por uma IA, porém sem o módulo SpO2).
+Porém mesmo com todas estas versões e melhorias, foram identificadas algumas lacunas, percebeu-se um risco em potencial ao paciente, dado que os dados capturados atualmente não contemplam e nem fornecem em sua totalidade o necessario para um ajuste dinamico da dificuldade de maneira totalmente confiavel assim havendo o eventual risco de ou subdimencionar a dificuldade e comprometendo a terapia em curso, ou hiperdimencionar o exercicio, podendo acabar em casos extremos com desmaios, tonturas ou fadiga extrema por parte do paciente.
+
+O que nos leva à decisão de implementar o módulo novo no IoT adicionando ao projeto, no qual sua adição acarreta em mudanças e ajustes diretos aos módulos de dashboards médicos e IA de ajuste de dificuldade ao novo componente.
 
 ---
 
@@ -74,8 +73,6 @@ Desde sua fase inicial até agora houveram diversas melhorias em cada uma das ve
   - Redesign para a incorporação de IA ao projeto
 - versão 05 - I Blue It / Flow Psicofisiológico (2024):
   - Incorporação de Flow Psicofisiológico (busca equilibrar a parte motivadora psíquica, com a parte fisiológica do paciente) e IA ao projeto com o fim de controlar o Flow Psicofisiológico
-
-Porém mesmo com todas estas versões e melhorias, foram identificadas algumas lacunas sendo a necessidade de aprimorar a captura e o tipo de dados, o que levou à decisão de implementar o módulo novo no IoT adicionando ao projeto o SpO2 (medidor de saturação do sangue), o que acarreta em mudanças e ajustes aos módulos de dashboards e IA de dificuldade de Flow Psicofisiológico ao novo componente.
 
 Neste contexto este projeto de melhoria tem como ponto de partida dar continuidade no aprimoramento de uma ferramenta que auxilia a comunidade médica na recuperação de pacientes com problemas respiratórios, por meio de uma bolsa de Iniciação Científica adjunto a Udesc, tratando as lacunas encontradas e dando continuidade ao trabalho técnico acadêmico já desenvolvido.
 
