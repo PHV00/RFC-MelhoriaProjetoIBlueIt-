@@ -149,7 +149,7 @@ Profissional de saúde: fisioterapeutas respiratórios, fisioterapeutas clínico
 
 ### Objetivo Geral
 
-O projeto se propõe a aprimorar aquilo que já é um software clínico de excelência, por meio da incorporação de uma adição de um novo módulo de captura de dados do paciente o SpO2 (que atua na captação de dados da saturação sanguínea do paciente), e por conta disto refatorar, ajustar as partes necessárias para a completa incorporação deste módulo, e por meio disso fornecer à comunidade médica uma ferramenta ainda mais aprimorada
+O projeto se propõe por meio da incorporação de um novo módulo de captura de dados do paciente o Spo2 (sensor responsável pela captura da saturação sanguínea do paciente), oque acarreta em mudanças imediatas em partes já consolidadas do codigo, como o os modulos de dahboard medico (para fornecer mais um dado importante para tomada de decisão) e Ia de ajuste de dificuldade dinamica (que recebera mais um parametro para se adequar ao paciente em tratamento).
 
 ---
 
@@ -157,9 +157,9 @@ O projeto se propõe a aprimorar aquilo que já é um software clínico de excel
 
 Tendo em vista a problemática apresentada, este projeto tem como fim sanar as lacunas identificadas pela comunidade com fim de entregar uma plataforma mais completa e otimizada. Baseando-se nisso segue abaixo os objetivos a serem tratados:
 
-- Integrar um sensor de SpO2 ao ecossistema do jogo para monitoramento fisiológico complementar.
-- Implementar um módulo de ajuste dinâmico de dificuldade com base no desempenho e nos sinais do paciente, utilizando Inteligência Artificial, de modo a suportar todos os módulos IoT.
-- Ampliar o dashboard clínico para exibir e correlacionar dados respiratórios, de SpO2 e de desempenho no jogo.
+- Integrar o sensor de Spo2 ao ecossistema do jogo para monitoramento fisiológico complementar.
+- Atualizar o módulo de ajuste dinâmico de dificuldade para suportar o novo parametro de Saturação Sanguinea.
+- Atualizar o dashboard clínico para exibir e correlacionar dados respiratórios, do Spo2 e de desempenho no jogo.
 [2018 - Santos - I Blue It Um Jogo Sério para auxiliar na Reabilitação Respiratória (2).pdf](https://github.com/user-attachments/files/26648094/2018.-.Santos.-.I.Blue.It.Um.Jogo.Serio.para.auxiliar.na.Reabilitacao.Respiratoria.2.pdf)
 
 ---
