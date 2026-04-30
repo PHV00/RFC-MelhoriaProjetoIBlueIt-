@@ -177,11 +177,11 @@ As Metricas de sucesso estipuladas são:
 
 # 2. Engenharia de Requisitos
 
-Esta seção define o que o sistema deverá realizar para atender às melhorias no projeto I Blue It. O foco dos requisitos está na incorporação de um novo módulo de monitoramento fisiológico por SpO2, na ampliação dos dados apresentados aos profissionais de saúde e no ajuste do módulo de Inteligência Artificial responsável pela adaptação dinâmica da dificuldade dos exercícios ao novo parametro.
+Este segmento define oque o sitema realizara para atender as melhorias no projeto I Blue It, tendo em vista a problematica, na qual os dados fornecidos pelo modelo atual não podem atender e nem garentir uma dificuldade automatica confiavel para evitar tanto a sua extrapolações quanto a sua atenuação ao nivel fisiologico suportado pelo paciente durante as sessões de exercicios, o projeto nesse sentido nessecita de um acrescimo , um novo modulo de monitoramento fisiologico com o fim de sanar está exata lacuna.
 
-O projeto considera que o I Blue It já possui uma base funcional composta por jogo sério, dispositivos IoT para captura respiratória, armazenamento de dados, calibração e acompanhamento por profissional. Sendo assim, os requisitos abaixo descrevem principalmente as funcionalidades necessárias para integrar o novo componente de saturação periférica de oxigênio ao ecossistema existente.
+Para este fim é proposto que nesse novo modulo de monitoramento fisiologico possua um componente spo2(sensor de saturação sanguinea), oque acarreta em mudanças imediatas nos modulos de Dashboard clinico e de dificuldade ajustada por Inteligencia Artificial, sendo respectividamente acrecimos de informações clinicas para analise dos profissionais de saude, e parametro utilizado pela inteligencia artifical para estipular a dificuldade adequada dos exercicios.  
 
-[ia]
+O projeto tem como premisa que o software I Blue It já possui uma  base funcional composta por jogo sério, dispositivos IoT para captura respiratória, armazenamento de dados, calibração por iteligencia artificial e acompanhamento por profissional.Sendo assim os requisitos estipulados abaixo descrevem as funcionalidades necessarios para a integração do novo modulo proposto, saturação sanguinea ao ecossitema existente. 
 
 ---
 
@@ -189,7 +189,7 @@ O projeto considera que o I Blue It já possui uma base funcional composta por j
 ### Persona 1 — Ana Clara, paciente em reabilitação respiratória
 
 **Contexto:**  
-Ana Clara uma criança de 12 anos realiza sessões de fisioterapia respiratória, por possuir problemas respiratorios. Ela apresenta dificuldade em manter a constancia dos exercícios, considerando o tratamento repetitivo e cansativo. Durante as sessões, utiliza o jogo I Blue It com acompanhamento de um fisioterapeuta.
+Ana Clara uma criança de 12 anos realiza sessões de fisioterapia respiratória, por possuir problemas respiratorios. Ela apresentava dificuldade em manter a constância dos exercícios, considerando o tratamento repetitivo e cansativo. Durante as sessões, passou a utilizar o jogo I Blue It com acompanhamento de um fisioterapeuta, oque apresetou repectiva melhora ao quadro.
 
 **Objetivos:**  
 - Proporsionar os exercícios respiratórios de uma forma mais lúdica e motivadora.
@@ -200,7 +200,7 @@ Ana Clara uma criança de 12 anos realiza sessões de fisioterapia respiratória
 **Principais dificuldades:**  
 - Perde a motivação quando os exercícios são repetitivos.
 - Em exercicios longos pode apresentar fadiga ou desconforto.
-- Não pussue semsibilidade necessario para perceber quando está realizando esforço excessivo.
+- Não pussue sensibilidade necessario para perceber quando está realizando esforço excessivo.
 - Dependente da orientação de um profissional para realizar adequada dos exercícios propostos.
 
 ---
@@ -212,10 +212,10 @@ Dr. Marcos atua em uma clínica voltada ao tatamento fisioterapico, na area resp
 
 **Objetivos:**  
 - Configurar parâmetros para exercício seguindo o perfil clínico do paciente.
-- Acompanhar os dados respiratórios e fisiológicos em tempo de execução durante a sessão.
+- Acompanhar os dados respiratórios e fisiológicos em tempo de execução da sessão.
 - Visualizar histórico do paciente analisando seu desempenho e evolução.
 - Identificar sinais de alerta tais como queda de saturação, fadiga ou baixo resultado ao exercício.
-- Utilizar os dados obtidos e processados pelo sistema como apoio na tomada de decisão especializada.
+- Utilizar os dados obtidos e processados pelo sistema como apoio na tomada de decisão.
 
 **Principais dificuldades:**  
 - Necessita acompanhar simultaneamente a execução respiratória do paciente suas condições fisiológica e seu desempenho no jogo.
