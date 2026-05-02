@@ -227,37 +227,17 @@ Dr. Marcos atua em uma clínica voltada ao tatamento fisioterapico, na area resp
 
 ## 2.2 Casos de Uso Principais
 
-Considerando o estado atual em que o software se encontra, com suas inumeras funcionalidades e aprimoramentos a cada versão, foram abstraidos as suas principais funções e caracteristicas para a craição do diagrama de caso de uso, consistindo primasia uma abstração geral sobre o software I Blue It, e posteriormente a criação de outro, para fins comparativos, contendo as princiapis mudanças que a melhoria se propẽm a realizar.
+Considerando o estado atual em que o software se encontra, com suas inumeras funcionalidades e aprimoramentos de cada versão, foram abstraidos as suas principais funções e caracteristicas para a criação de dois fluxos, consistindo em primasia uma abstração geral sobre o software I Blue It, e posteriormente a derivação de outro para fins comparativos, contendo as princiapis mudanças e impactos no fluxo que a melhoria se propẽm a realizar.
 
 Para o atual estado do software foram elencado as seguintes funcionalidades primarias:
 
-- Cadastrar/Selecionar paciente
-- Calibrar respiração
-- Configurar sessão terapêutica
-- Executar modo plataforma
-- Executar minigames
-- Capturar dados respiratórios
-- Registrar histórico da sessão
-- Consultar dados/relatórios
-- Personalizar fases e níveis
-- Monitorar biossinais
-- Ajustar dificuldade dinamicamente
-- Avaliar desempenho do paciente
-
 <img width="3408" height="4324" alt="image" src="https://github.com/user-attachments/assets/2393fd7f-018c-4231-9166-f5fddc9a7d58" />
 
-Já para a versão melhorada foram acresentados os casos de :
-
-- Capturar dados respiratórios e SpO2 via PITACO ampliado
-- Validar dados respiratórios e SpO2
-- Ajustar dificuldade dinamicamente com SpO2
-- Emitir alerta de segurança
-- ausar/Interromper sessão por risco fisiológico
-- Registrar dados de SpO2
-- Consultar dados / relatórios
+Já para a versão melhorada foram acresentados alguns casos e suas conexões, referentes ao novo modulo contendo o spo2:
 
 <img width="3288" height="5124" alt="image" src="https://github.com/user-attachments/assets/a51cc330-99d7-4e59-922f-265a84774222" />
 
+devo descrever o fluxo, mostrar em forma d  diagrama e depois comparar oque e onde a melhoria afetara
 
 Exemplo:
 
