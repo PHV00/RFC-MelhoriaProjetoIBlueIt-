@@ -229,7 +229,116 @@ Dr. Marcos atua em uma clínica voltada ao tatamento fisioterapico, na area resp
 
 Considerando o estado atual em que o software se encontra, com suas inumeras funcionalidades e aprimoramentos de cada versão, foram abstraidos as suas principais funções e caracteristicas para a criação de dois fluxos, consistindo em primasia uma abstração geral sobre o software I Blue It, e posteriormente a derivação de outro para fins comparativos, contendo as princiapis mudanças e impactos no fluxo que a melhoria se propẽm a realizar.
 
-Para o atual estado do software foram elencado as seguintes funcionalidades primarias:
+Para o atual estado do software foram elencado as seguintes funcionalidades:
+
+
+### UC01 — Cadastrar/Selecionar Paciente
+
+**Objetivo:** Identificar paciente que realizará a sessão terapêutica.
+
+**Descrição:**
+O sistema permite que o profissional de saúde cadastre o paciente caso seje novo, ou permite a seleção de um paciente previamente cadastrado.Essa funcionalidade tem como fim associar os pacientes as sessões do jogo e seus dados taus como calibrações, dados respiratórios, histórico e resultados.
+
+---
+
+### UC02 — Capturar dados respiratórios (via PITACO)
+
+**Objetivo:** Receber os dados fisiológicos necessarios para a realização do jogo.
+
+**Descrição:**
+O sistema permite que o paciente por meio do dispositivo PITACO tenha seus dados fisiologicos estipulados e monitorados.Essa funcionalidade tem como fim capturar os dados necessarios para a realização de todas as operações do sistema.
+
+---
+
+### UC03 — Calibrar Respiração
+
+**Objetivo:** Calibrar o sistema baseando-se na fisiológia do paciente.
+
+**Descrição:**
+O sistema permite que o paciente adjunto ao profissional de saúde calibrem o preparem o ambiente para a realização dos exercicios.Essa funcionalidade tem como objetivo adequar e preparar o software para realizar o exercicio ao paciente.
+
+---
+
+### UC04 — Configurar Sessão Terapêutica
+
+**Objetivo:** Preparar a sessão com o exercicio  trapeutico adequado ao paciente.
+
+**Descrição:**
+O sistema permite que o profissional de saúde configure a sessão terapêutica a ser executada.Essa configuração se caracterizando por poder envolver desde a preparação do paciente, escolha do modo de jogo até a definição de parâmetros para a realização da atividade.
+
+---
+
+### UC05 — Executar Game Plataforma
+
+**Objetivo:** Realizar o exercicio terapeutico com o jogo de plataforma
+
+**Descrição:**
+O sistema permite que o paciente ralize a sessão de exercicio teraupeutico do game de plataforma, no qual utiliza-se de sua respiração no instrumento PITACO para controlar um personagem verticalmente assim o fazendo desviar de obstaculos que aparecem para completar o nivel.Deste modo buscando exercitar o paciente de maneira lúdica. 
+
+---
+
+### UC06 — Executar Minigame
+
+**Objetivo:** Realizar o exercicio terapeutico com os minijogos existentes 
+
+**Descrição:**
+O sistema permite que o paciente ralize a sessão de exercicio teraupeutico em um dos minigames existentes, no qual utiliza-se de sua respiração no instrumento PITACO para controlar as ações de cada nivel.Deste modo buscando exercitar o paciente de maneira lúdica. 
+
+---
+
+### UC07 — Personalizar Fases ou Níveis
+
+**Objetivo:** Personalizar as fases para adeuquar ao perfil,fisiologia e evolução do paciente
+
+**Descrição:**
+O sistema permite que o profissional da saúde personalize as fazes para conter o tamanho e desafios adequados ao caso clinico do paciente.Esta funcionalidade permite a alteração dos niveis, fases e desafios do jogo de plataforma.
+
+---
+
+### UC08 — Acompanhar Sessão
+
+**Objetivo:** Permitir supervisão por parte do profissional de saúde sobre a atividade terapêutica.
+
+**Descrição:**
+O sistema permite que o profissional de saúde acompanhe a realização da sessão terapêutica.Assim posibilitando observar o andamento e desempenho da execução do paciente, permitindo a tomadada de decisões durante ou breve após a sessão 
+
+---
+
+## UC09 — Ajustar Dificuldade Dinamicamente
+
+**Objetivo:** Adequar a dificuldade do jogo à capacidade e ao desempenho do paciente.
+
+**Descrição:**
+O sistema ajusta a dificuldade da atividade em tempo de execução do exercicio terapeutico se adequando ao desempenho do paciente.Esse ajuste se caracteriza por envolver mudanças em parâmetros do jogo tais como obstaculos, velocidade, alvos ou nivel de desafio.
+
+---
+
+### UC10 — Registrar Histórico de Sessão
+
+**Objetivo:** Armazenar dados da sessão fisioterapica para avaliação futura.
+
+**Descrição:**
+O sistema registra os dados gerados durante a sessão, tais como calibração, desempenho e dados respiratórios capturados.Esses dados constituindo o historico do paicente pedendo ser consultado posterioemente pelo profissional da saúde.
+
+---
+
+### UC11 — Consultar Dados / Relatórios
+
+**Objetivo:** Disponibilizar informações obtidas anteroriormente para acompanhamento avanço clínico.
+
+**Descrição:**
+O sistema permite que o profissional da saúde consulte os dados e relatórios obtidos das sessões já realizadas.Essa funcionalidade auxilia o profissional na analise  da evolução do paicente e tomada de decisões eventuais envolvendo o tratamento. 
+
+---
+
+### UC13 — Interromper Sessão
+
+**Objetivo:** Garantir soberania do profissional da saúde sobre da sessão terapêutica.
+
+**Descrição:**
+O sistema permite que o profissional da saúde interrompa a sessão quando achar necessário. Essa ocorrendo por decisão clínica esclusiva do proficional da saúde, baseada em sua experiencia e supervisão sobre o paciente em casos onde o paciente possa estar demosntrando desconforto, dificuldade na execução ou necessidade do encerramento da sessão de terapia.
+
+---
 
 <img width="3408" height="4324" alt="image" src="https://github.com/user-attachments/assets/2393fd7f-018c-4231-9166-f5fddc9a7d58" />
 
