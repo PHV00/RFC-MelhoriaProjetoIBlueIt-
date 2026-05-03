@@ -227,10 +227,9 @@ Dr. Marcos atua em uma clínica voltada ao tatamento fisioterapico, na area resp
 
 ## 2.2 Casos de Uso Principais
 
-Considerando o estado atual em que o software se encontra, com suas inumeras funcionalidades e aprimoramentos de cada versão, foram abstraidos as suas principais funções e caracteristicas para a criação de dois fluxos, consistindo em primasia uma abstração geral sobre o software I Blue It, e posteriormente a derivação de outro para fins comparativos, contendo as princiapis mudanças e impactos no fluxo que a melhoria se propẽm a realizar.
+Considerando o estado atual em que o software se encontra, com suas inumeras funcionalidades e aprimoramentos de cada versão, foram abstraidos as suas principais funções e caracteristicas para a criação de dois fluxos, consistindo em primasia uma abstração geral sobre o software I Blue It, e posteriormente a derivação de outro  para fins comparativos, contendo este as princiapis mudanças e impactos no fluxo que a melhoria se propẽm a realizar.
 
 Para o atual estado do software foram elencado as seguintes funcionalidades:
-
 
 ### UC01 — Cadastrar/Selecionar Paciente
 
@@ -331,7 +330,7 @@ O sistema permite que o profissional da saúde consulte os dados e relatórios o
 
 ---
 
-### UC13 — Interromper Sessão
+### UC12 — Interromper Sessão
 
 **Objetivo:** Garantir soberania do profissional da saúde sobre da sessão terapêutica.
 
@@ -340,22 +339,60 @@ O sistema permite que o profissional da saúde interrompa a sessão quando achar
 
 ---
 
-<img width="3408" height="4324" alt="image" src="https://github.com/user-attachments/assets/2393fd7f-018c-4231-9166-f5fddc9a7d58" />
+Logo abaixo pode-se ver o diagrama que representa tais casos de uso e suas correlações: 
 
-Já para a versão melhorada foram acresentados alguns casos e suas conexões, referentes ao novo modulo contendo o spo2:
+<img width="3404" height="4328" alt="image" src="https://github.com/user-attachments/assets/cef341ac-0b1d-4151-b5bc-1792789c4cc3" />
 
-<img width="3288" height="5124" alt="image" src="https://github.com/user-attachments/assets/a51cc330-99d7-4e59-922f-265a84774222" />
+Já para a versão melhorada foram acresentados alguns casos, referentes ao novo modulo contendo o spo2, como pode-se ver abaixo:
 
-devo descrever o fluxo, mostrar em forma d  diagrama e depois comparar oque e onde a melhoria afetara
+### UC14 — Capturar Dados Respiratórios e SpO2 via PITACO Ampliado
 
-Exemplo:
+**Objetivo:** Ampliar a coleta de dados fisiologicos do paciente, integrando no mesmo dispositivo PITACO captura de informações respiratórias e de oxigenação sanguínea.
 
-- criar conta
-- registrar dados
-- consultar informações
-- gerar relatórios
+**Descrição:**
+O sistema permite capturar dados fisiologicos, por meio do PITACO ampliado, tanto os já utilizados dados respiratórios do paciente quanto os dados de saturação de oxigênio. Isso sendo feito por meio da adição do módulo Spo2 ao corpo do PITACO, com dispositivo passando a fornecer mais informações fisiológicas durante a sessão terapêutica.
 
-Sempre que possível inclua **diagramas de caso de uso**.
+---
+
+### UC15 — Validar, Filtrar e Transformar Sinais Brutos
+
+**Objetivo:** Garantir que os dados respiratórios capituados pelo SpO2 sejam consistentes, confiáveis e adequados para análise.
+
+**Descrição:**
+O sistema realiza a validação e tranformação dos dados brutos obtidos pelo Spo2 para dados como saturação sanguinea, frequência cardiaca e posição adequada do dispositivo, com a finalidade de fornecer tais dados processados para as outra partes interconectadas do sistema.Essa etapa permite validar se os dado estão sendo caputurados de maneira adequada e que estejam sendo retornados também de maneira adequada, para as demais partes.
+
+---
+
+### UC16 — Registrar Dados de Oxigenação
+
+**Objetivo:** Armazenar os dados do Spo2 obtidos durante a sessão para fornecelos no acompanhamento clínico e análise posteriores.
+
+**Descrição:**
+O sistema registra os dados de oxigenação sanguinea obtidos durante a sessão pelo modulo Spo2.Esses dados passam a compor adjunto aos já existenteo o histórico do paciente, permitindo que o profissional da saúde em consultas posteriores tenha acesso a estas informações.
+
+---
+
+### UC17 — Emitir Alerta de Segurança
+
+**Objetivo:** Alerta o profissional da saúde sobre possíveis riscos fisiológicos occoridos em tempo de execução da sessão terapêutica.
+
+**Descrição:**
+O sistema emite um alerta de segurança ao profissional da saúde quando indentifica que os sinais disiologicos do paciente indicam condições de risco ao mesmo, isso em durante a sessão terapêutica. Esses alertas podem estar relacionados a sinais incopativeis com a execução do exercicio como exesso ou falta de oxigenação , ou ainda a casos onde o dispositivo pode estar apresentando falahas na leitura.
+
+---
+
+### UC18 — Pausar/Interromper Sessão por Risco Fisiológico
+
+**Objetivo:** Proteger o paciente durante a sessão, interompendo a atividade que desmontre situações de risco.
+
+**Descrição:**
+O sistema interrompe sessçoes em que forem identificados padrões anomalos ou de alto risco fisiologico ao paciente.Essa funcionalidade atua como medida de precaução e segurança, permitindo a pausa momentânea ou suspensão caso os sinais indiquem uma condição inadequada durante o exercicio.
+
+****
+
+Abaixo pode se ver o fluxo com a melhoria proposta:
+
+<img width="3284" height="5128" alt="image" src="https://github.com/user-attachments/assets/9f41649e-9723-4fd5-8456-7e1de6a08285" />
 
 ---
 
